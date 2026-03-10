@@ -1,0 +1,4167 @@
+date,card,category,type,amount
+2021-10-17,3,Food and Rest,outcome,106.20
+2021-10-17,3,Party,outcome,406.00
+2021-10-18,2,Public Transport,outcome,180.00
+2021-10-19,3,Food and Rest,outcome,1349.24
+2021-10-19,3,Food and Rest,outcome,73.00
+2021-10-19,2,Public Transport,outcome,300.00
+2021-10-20,3,Food and Rest,outcome,55.00
+2021-10-20,3,Food and Rest,outcome,160.00
+2021-10-20,3,Others,outcome,860.00
+2021-10-20,3,Transactions,outcome,1000.00
+2021-10-20,2,Transactions,income,1000.00
+2021-10-20,2,Others,income,150.00
+2021-10-20,2,Public Transport,outcome,300.00
+2021-10-20,2,Public Transport,outcome,46.00
+2021-10-21,2,Transactions,income,5000.00
+2021-10-21,2,Others,income,5000.00
+2021-10-21,3,Transactions,income,5000.00
+2021-10-21,2,Transactions,outcome,5000.00
+2021-10-21,3,Party,outcome,1920.74
+2021-10-21,3,Smoke,outcome,1650.00
+2021-10-22,3,Public Transport,outcome,400.00
+2021-10-22,3,Food and Rest,outcome,149.00
+2021-10-23,2,Others,income,450.00
+2021-10-23,3,Food and Rest,outcome,330.00
+2021-10-23,3,Party,outcome,195.00
+2021-10-24,3,Others,outcome,500.00
+2021-10-25,3,Transactions,income,2000.00
+2021-10-25,3,Smoke,outcome,500.00
+2021-10-25,3,Food and Rest,outcome,115.00
+2021-10-25,3,Others,income,10000.00
+2021-10-25,3,Public Transport,outcome,8678.00
+2021-10-26,3,Public Transport,outcome,600.00
+2021-10-26,2,Food and Rest,outcome,230.00
+2021-10-26,2,Public Transport,outcome,138.00
+2021-10-26,2,Food and Rest,outcome,600.00
+2021-10-26,3,Partner,outcome,1080.00
+2021-10-26,3,Party,outcome,2800.00
+2021-10-26,3,Others,income,800.00
+2021-10-27,2,Others,outcome,500.00
+2021-10-28,3,Food and Rest,outcome,400.00
+2021-10-28,2,Public Transport,outcome,651.00
+2021-10-28,2,Others,income,250.00
+2021-10-28,3,Transactions,income,2000.00
+2021-10-28,2,Transactions,outcome,2000.00
+2021-10-28,3,Party,outcome,1025.00
+2021-10-28,2,Others,income,1200.00
+2021-10-29,2,Public Transport,outcome,46.00
+2021-10-30,2,Public Transport,outcome,755.00
+2021-10-30,3,Smoke,outcome,650.00
+2021-10-30,3,Food and Rest,outcome,154.99
+2021-10-30,3,Transactions,income,25.07
+2021-10-31,3,Others,outcome,59.00
+2021-11-01,3,Others,outcome,720.00
+2021-11-02,3,Transactions,income,2000.00
+2021-11-02,2,Transactions,outcome,2000.00
+2021-11-02,3,Food and Rest,outcome,1170.00
+2021-11-04,3,Food and Rest,outcome,200.00
+2021-11-05,3,Food and Rest,outcome,420.00
+2021-11-05,3,Public Transport,outcome,46.00
+2021-11-06,3,Others,outcome,120.00
+2021-11-06,3,Food and Rest,outcome,35.00
+2021-11-07,3,Transactions,income,420.00
+2021-11-07,3,Public Transport,outcome,420.00
+2021-11-07,3,Food and Rest,outcome,470.00
+2021-11-08,3,Public Transport,outcome,46.00
+2021-11-09,2,Public Transport,outcome,180.00
+2021-11-09,2,Others,outcome,60.00
+2021-11-10,3,Transactions,income,2000.00
+2021-11-10,2,Others,outcome,437.33
+2021-11-10,3,Food and Rest,outcome,799.00
+2021-11-10,2,Others,income,217.00
+2021-11-11,3,Food and Rest,outcome,381.00
+2021-11-11,2,Others,income,12000.00
+2021-11-11,2,Others,outcome,11950.32
+2021-11-11,2,Public Transport,outcome,240.00
+2021-11-13,2,Public Transport,outcome,222.00
+2021-11-13,3,Food and Rest,outcome,591.10
+2021-11-14,2,Others,income,2000.00
+2021-11-14,2,Public Transport,outcome,300.00
+2021-11-14,3,Others,income,200.00
+2021-11-14,2,Others,income,150.00
+2021-11-14,3,Transactions,income,1000.00
+2021-11-14,2,Transactions,outcome,1000.00
+2021-11-14,3,Food and Rest,outcome,1106.00
+2021-11-15,3,Food and Rest,outcome,420.00
+2021-11-16,2,Others,income,5000.00
+2021-11-16,3,Others,income,5000.00
+2021-11-16,3,Food and Rest,outcome,320.00
+2021-11-16,3,Partner,outcome,115.00
+2021-11-17,3,Food and Rest,outcome,140.00
+2021-11-17,2,Public Transport,outcome,75.00
+2021-11-17,3,Food and Rest,outcome,325.00
+2021-11-17,3,Smoke,outcome,390.00
+2021-11-17,3,Public Transport,outcome,46.00
+2021-11-18,3,Salary,income,16793.00
+2021-11-18,3,Food and Rest,outcome,1002.02
+2021-11-18,3,Party,outcome,629.00
+2021-11-19,2,Others,outcome,2000.00
+2021-11-19,3,Party,outcome,1026.87
+2021-11-20,3,Party,outcome,2100.00
+2021-11-20,2,Others,income,514.50
+2021-11-22,2,Public Transport,outcome,370.00
+2021-11-22,3,Food and Rest,outcome,404.95
+2021-11-23,2,Smoke,outcome,390.00
+2021-11-25,3,Others,outcome,500.00
+2021-11-25,2,Public Transport,outcome,215.00
+2021-11-25,3,Party,outcome,9783.00
+2021-11-26,2,Party,outcome,757.00
+2021-11-26,2,Public Transport,outcome,750.00
+2021-11-26,2,Others,income,250.00
+2021-11-28,2,Others,income,3000.00
+2021-11-29,3,Transactions,income,17.15
+2021-11-30,3,Food and Rest,outcome,761.00
+2021-11-30,3,Others,outcome,59.00
+2021-12-01,3,Food and Rest,outcome,420.00
+2021-12-01,2,Food and Rest,outcome,200.00
+2021-12-01,3,Others,outcome,149.00
+2021-12-02,3,Transactions,outcome,3960.00
+2021-12-02,2,Transactions,income,3960.00
+2021-12-02,2,Personal,outcome,1100.00
+2021-12-02,3,Smoke,outcome,850.00
+2021-12-02,3,Party,outcome,800.00
+2021-12-02,3,Food and Rest,outcome,252.00
+2021-12-02,3,Public Transport,outcome,92.00
+2021-12-02,3,Salary,income,52930.10
+2021-12-04,3,Public Transport,outcome,8608.00
+2021-12-04,3,Partner,outcome,3230.00
+2021-12-04,3,Others,outcome,2330.00
+2021-12-04,3,Public Transport,outcome,599.00
+2021-12-04,3,Food and Rest,outcome,308.00
+2021-12-04,3,Transactions,income,4800.00
+2021-12-04,3,Others,income,1500.00
+2021-12-05,3,Personal,outcome,12000.00
+2021-12-06,2,Smoke,outcome,450.00
+2021-12-06,3,Food and Rest,outcome,420.00
+2021-12-07,2,Food and Rest,outcome,350.00
+2021-12-07,2,Public Transport,outcome,300.00
+2021-12-08,3,Food and Rest,outcome,478.00
+2021-12-09,3,Food and Rest,outcome,403.00
+2021-12-09,2,Others,outcome,338.35
+2021-12-09,3,Party,outcome,225.00
+2021-12-09,3,Party,outcome,107.99
+2021-12-09,2,Others,outcome,60.00
+2021-12-10,3,Education,outcome,14560.00
+2021-12-10,2,Party,outcome,1000.00
+2021-12-10,3,Food and Rest,outcome,437.00
+2021-12-11,3,Clothes,outcome,4920.00
+2021-12-11,3,Food and Rest,outcome,502.00
+2021-12-11,3,Food and Rest,outcome,300.00
+2021-12-12,3,Food and Rest,outcome,259.00
+2021-12-12,3,Education,outcome,10.00
+2021-12-13,3,Food and Rest,outcome,409.00
+2021-12-13,2,Others,income,300.00
+2021-12-14,3,Food and Rest,outcome,1332.06
+2021-12-14,3,Food and Rest,outcome,446.00
+2021-12-15,3,Food and Rest,outcome,276.00
+2021-12-16,2,Smoke,outcome,450.00
+2021-12-16,3,Food and Rest,outcome,355.00
+2021-12-16,3,Food and Rest,outcome,339.70
+2021-12-17,2,Public Transport,outcome,355.00
+2021-12-17,3,Others,outcome,330.29
+2021-12-17,3,Food and Rest,outcome,100.00
+2021-12-17,3,Public Transport,outcome,46.00
+2021-12-18,2,Food and Rest,outcome,1534.74
+2021-12-18,3,Food and Rest,outcome,857.00
+2021-12-18,3,Public Transport,outcome,46.00
+2021-12-18,2,Others,income,400.00
+2021-12-18,2,Others,income,200.00
+2021-12-19,2,Food and Rest,outcome,250.00
+2021-12-19,2,Others,outcome,150.00
+2021-12-19,3,Others,outcome,50.00
+2021-12-19,3,Salary,income,24840.00
+2021-12-20,3,Others,outcome,1100.00
+2021-12-20,3,Food and Rest,outcome,450.00
+2021-12-20,3,Food and Rest,outcome,100.00
+2021-12-21,3,Smoke,outcome,250.00
+2021-12-21,3,Food and Rest,outcome,190.00
+2021-12-21,3,Public Transport,outcome,150.00
+2021-12-22,3,Clothes,outcome,6920.00
+2021-12-23,3,Party,outcome,2500.00
+2021-12-23,3,Food and Rest,outcome,576.00
+2021-12-23,2,Smoke,outcome,450.00
+2021-12-24,3,Party,outcome,800.00
+2021-12-24,2,Public Transport,outcome,285.00
+2021-12-25,3,Others,outcome,550.00
+2021-12-25,3,Food and Rest,outcome,150.00
+2021-12-25,3,Salary,income,2935.00
+2021-12-26,3,Food and Rest,outcome,230.00
+2021-12-27,3,Salary,income,56561.00
+2021-12-28,3,Others,outcome,510.00
+2021-12-28,3,Food and Rest,outcome,174.00
+2021-12-28,2,Food and Rest,outcome,300.00
+2021-12-29,3,Food and Rest,outcome,208.00
+2021-12-30,3,Food and Rest,outcome,1270.00
+2021-12-31,3,Partner,outcome,4000.00
+2021-12-31,3,Partner,outcome,1733.15
+2021-12-31,3,Others,outcome,59.00
+2021-12-31,3,Party,outcome,670.00
+2021-12-31,3,Public Transport,outcome,5.00
+2021-12-31,3,Party,outcome,459.70
+2021-12-31,2,Public Transport,outcome,285.00
+2022-01-01,3,Party,outcome,13530.00
+2022-01-01,3,Food and Rest,outcome,870.00
+2022-01-01,3,Food and Rest,outcome,3610.30
+2022-01-02,3,Public Transport,outcome,92.00
+2022-01-02,3,Others,outcome,17310.00
+2022-01-03,3,Public Transport,outcome,150.00
+2022-01-04,3,Food and Rest,outcome,199.00
+2022-01-04,3,Party,outcome,1700.00
+2022-01-04,3,Food and Rest,outcome,44.20
+2022-01-04,3,Food and Rest,outcome,62.00
+2022-01-04,3,Smoke,outcome,500.00
+2022-01-04,3,Food and Rest,outcome,147.19
+2022-01-05,2,Transactions,income,5000.00
+2022-01-05,2,Clothes,outcome,5000.00
+2022-01-05,2,Personal,outcome,300.00
+2022-01-06,3,Public Transport,outcome,340.00
+2022-01-06,3,Public Transport,outcome,350.00
+2022-01-06,3,Food and Rest,outcome,300.00
+2022-01-07,3,Personal,outcome,450.00
+2022-01-07,3,Food and Rest,outcome,1601.48
+2022-01-07,3,Public Transport,outcome,51.00
+2022-01-09,3,Food and Rest,outcome,205.00
+2022-01-09,3,Education,outcome,5910.00
+2022-01-09,2,Others,outcome,60.00
+2022-01-10,3,Food and Rest,outcome,363.00
+2022-01-10,3,Public Transport,outcome,51.00
+2022-01-10,3,Public Transport,outcome,435.00
+2022-01-11,2,Others,outcome,348.45
+2022-01-11,3,Public Transport,outcome,51.00
+2022-01-12,3,Smoke,outcome,450.00
+2022-01-12,3,Food and Rest,outcome,721.00
+2022-01-12,3,Food and Rest,outcome,325.00
+2022-01-12,3,Food and Rest,outcome,60.00
+2022-01-12,2,Public Transport,outcome,200.00
+2022-01-12,2,Public Transport,outcome,300.00
+2022-01-13,3,Party,outcome,950.00
+2022-01-13,2,Public Transport,outcome,480.00
+2022-01-14,3,Party,outcome,2580.00
+2022-01-16,3,Food and Rest,outcome,299.00
+2022-01-17,3,Food and Rest,outcome,952.87
+2022-01-18,3,Party,outcome,579.00
+2022-01-18,3,Food and Rest,outcome,52.49
+2022-01-19,3,Salary,income,19872.00
+2022-01-20,3,Food and Rest,outcome,143.00
+2022-01-20,3,Food and Rest,outcome,107.99
+2022-01-20,3,Smoke,outcome,450.00
+2022-01-20,3,Food and Rest,outcome,180.00
+2022-01-21,3,Food and Rest,outcome,279.00
+2022-01-21,3,Food and Rest,outcome,818.57
+2022-01-22,3,Personal,outcome,600.00
+2022-01-22,3,Personal,outcome,600.00
+2022-01-22,3,Public Transport,outcome,285.00
+2022-01-22,3,Party,outcome,553.70
+2022-01-22,3,Public Transport,outcome,285.46
+2022-01-23,3,Food and Rest,outcome,369.00
+2022-01-23,3,Public Transport,outcome,51.00
+2022-01-25,3,Others,outcome,500.00
+2022-01-26,3,Salary,income,2910.00
+2022-01-26,3,Food and Rest,outcome,862.00
+2022-01-26,3,Others,outcome,550.00
+2022-01-27,3,Party,outcome,583.93
+2022-01-27,3,Party,outcome,458.94
+2022-01-28,3,Party,outcome,350.00
+2022-01-29,3,Others,outcome,510.00
+2022-01-29,3,Food and Rest,outcome,1664.78
+2022-01-29,2,Others,income,400.00
+2022-01-31,3,Others,outcome,59.00
+2022-02-01,3,Public Transport,outcome,435.00
+2022-02-01,3,Food and Rest,outcome,395.00
+2022-02-03,3,Salary,income,51437.00
+2022-02-03,3,Transactions,outcome,746.00
+2022-02-03,2,Transactions,income,200.00
+2022-02-03,3,Food and Rest,outcome,300.00
+2022-02-04,3,Transactions,income,6000.00
+2022-02-04,3,Transactions,outcome,6580.00
+2022-02-04,2,Transactions,income,7000.00
+2022-02-04,2,Transactions,outcome,6000.00
+2022-02-04,3,Others,outcome,70.50
+2022-02-05,3,Food and Rest,outcome,100.00
+2022-02-05,3,Food and Rest,outcome,1252.69
+2022-02-06,3,Food and Rest,outcome,347.00
+2022-02-06,3,Smoke,outcome,160.00
+2022-02-08,2,Others,outcome,230.00
+2022-02-08,2,Food and Rest,outcome,570.00
+2022-02-08,2,Food and Rest,outcome,550.00
+2022-02-09,2,Others,outcome,60.00
+2022-02-09,3,Smoke,outcome,150.00
+2022-02-09,3,Party,outcome,283.00
+2022-02-09,2,Others,outcome,400.00
+2022-02-10,3,Party,outcome,492.40
+2022-02-10,3,Transactions,outcome,400.00
+2022-02-10,2,Transactions,income,400.00
+2022-02-10,2,Public Transport,outcome,200.00
+2022-02-11,3,Personal,outcome,450.00
+2022-02-11,2,Public Transport,outcome,222.00
+2022-02-11,3,Food and Rest,outcome,300.00
+2022-02-11,3,Smoke,outcome,150.00
+2022-02-11,3,Others,outcome,3000.00
+2022-02-12,2,Public Transport,outcome,233.00
+2022-02-12,2,Public Transport,outcome,205.00
+2022-02-12,3,Food and Rest,outcome,368.00
+2022-02-13,3,Food and Rest,outcome,401.00
+2022-02-14,2,Others,outcome,327.24
+2022-02-14,3,Food and Rest,outcome,401.00
+2022-02-15,3,Smoke,outcome,170.00
+2022-02-15,3,Food and Rest,outcome,220.00
+2022-02-15,3,Food and Rest,outcome,570.00
+2022-02-16,3,Food and Rest,outcome,1947.47
+2022-02-17,3,Salary,income,83669.07
+2022-02-17,3,Smoke,outcome,150.00
+2022-02-18,3,Party,outcome,800.00
+2022-02-18,3,Public Transport,outcome,205.94
+2022-02-19,3,Party,outcome,350.00
+2022-02-19,3,Party,outcome,1640.00
+2022-02-20,3,Public Transport,outcome,331.00
+2022-02-20,3,Food and Rest,outcome,400.00
+2022-02-21,3,Others,outcome,899.00
+2022-02-21,3,Party,outcome,770.94
+2022-02-21,3,Public Transport,outcome,51.00
+2022-02-22,2,Transactions,income,3000.00
+2022-02-23,3,Transactions,outcome,10000.00
+2022-02-23,3,Public Transport,outcome,102.00
+2022-02-23,3,Party,outcome,2098.00
+2022-02-24,3,Food and Rest,outcome,648.00
+2022-02-24,3,Smoke,outcome,170.00
+2022-02-24,3,Public Transport,outcome,51.00
+2022-02-25,3,Party,outcome,390.00
+2022-02-25,3,Food and Rest,outcome,1422.05
+2022-02-25,3,Others,outcome,500.00
+2022-02-25,3,Party,outcome,200.00
+2022-02-25,2,Party,outcome,100.00
+2022-02-26,3,Others,outcome,199.00
+2022-02-26,3,Food and Rest,outcome,590.00
+2022-02-26,3,Party,outcome,1300.00
+2022-02-27,3,Smoke,outcome,160.00
+2022-02-27,3,Food and Rest,outcome,401.00
+2022-02-27,3,Food and Rest,outcome,117.00
+2022-02-27,3,Transactions,income,328.13
+2022-02-27,3,Transactions,income,196.88
+2022-02-28,3,Others,outcome,510.00
+2022-02-28,3,Others,outcome,59.00
+2022-03-01,3,Food and Rest,outcome,380.00
+2022-03-01,3,Food and Rest,outcome,508.74
+2022-03-01,2,Public Transport,outcome,300.00
+2022-03-02,3,Smoke,outcome,150.00
+2022-03-02,3,Transactions,outcome,530.00
+2022-03-02,2,Transactions,income,530.00
+2022-03-02,3,Party,outcome,1850.00
+2022-03-03,3,Food and Rest,outcome,261.00
+2022-03-03,3,Public Transport,outcome,150.00
+2022-03-03,3,Food and Rest,outcome,250.00
+2022-03-04,3,Public Transport,outcome,100.00
+2022-03-04,3,Food and Rest,outcome,678.19
+2022-03-04,3,Smoke,outcome,150.00
+2022-03-05,2,Public Transport,outcome,288.00
+2022-03-06,2,Public Transport,outcome,175.00
+2022-03-06,3,Personal,outcome,1275.00
+2022-03-06,3,Food and Rest,outcome,145.00
+2022-03-06,3,Food and Rest,outcome,1460.22
+2022-03-06,3,Public Transport,outcome,51.00
+2022-03-07,3,Others,outcome,6000.00
+2022-03-07,3,Public Transport,outcome,435.00
+2022-03-07,2,Others,outcome,70.00
+2022-03-08,3,Others,outcome,180.00
+2022-03-08,3,Salary,income,21704.36
+2022-03-08,3,Personal,outcome,1260.00
+2022-03-09,3,Food and Rest,outcome,400.00
+2022-03-09,3,Smoke,outcome,150.00
+2022-03-09,2,Others,outcome,60.00
+2022-03-10,3,Food and Rest,outcome,463.00
+2022-03-11,3,Food and Rest,outcome,242.00
+2022-03-11,3,Party,outcome,5150.00
+2022-03-12,3,Smoke,outcome,285.00
+2022-03-12,3,Food and Rest,outcome,802.30
+2022-03-12,3,Education,outcome,319.20
+2022-03-13,3,Food and Rest,outcome,105.00
+2022-03-13,2,Others,outcome,301.99
+2022-03-14,3,Food and Rest,outcome,401.00
+2022-03-15,3,Food and Rest,outcome,120.00
+2022-03-15,3,Food and Rest,outcome,225.00
+2022-03-15,3,Food and Rest,outcome,170.00
+2022-03-15,3,Food and Rest,outcome,420.00
+2022-03-16,3,Food and Rest,outcome,260.00
+2022-03-16,2,Food and Rest,outcome,65.00
+2022-03-17,3,Food and Rest,outcome,117.00
+2022-03-17,3,Others,outcome,6000.00
+2022-03-17,3,Food and Rest,outcome,460.00
+2022-03-17,3,Party,outcome,2795.00
+2022-03-18,3,Party,outcome,968.38
+2022-03-19,3,Personal,outcome,600.00
+2022-03-19,3,Food and Rest,outcome,810.02
+2022-03-19,3,Transactions,outcome,774.09
+2022-03-19,2,Transactions,income,800.00
+2022-03-20,3,Food and Rest,outcome,445.00
+2022-03-21,3,Smoke,outcome,160.00
+2022-03-21,3,Food and Rest,outcome,450.00
+2022-03-21,3,Transactions,income,130.00
+2022-03-21,3,Transactions,outcome,122.00
+2022-03-22,3,Food and Rest,outcome,810.69
+2022-03-23,3,Food and Rest,outcome,215.00
+2022-03-23,3,Salary,income,32743.36
+2022-03-23,2,Public Transport,outcome,300.00
+2022-03-24,3,Smoke,outcome,160.00
+2022-03-24,3,Food and Rest,outcome,499.00
+2022-03-24,3,Party,outcome,5139.35
+2022-03-24,3,Party,outcome,2650.00
+2022-03-24,2,Party,outcome,200.00
+2022-03-24,3,Transactions,outcome,800.00
+2022-03-24,2,Transactions,income,800.00
+2022-03-24,3,Transactions,outcome,3542.00
+2022-03-24,2,Transactions,income,3542.00
+2022-03-25,3,Others,outcome,500.00
+2022-03-26,3,Transactions,income,250.00
+2022-03-26,3,Transactions,outcome,371.35
+2022-03-26,3,Food and Rest,outcome,327.00
+2022-03-26,2,Food and Rest,outcome,370.00
+2022-03-27,3,Party,outcome,200.00
+2022-03-27,3,Education,outcome,769.00
+2022-03-28,3,Transactions,outcome,7000.00
+2022-03-28,2,Transactions,income,7000.00
+2022-03-28,2,Transactions,outcome,11950.32
+2022-03-29,3,Food and Rest,outcome,500.00
+2022-03-30,3,Salary,income,273.97
+2022-03-30,3,Salary,income,1095.89
+2022-03-30,3,Salary,income,217.35
+2022-03-30,3,Others,outcome,510.00
+2022-03-30,2,Public Transport,outcome,285.00
+2022-03-31,3,Food and Rest,outcome,677.00
+2022-03-31,3,Public Transport,outcome,435.00
+2022-03-31,3,Food and Rest,outcome,925.00
+2022-03-31,3,Party,outcome,1170.00
+2022-03-31,3,Smoke,outcome,150.00
+2022-03-31,3,Public Transport,outcome,2233.00
+2022-03-31,3,Transactions,outcome,300.00
+2022-03-31,2,Transactions,income,300.00
+2022-04-01,3,Party,outcome,4940.00
+2022-04-03,3,Food and Rest,outcome,580.00
+2022-04-03,2,Smoke,outcome,160.00
+2022-04-04,3,Food and Rest,outcome,395.00
+2022-04-04,2,Public Transport,outcome,300.00
+2022-04-05,2,Transactions,outcome,500.00
+2022-04-05,3,Transactions,income,700.00
+2022-04-05,2,Transactions,outcome,700.00
+2022-04-05,3,Smoke,outcome,150.00
+2022-04-05,3,Food and Rest,outcome,1195.62
+2022-04-05,3,Party,outcome,825.98
+2022-04-05,3,Public Transport,outcome,51.00
+2022-04-06,3,Salary,income,49732.64
+2022-04-07,3,Others,outcome,28000.00
+2022-04-07,3,Food and Rest,outcome,580.00
+2022-04-07,3,Smoke,outcome,170.00
+2022-04-08,3,Personal,outcome,450.00
+2022-04-08,3,Food and Rest,outcome,360.00
+2022-04-09,3,Party,outcome,1300.00
+2022-04-09,3,Transactions,outcome,1325.00
+2022-04-09,2,Transactions,income,1325.00
+2022-04-09,3,Food and Rest,outcome,130.00
+2022-04-10,3,Food and Rest,outcome,511.00
+2022-04-10,3,Others,outcome,30.00
+2022-04-10,2,Others,outcome,296.94
+2022-04-10,2,Others,outcome,60.00
+2022-04-10,2,Transactions,income,350.00
+2022-04-11,3,Food and Rest,outcome,580.00
+2022-04-11,3,Smoke,outcome,170.00
+2022-04-11,3,Public Transport,outcome,1370.00
+2022-04-13,3,Others,outcome,2000.00
+2022-04-14,3,Public Transport,outcome,2518.00
+2022-04-14,3,Clothes,outcome,3799.00
+2022-04-14,3,Food and Rest,outcome,640.80
+2022-04-15,3,Food and Rest,outcome,350.00
+2022-04-15,3,Public Transport,outcome,450.00
+2022-04-16,3,Food and Rest,outcome,300.00
+2022-04-17,3,Food and Rest,outcome,35.00
+2022-04-17,3,Food and Rest,outcome,490.00
+2022-04-17,3,Food and Rest,outcome,89.00
+2022-04-17,3,Food and Rest,outcome,319.00
+2022-04-18,3,Public Transport,outcome,5803.20
+2022-04-18,3,Public Transport,outcome,770.00
+2022-04-19,3,Food and Rest,outcome,578.00
+2022-04-20,3,Transactions,income,690.00
+2022-04-20,2,Transactions,outcome,690.00
+2022-04-20,3,Food and Rest,outcome,558.00
+2022-04-20,3,Salary,income,37733.43
+2022-04-20,3,Food and Rest,outcome,294.00
+2022-04-20,3,Others,outcome,350.00
+2022-04-20,2,Public Transport,outcome,682.00
+2022-04-21,3,Transactions,income,1934.90
+2022-04-21,3,Others,outcome,500.00
+2022-04-21,3,Food and Rest,outcome,524.00
+2022-04-21,3,Food and Rest,outcome,1178.08
+2022-04-22,3,Personal,outcome,2500.00
+2022-04-22,3,Smoke,outcome,160.00
+2022-04-22,3,Clothes,outcome,10453.00
+2022-04-22,3,Public Transport,outcome,173.32
+2022-04-22,3,Party,outcome,389.78
+2022-04-23,3,Public Transport,outcome,163.12
+2022-04-23,3,Party,outcome,450.00
+2022-04-24,3,Others,outcome,500.00
+2022-04-24,3,Food and Rest,outcome,574.00
+2022-04-25,3,Smoke,outcome,155.00
+2022-04-25,3,Food and Rest,outcome,629.00
+2022-04-26,3,Food and Rest,outcome,788.74
+2022-04-26,3,Others,outcome,1000.00
+2022-04-27,3,Food and Rest,outcome,529.00
+2022-04-27,3,Smoke,outcome,170.00
+2022-04-28,3,Food and Rest,outcome,490.00
+2022-04-28,3,Food and Rest,outcome,370.00
+2022-04-28,3,Others,outcome,200.00
+2022-04-29,3,Party,outcome,1800.00
+2022-04-29,3,Others,outcome,500.00
+2022-04-29,3,Salary,income,1610.65
+2022-04-29,3,Food and Rest,outcome,505.85
+2022-04-30,3,Food and Rest,outcome,589.99
+2022-05-01,3,Personal,outcome,600.00
+2022-05-01,3,Food and Rest,outcome,351.98
+2022-05-03,3,Public Transport,outcome,435.00
+2022-05-03,3,Personal,outcome,211.57
+2022-05-03,3,Food and Rest,outcome,440.00
+2022-05-03,3,Food and Rest,outcome,144.00
+2022-05-03,3,Others,outcome,303.00
+2022-05-03,3,Food and Rest,outcome,260.00
+2022-05-04,3,Party,outcome,1090.00
+2022-05-04,3,Personal,outcome,750.00
+2022-05-04,3,Smoke,outcome,150.00
+2022-05-04,3,Food and Rest,outcome,467.00
+2022-05-04,3,Transactions,outcome,500.00
+2022-05-04,2,Transactions,income,500.00
+2022-05-04,2,Food and Rest,outcome,270.00
+2022-05-05,3,Food and Rest,outcome,278.00
+2022-05-05,3,Education,outcome,750.00
+2022-05-05,3,Salary,income,116778.57
+2022-05-05,3,Public Transport,outcome,494.00
+2022-05-05,3,Others,outcome,4950.00
+2022-05-05,3,Transactions,income,804.00
+2022-05-06,3,Food and Rest,outcome,2580.00
+2022-05-06,3,Personal,outcome,1181.50
+2022-05-06,3,Food and Rest,outcome,630.99
+2022-05-06,3,Others,outcome,1550.00
+2022-05-06,3,Food and Rest,outcome,961.00
+2022-05-06,3,Party,outcome,4950.00
+2022-05-06,3,Public Transport,outcome,1315.00
+2022-05-07,3,Party,outcome,2517.00
+2022-05-07,3,Food and Rest,outcome,2729.00
+2022-05-07,3,Food and Rest,outcome,900.00
+2022-05-07,3,Education,outcome,170.00
+2022-05-08,3,Food and Rest,outcome,290.00
+2022-05-08,3,Party,outcome,569.97
+2022-05-09,3,Food and Rest,outcome,1067.00
+2022-05-09,3,Transactions,outcome,200.00
+2022-05-09,2,Transactions,income,200.00
+2022-05-09,2,Others,outcome,335.73
+2022-05-10,3,Others,outcome,1500.00
+2022-05-10,3,Party,outcome,300.00
+2022-05-10,3,Public Transport,outcome,200.00
+2022-05-10,3,Personal,outcome,1143.00
+2022-05-10,3,Smoke,outcome,150.00
+2022-05-10,3,Transactions,outcome,1000.00
+2022-05-10,2,Transactions,income,1000.00
+2022-05-11,3,Public Transport,outcome,100.00
+2022-05-11,3,Food and Rest,outcome,555.00
+2022-05-12,3,Food and Rest,outcome,393.88
+2022-05-12,3,Transactions,outcome,1000.00
+2022-05-12,2,Public Transport,outcome,558.00
+2022-05-13,3,Party,outcome,6800.00
+2022-05-13,3,Food and Rest,outcome,892.90
+2022-05-13,3,Smoke,outcome,150.00
+2022-05-14,3,Food and Rest,outcome,308.00
+2022-05-14,2,Public Transport,outcome,228.06
+2022-05-15,3,Food and Rest,outcome,1025.00
+2022-05-15,3,Smoke,outcome,170.00
+2022-05-15,2,Public Transport,outcome,100.00
+2022-05-16,3,Food and Rest,outcome,219.39
+2022-05-16,3,Food and Rest,outcome,425.00
+2022-05-17,3,Food and Rest,outcome,575.00
+2022-05-18,3,Food and Rest,outcome,768.00
+2022-05-18,3,Others,outcome,660.00
+2022-05-19,3,Food and Rest,outcome,440.00
+2022-05-19,3,Smoke,outcome,155.00
+2022-05-20,3,Party,outcome,2710.00
+2022-05-20,3,Food and Rest,outcome,1554.25
+2022-05-21,3,Smoke,outcome,150.00
+2022-05-21,3,Transactions,outcome,500.00
+2022-05-21,2,Transactions,income,500.00
+2022-05-21,3,Public Transport,outcome,350.00
+2022-05-21,2,Food and Rest,outcome,290.00
+2022-05-22,3,Food and Rest,outcome,2294.17
+2022-05-22,3,Smoke,outcome,160.00
+2022-05-23,3,Salary,income,24012.00
+2022-05-23,3,Food and Rest,outcome,525.00
+2022-05-24,3,Smoke,outcome,155.00
+2022-05-24,3,Food and Rest,outcome,575.00
+2022-05-24,3,Food and Rest,outcome,1456.68
+2022-05-25,3,Others,outcome,3125.00
+2022-05-26,3,Food and Rest,outcome,490.00
+2022-05-26,3,Smoke,outcome,170.00
+2022-05-27,3,Food and Rest,outcome,390.00
+2022-05-28,3,Party,outcome,3880.00
+2022-05-28,3,Personal,outcome,450.00
+2022-05-28,3,Food and Rest,outcome,754.00
+2022-05-29,3,Food and Rest,outcome,690.00
+2022-05-29,3,Smoke,outcome,155.00
+2022-05-29,3,Food and Rest,outcome,825.00
+2022-05-30,3,Food and Rest,outcome,942.30
+2022-05-30,3,Salary,income,1059.95
+2022-05-31,3,Food and Rest,outcome,682.00
+2022-05-31,3,Smoke,outcome,155.00
+2022-05-31,3,Transactions,income,117.65
+2022-06-01,3,Food and Rest,outcome,440.00
+2022-06-02,3,Public Transport,outcome,435.00
+2022-06-02,3,Food and Rest,outcome,364.00
+2022-06-02,3,Transactions,outcome,550.00
+2022-06-02,2,Transactions,income,550.00
+2022-06-03,3,Transactions,outcome,500.00
+2022-06-03,2,Transactions,income,500.00
+2022-06-03,3,Others,outcome,510.20
+2022-06-03,3,Others,outcome,350.00
+2022-06-03,3,Food and Rest,outcome,2070.00
+2022-06-03,2,Public Transport,outcome,707.00
+2022-06-03,3,Transactions,outcome,2110.00
+2022-06-03,2,Transactions,income,2110.00
+2022-06-04,3,Public Transport,outcome,7424.00
+2022-06-04,3,Smoke,outcome,150.00
+2022-06-04,3,Transactions,outcome,1966.88
+2022-06-04,2,Transactions,income,150.00
+2022-06-04,3,Transactions,outcome,150.00
+2022-06-05,3,Food and Rest,outcome,109.00
+2022-06-06,3,Transactions,outcome,500.00
+2022-06-06,2,Transactions,income,500.00
+2022-06-06,3,Food and Rest,outcome,570.00
+2022-06-06,3,Transactions,outcome,490.00
+2022-06-06,2,Transactions,income,490.00
+2022-06-07,3,Food and Rest,outcome,788.00
+2022-06-07,3,Smoke,outcome,155.00
+2022-06-08,3,Transactions,outcome,200.00
+2022-06-08,2,Transactions,income,200.00
+2022-06-08,3,Transactions,outcome,200.00
+2022-06-08,2,Transactions,income,200.00
+2022-06-08,3,Public Transport,outcome,850.00
+2022-06-08,3,Party,outcome,530.00
+2022-06-08,3,Transactions,outcome,199.96
+2022-06-08,2,Transactions,income,199.96
+2022-06-08,3,Salary,income,149220.00
+2022-06-08,2,Food and Rest,outcome,370.00
+2022-06-09,2,Others,outcome,367.04
+2022-06-09,2,Others,outcome,0.10
+2022-06-10,3,Others,outcome,959.78
+2022-06-11,3,Food and Rest,outcome,53.99
+2022-06-12,3,Food and Rest,outcome,373.00
+2022-06-13,3,Food and Rest,outcome,350.00
+2022-06-13,3,Public Transport,outcome,450.00
+2022-06-14,3,Food and Rest,outcome,460.84
+2022-06-14,2,Food and Rest,outcome,270.00
+2022-06-15,3,Food and Rest,outcome,1137.00
+2022-06-15,3,Smoke,outcome,150.00
+2022-06-16,2,Food and Rest,outcome,240.00
+2022-06-17,3,Clothes,outcome,7500.00
+2022-06-17,3,Food and Rest,outcome,817.61
+2022-06-17,3,Others,outcome,110.00
+2022-06-18,3,Party,outcome,7020.00
+2022-06-18,3,Food and Rest,outcome,559.95
+2022-06-18,3,Public Transport,outcome,51.00
+2022-06-18,2,Public Transport,outcome,118.00
+2022-06-18,3,Transactions,outcome,7980.00
+2022-06-18,2,Transactions,income,7980.00
+2022-06-19,3,Others,outcome,326.83
+2022-06-19,3,Food and Rest,outcome,808.86
+2022-06-19,2,Public Transport,outcome,174.00
+2022-06-20,2,Food and Rest,outcome,370.00
+2022-06-21,3,Food and Rest,outcome,500.00
+2022-06-21,3,Smoke,outcome,1240.00
+2022-06-22,3,Food and Rest,outcome,848.95
+2022-06-22,3,Public Transport,outcome,51.00
+2022-06-23,3,Food and Rest,outcome,619.38
+2022-06-23,3,Salary,income,34302.57
+2022-06-24,3,Food and Rest,outcome,589.80
+2022-06-24,3,Party,outcome,467.00
+2022-06-24,3,Personal,outcome,500.00
+2022-06-24,2,Public Transport,outcome,315.00
+2022-06-24,2,Public Transport,outcome,491.00
+2022-06-24,3,Transactions,outcome,760.00
+2022-06-24,2,Transactions,income,760.00
+2022-06-24,2,Personal,outcome,2380.00
+2022-06-25,3,Others,outcome,380.00
+2022-06-25,3,Others,outcome,450.00
+2022-06-25,3,Food and Rest,outcome,1264.51
+2022-06-25,2,Public Transport,outcome,42.00
+2022-06-26,3,Food and Rest,outcome,1480.00
+2022-06-26,2,Public Transport,outcome,61.00
+2022-06-27,3,Food and Rest,outcome,948.97
+2022-06-27,2,Public Transport,outcome,32.00
+2022-06-28,3,Food and Rest,outcome,673.98
+2022-06-29,2,Public Transport,outcome,400.00
+2022-06-29,2,Food and Rest,outcome,400.00
+2022-06-29,3,Salary,income,1273.97
+2022-06-29,3,Food and Rest,outcome,803.99
+2022-06-29,2,Public Transport,outcome,102.00
+2022-06-30,3,Public Transport,outcome,435.00
+2022-06-30,2,Public Transport,outcome,40.00
+2022-06-30,3,Food and Rest,outcome,974.70
+2022-06-30,3,Others,outcome,530.00
+2022-06-30,3,Clothes,outcome,6645.00
+2022-07-01,3,Food and Rest,outcome,748.84
+2022-07-01,2,Food and Rest,outcome,270.00
+2022-07-01,3,Partner,outcome,1960.00
+2022-07-01,2,Public Transport,outcome,128.00
+2022-07-01,2,Public Transport,outcome,499.00
+2022-07-01,2,Personal,outcome,2800.00
+2022-07-02,3,Food and Rest,outcome,406.98
+2022-07-02,2,Food and Rest,outcome,70.00
+2022-07-02,2,Public Transport,outcome,63.00
+2022-07-03,3,Others,outcome,300.00
+2022-07-03,3,Food and Rest,outcome,539.00
+2022-07-03,3,Smoke,outcome,600.00
+2022-07-03,2,Public Transport,outcome,72.00
+2022-07-04,3,Party,outcome,7000.00
+2022-07-04,3,Personal,outcome,800.00
+2022-07-04,3,Transactions,outcome,600.00
+2022-07-04,3,Others,outcome,500.00
+2022-07-04,3,Public Transport,outcome,102.00
+2022-07-04,2,Public Transport,outcome,14.00
+2022-07-04,2,Food and Rest,outcome,490.00
+2022-07-05,3,Food and Rest,outcome,1259.13
+2022-07-05,3,Party,outcome,480.00
+2022-07-05,3,Transactions,outcome,2000.00
+2022-07-05,2,Transactions,income,2000.00
+2022-07-05,2,Public Transport,outcome,112.00
+2022-07-06,3,Transactions,outcome,490.00
+2022-07-06,2,Transactions,income,490.00
+2022-07-06,3,Food and Rest,outcome,490.00
+2022-07-06,2,Public Transport,outcome,53.00
+2022-07-07,3,Others,outcome,500.00
+2022-07-07,3,Salary,income,120209.43
+2022-07-07,3,Food and Rest,outcome,558.00
+2022-07-07,3,Party,outcome,2200.00
+2022-07-07,2,Public Transport,outcome,229.00
+2022-07-07,3,Transactions,outcome,1850.00
+2022-07-07,2,Transactions,income,1850.00
+2022-07-07,3,Transactions,outcome,3300.00
+2022-07-07,2,Transactions,income,2750.00
+2022-07-08,3,Food and Rest,outcome,275.38
+2022-07-08,2,Food and Rest,outcome,470.00
+2022-07-08,2,Public Transport,outcome,32.00
+2022-07-08,2,Personal,outcome,2300.00
+2022-07-09,3,Food and Rest,outcome,1340.52
+2022-07-09,3,Others,outcome,450.00
+2022-07-09,3,Others,outcome,435.00
+2022-07-09,2,Others,outcome,60.00
+2022-07-10,3,Food and Rest,outcome,490.00
+2022-07-10,2,Public Transport,outcome,48.00
+2022-07-11,3,Food and Rest,outcome,317.00
+2022-07-11,2,Smoke,outcome,200.00
+2022-07-11,2,Others,outcome,338.35
+2022-07-12,3,Personal,outcome,116.00
+2022-07-12,3,Food and Rest,outcome,560.00
+2022-07-12,2,Public Transport,outcome,56.00
+2022-07-13,3,Salary,income,5000.00
+2022-07-13,3,Others,outcome,3229.00
+2022-07-13,3,Party,outcome,4130.00
+2022-07-13,3,Transactions,outcome,2130.00
+2022-07-13,2,Transactions,income,2130.00
+2022-07-14,3,Party,outcome,462.00
+2022-07-14,3,Food and Rest,outcome,260.00
+2022-07-14,3,Food and Rest,outcome,300.00
+2022-07-14,3,Clothes,outcome,2086.00
+2022-07-14,3,Salary,income,6800.00
+2022-07-14,2,Public Transport,outcome,67.00
+2022-07-15,3,Personal,outcome,297.00
+2022-07-15,3,Food and Rest,outcome,209.97
+2022-07-16,3,Others,outcome,1750.00
+2022-07-16,2,Public Transport,outcome,121.00
+2022-07-16,2,Others,outcome,3600.00
+2022-07-17,3,Others,outcome,100.00
+2022-07-17,3,Food and Rest,outcome,529.00
+2022-07-17,2,Public Transport,outcome,24.00
+2022-07-18,2,Public Transport,outcome,21.00
+2022-07-18,3,Food and Rest,outcome,220.00
+2022-07-18,3,Partner,outcome,920.00
+2022-07-19,3,Food and Rest,outcome,2529.49
+2022-07-19,2,Public Transport,outcome,98.00
+2022-07-19,2,Food and Rest,outcome,200.00
+2022-07-20,3,Others,outcome,50.00
+2022-07-20,2,Public Transport,outcome,21.00
+2022-07-21,3,Smoke,outcome,155.00
+2022-07-21,3,Salary,income,37732.43
+2022-07-21,3,Food and Rest,outcome,710.00
+2022-07-21,3,Clothes,outcome,19064.65
+2022-07-21,2,Public Transport,outcome,21.00
+2022-07-22,3,Personal,outcome,5097.50
+2022-07-22,3,Personal,outcome,2800.00
+2022-07-22,3,Party,outcome,2500.00
+2022-07-22,3,Food and Rest,outcome,2597.00
+2022-07-22,2,Food and Rest,outcome,140.00
+2022-07-22,3,Others,outcome,700.00
+2022-07-22,2,Public Transport,outcome,975.00
+2022-07-23,3,Smoke,outcome,150.00
+2022-07-23,3,Food and Rest,outcome,86.49
+2022-07-23,2,Public Transport,outcome,38.00
+2022-07-23,3,Party,outcome,3300.00
+2022-07-23,3,Public Transport,outcome,51.00
+2022-07-24,3,Others,outcome,900.00
+2022-07-24,3,Clothes,outcome,4499.00
+2022-07-24,2,Public Transport,outcome,446.00
+2022-07-25,3,Food and Rest,outcome,490.00
+2022-07-25,3,Smoke,outcome,170.00
+2022-07-25,2,Public Transport,outcome,87.00
+2022-07-26,2,Food and Rest,outcome,500.00
+2022-07-26,3,Transactions,income,500.00
+2022-07-26,2,Transactions,outcome,500.00
+2022-07-26,2,Public Transport,outcome,21.00
+2022-07-26,3,Public Transport,outcome,1400.00
+2022-07-26,3,Personal,outcome,1250.00
+2022-07-27,3,Clothes,outcome,830.00
+2022-07-27,3,Others,outcome,82000.00
+2022-07-27,3,Others,outcome,15225.00
+2022-07-27,3,Food and Rest,outcome,706.35
+2022-07-27,3,Smoke,outcome,150.00
+2022-07-27,2,Public Transport,outcome,84.00
+2022-07-28,3,Public Transport,outcome,102.00
+2022-07-28,2,Public Transport,outcome,28.00
+2022-07-28,3,Clothes,outcome,948.00
+2022-07-28,3,Personal,outcome,12812.00
+2022-07-29,3,Food and Rest,outcome,862.00
+2022-07-29,2,Food and Rest,outcome,270.00
+2022-07-29,3,Clothes,outcome,141.48
+2022-07-29,3,Others,outcome,50.00
+2022-07-29,2,Public Transport,outcome,56.00
+2022-07-29,2,Public Transport,outcome,886.00
+2022-07-30,3,Public Transport,outcome,917.55
+2022-07-30,3,Food and Rest,outcome,1204.41
+2022-07-30,3,Others,outcome,500.00
+2022-07-30,3,Personal,outcome,2800.00
+2022-07-30,3,Party,outcome,2200.00
+2022-07-30,3,Salary,income,1698.64
+2022-07-31,3,Food and Rest,outcome,490.00
+2022-07-31,3,Public Transport,outcome,9638.00
+2022-07-31,3,Public Transport,outcome,435.00
+2022-07-31,2,Public Transport,outcome,54.00
+2022-08-01,3,Smoke,outcome,155.00
+2022-08-01,3,Food and Rest,outcome,1066.00
+2022-08-01,2,Public Transport,outcome,234.00
+2022-08-02,3,Food and Rest,outcome,195.48
+2022-08-02,3,Transactions,outcome,2000.00
+2022-08-02,2,Transactions,income,2000.00
+2022-08-02,3,Others,outcome,100.00
+2022-08-02,2,Food and Rest,outcome,160.00
+2022-08-03,3,Others,outcome,500.00
+2022-08-03,3,Party,outcome,390.00
+2022-08-03,3,Smoke,outcome,170.00
+2022-08-03,3,Food and Rest,outcome,674.00
+2022-08-03,2,Public Transport,outcome,75.00
+2022-08-04,3,Food and Rest,outcome,840.00
+2022-08-04,2,Public Transport,outcome,105.00
+2022-08-05,3,Transactions,outcome,1000.00
+2022-08-05,2,Transactions,income,1000.00
+2022-08-05,3,Food and Rest,outcome,1202.73
+2022-08-05,3,Personal,outcome,2300.00
+2022-08-05,3,Clothes,outcome,2156.00
+2022-08-05,3,Party,outcome,2500.00
+2022-08-05,2,Public Transport,outcome,1090.00
+2022-08-06,3,Others,outcome,500.00
+2022-08-06,3,Food and Rest,outcome,618.69
+2022-08-07,3,Party,outcome,238.00
+2022-08-07,3,Others,outcome,130.00
+2022-08-07,2,Public Transport,outcome,14.00
+2022-08-08,3,Food and Rest,outcome,1738.83
+2022-08-08,3,Party,outcome,665.00
+2022-08-08,3,Smoke,outcome,140.00
+2022-08-08,3,Salary,income,57114.57
+2022-08-08,2,Public Transport,outcome,199.00
+2022-08-09,3,Food and Rest,outcome,567.00
+2022-08-09,3,Partner,outcome,1540.00
+2022-08-09,2,Public Transport,outcome,119.00
+2022-08-10,3,Smoke,outcome,155.00
+2022-08-10,3,Food and Rest,outcome,582.00
+2022-08-10,3,Others,outcome,599.00
+2022-08-10,3,Transactions,income,30828.08
+2022-08-10,3,Transactions,outcome,726.08
+2022-08-10,2,Transactions,income,726.08
+2022-08-10,3,Personal,outcome,2300.00
+2022-08-10,2,Public Transport,outcome,468.00
+2022-08-11,3,Public Transport,outcome,450.00
+2022-08-11,2,Public Transport,outcome,538.00
+2022-08-11,3,Food and Rest,outcome,560.00
+2022-08-12,3,Food and Rest,outcome,1411.39
+2022-08-12,3,Smoke,outcome,150.00
+2022-08-14,3,Others,outcome,149.00
+2022-08-14,3,Clothes,outcome,1877.00
+2022-08-14,3,Others,outcome,1520.00
+2022-08-14,2,Public Transport,outcome,119.00
+2022-08-15,3,Others,outcome,150.00
+2022-08-15,3,Transactions,outcome,500.00
+2022-08-15,2,Transactions,income,500.00
+2022-08-15,3,Others,outcome,849.00
+2022-08-15,3,Food and Rest,outcome,330.00
+2022-08-15,3,Others,outcome,200.00
+2022-08-15,2,Public Transport,outcome,343.00
+2022-08-16,3,Smoke,outcome,150.00
+2022-08-16,3,Others,outcome,100.00
+2022-08-17,3,Personal,outcome,1600.00
+2022-08-17,3,Others,outcome,377.00
+2022-08-18,3,Clothes,outcome,999.00
+2022-08-18,3,Others,outcome,2100.00
+2022-08-19,3,Transactions,outcome,1000.00
+2022-08-19,2,Transactions,income,1000.00
+2022-08-19,3,Personal,outcome,1800.00
+2022-08-19,3,Party,outcome,8410.00
+2022-08-19,3,Food and Rest,outcome,219.99
+2022-08-19,2,Public Transport,outcome,400.00
+2022-08-20,3,Food and Rest,outcome,355.00
+2022-08-21,3,Others,outcome,203.90
+2022-08-22,3,Personal,outcome,100.00
+2022-08-22,3,Others,outcome,4190.00
+2022-08-22,3,Food and Rest,outcome,275.98
+2022-08-23,3,Food and Rest,outcome,3160.00
+2022-08-23,3,Salary,income,31320.00
+2022-08-24,3,Food and Rest,outcome,200.00
+2022-08-24,3,Personal,outcome,2446.80
+2022-08-24,3,Others,outcome,560.00
+2022-08-24,2,Public Transport,outcome,366.00
+2022-08-25,3,Personal,outcome,900.00
+2022-08-26,3,Transactions,income,500.00
+2022-08-26,3,Transactions,outcome,450.00
+2022-08-26,3,Smoke,outcome,150.00
+2022-08-26,3,Food and Rest,outcome,1145.34
+2022-08-27,3,Others,outcome,20.00
+2022-08-27,3,Transactions,outcome,1000.00
+2022-08-27,2,Transactions,income,1000.00
+2022-08-27,3,Public Transport,outcome,600.00
+2022-08-27,2,Public Transport,outcome,579.00
+2022-08-28,3,Food and Rest,outcome,360.00
+2022-08-28,2,Public Transport,outcome,130.88
+2022-08-29,3,Food and Rest,outcome,570.00
+2022-08-29,3,Smoke,outcome,165.00
+2022-08-29,3,Party,outcome,5186.00
+2022-08-29,2,Public Transport,outcome,24.87
+2022-08-30,3,Others,outcome,2000.00
+2022-08-30,3,Partner,outcome,930.00
+2022-08-30,3,Salary,income,1460.82
+2022-08-30,3,Transactions,income,16.00
+2022-08-30,2,Public Transport,outcome,53.49
+2022-08-31,3,Food and Rest,outcome,704.94
+2022-08-31,3,Food and Rest,outcome,700.49
+2022-08-31,2,Public Transport,outcome,600.00
+2022-09-01,3,Food and Rest,outcome,860.00
+2022-09-01,3,Public Transport,outcome,435.00
+2022-09-01,2,Public Transport,outcome,27.96
+2022-09-01,3,Smoke,outcome,155.00
+2022-09-02,3,Transactions,outcome,6000.00
+2022-09-02,2,Transactions,income,6000.00
+2022-09-02,3,Others,outcome,500.00
+2022-09-02,2,Personal,outcome,5000.00
+2022-09-03,3,Food and Rest,outcome,79.99
+2022-09-03,3,Clothes,outcome,956.00
+2022-09-03,3,Personal,outcome,1100.00
+2022-09-03,3,Party,outcome,2020.00
+2022-09-03,3,Transactions,outcome,810.00
+2022-09-03,2,Transactions,income,810.00
+2022-09-03,2,Public Transport,outcome,328.00
+2022-09-04,3,Public Transport,outcome,51.00
+2022-09-04,3,Others,outcome,50.00
+2022-09-05,3,Others,outcome,2800.00
+2022-09-05,3,Food and Rest,outcome,765.00
+2022-09-05,3,Smoke,outcome,170.00
+2022-09-05,2,Public Transport,outcome,23.64
+2022-09-06,3,Public Transport,outcome,102.00
+2022-09-06,3,Others,outcome,50.00
+2022-09-06,2,Food and Rest,outcome,350.00
+2022-09-07,3,Food and Rest,outcome,2039.12
+2022-09-07,3,Public Transport,outcome,102.00
+2022-09-08,3,Salary,income,32207.00
+2022-09-08,3,Others,outcome,50.00
+2022-09-08,3,Food and Rest,outcome,359.00
+2022-09-08,3,Smoke,outcome,150.00
+2022-09-09,3,Personal,outcome,450.00
+2022-09-09,3,Party,outcome,7185.00
+2022-09-09,3,Food and Rest,outcome,296.00
+2022-09-09,3,Smoke,outcome,150.00
+2022-09-09,3,Education,outcome,178.80
+2022-09-09,3,Transactions,outcome,4150.00
+2022-09-09,2,Transactions,income,4150.00
+2022-09-09,3,Transactions,outcome,10500.00
+2022-09-09,2,Transactions,income,10500.00
+2022-09-10,2,Public Transport,outcome,111.86
+2022-09-11,3,Others,outcome,175.00
+2022-09-12,3,Food and Rest,outcome,574.68
+2022-09-13,3,Food and Rest,outcome,729.00
+2022-09-13,3,Smoke,outcome,140.00
+2022-09-14,3,Food and Rest,outcome,260.83
+2022-09-14,3,Others,outcome,423.00
+2022-09-14,3,Others,outcome,50.00
+2022-09-14,3,Transactions,outcome,500.00
+2022-09-14,2,Transactions,income,500.00
+2022-09-15,3,Smoke,outcome,147.00
+2022-09-15,2,Others,outcome,1000.00
+2022-09-15,2,Public Transport,outcome,1135.96
+2022-09-16,3,Personal,outcome,2400.00
+2022-09-16,3,Food and Rest,outcome,185.00
+2022-09-16,2,Party,outcome,2692.00
+2022-09-16,2,Public Transport,outcome,37.45
+2022-09-17,3,Smoke,outcome,300.00
+2022-09-17,2,Public Transport,outcome,29.96
+2022-09-17,3,Food and Rest,outcome,490.00
+2022-09-17,2,Public Transport,outcome,1953.00
+2022-09-18,3,Transactions,outcome,26730.00
+2022-09-18,3,Food and Rest,outcome,1410.00
+2022-09-18,2,Public Transport,outcome,318.00
+2022-09-19,3,Food and Rest,outcome,1067.70
+2022-09-19,2,Public Transport,outcome,504.00
+2022-09-20,3,Food and Rest,outcome,891.00
+2022-09-20,2,Public Transport,outcome,336.00
+2022-09-21,3,Food and Rest,outcome,1324.80
+2022-09-21,2,Public Transport,outcome,353.00
+2022-09-22,3,Public Transport,outcome,3425.40
+2022-09-22,2,Public Transport,outcome,1069.00
+2022-09-22,3,Salary,income,36018.00
+2022-09-22,3,Food and Rest,outcome,1057.49
+2022-09-23,3,Smoke,outcome,150.00
+2022-09-23,3,Food and Rest,outcome,555.70
+2022-09-23,2,Public Transport,outcome,1030.00
+2022-09-24,3,Party,outcome,538.00
+2022-09-24,3,Food and Rest,outcome,545.00
+2022-09-24,2,Others,outcome,356.53
+2022-09-24,2,Public Transport,outcome,421.00
+2022-09-25,3,Public Transport,outcome,51.00
+2022-09-25,2,Public Transport,outcome,361.00
+2022-09-25,3,Food and Rest,outcome,50.76
+2022-09-26,3,Food and Rest,outcome,583.00
+2022-09-26,2,Food and Rest,outcome,200.00
+2022-09-26,3,Smoke,outcome,150.00
+2022-09-26,3,Public Transport,outcome,51.00
+2022-09-26,2,Public Transport,outcome,27.96
+2022-09-26,3,Salary,income,42830.00
+2022-09-26,3,Food and Rest,outcome,784.74
+2022-09-27,3,Food and Rest,outcome,425.00
+2022-09-27,2,Public Transport,outcome,370.00
+2022-09-28,3,Food and Rest,outcome,611.00
+2022-09-28,3,Others,outcome,500.00
+2022-09-28,2,Public Transport,outcome,298.96
+2022-09-29,3,Public Transport,outcome,51.00
+2022-09-29,3,Personal,outcome,2300.00
+2022-09-29,3,Party,outcome,2137.00
+2022-09-29,3,Salary,income,1315.06
+2022-09-29,2,Public Transport,outcome,398.00
+2022-09-29,2,Food and Rest,outcome,540.00
+2022-09-30,3,Others,outcome,600.00
+2022-09-30,3,Party,outcome,3000.00
+2022-09-30,3,Personal,outcome,870.00
+2022-09-30,3,Food and Rest,outcome,1527.64
+2022-09-30,3,Smoke,outcome,140.00
+2022-09-30,2,Public Transport,outcome,44.94
+2022-10-01,3,Others,outcome,550.00
+2022-10-01,3,Food and Rest,outcome,307.00
+2022-10-01,2,Food and Rest,outcome,290.00
+2022-10-01,3,Transactions,outcome,590.68
+2022-10-02,3,Smoke,outcome,165.00
+2022-10-02,2,Public Transport,outcome,370.00
+2022-10-03,3,Others,outcome,300.00
+2022-10-03,3,Food and Rest,outcome,860.88
+2022-10-03,2,Food and Rest,outcome,370.00
+2022-10-03,3,Others,outcome,21400.00
+2022-10-04,3,Food and Rest,outcome,323.00
+2022-10-04,3,Smoke,outcome,140.00
+2022-10-04,3,Others,outcome,299.00
+2022-10-05,3,Food and Rest,outcome,739.00
+2022-10-05,2,Public Transport,outcome,27.96
+2022-10-06,3,Public Transport,outcome,51.00
+2022-10-06,2,Public Transport,outcome,41.94
+2022-10-06,3,Smoke,outcome,140.00
+2022-10-06,3,Food and Rest,outcome,132.98
+2022-10-06,3,Salary,income,61140.56
+2022-10-07,3,Party,outcome,5700.00
+2022-10-07,3,Others,outcome,60.00
+2022-10-07,3,Food and Rest,outcome,421.00
+2022-10-07,2,Food and Rest,outcome,450.00
+2022-10-07,2,Public Transport,outcome,696.00
+2022-10-08,3,Personal,outcome,2300.00
+2022-10-08,3,Food and Rest,outcome,648.99
+2022-10-08,2,Public Transport,outcome,349.00
+2022-10-09,3,Food and Rest,outcome,850.00
+2022-10-09,3,Smoke,outcome,155.00
+2022-10-09,3,Food and Rest,outcome,1908.60
+2022-10-09,3,Transactions,outcome,15000.00
+2022-10-09,2,Others,outcome,13580.46
+2022-10-10,3,Public Transport,outcome,204.00
+2022-10-10,2,Public Transport,outcome,64.95
+2022-10-10,3,Food and Rest,outcome,396.00
+2022-10-11,3,Public Transport,outcome,204.00
+2022-10-11,2,Public Transport,outcome,14.16
+2022-10-11,3,Food and Rest,outcome,428.00
+2022-10-11,3,Smoke,outcome,140.00
+2022-10-12,3,Food and Rest,outcome,380.00
+2022-10-12,3,Public Transport,outcome,51.00
+2022-10-12,2,Public Transport,outcome,295.00
+2022-10-13,3,Personal,outcome,1200.00
+2022-10-13,3,Smoke,outcome,150.00
+2022-10-13,3,Food and Rest,outcome,380.00
+2022-10-13,2,Public Transport,outcome,574.00
+2022-10-14,3,Public Transport,outcome,767.00
+2022-10-14,3,Party,outcome,1050.00
+2022-10-15,3,Food and Rest,outcome,1270.00
+2022-10-15,3,Public Transport,outcome,2046.00
+2022-10-15,3,Personal,outcome,2300.00
+2022-10-15,3,Party,outcome,5830.00
+2022-10-16,3,Public Transport,outcome,296.00
+2022-10-16,3,Food and Rest,outcome,1060.00
+2022-10-16,3,Smoke,outcome,153.00
+2022-10-16,3,Public Transport,outcome,51.00
+2022-10-17,3,Food and Rest,outcome,1437.00
+2022-10-17,3,Public Transport,outcome,139.00
+2022-10-18,3,Public Transport,outcome,88.00
+2022-10-18,3,Food and Rest,outcome,1050.00
+2022-10-19,3,Public Transport,outcome,343.00
+2022-10-19,3,Food and Rest,outcome,736.20
+2022-10-20,3,Food and Rest,outcome,1083.00
+2022-10-20,3,Public Transport,outcome,376.00
+2022-10-21,3,Food and Rest,outcome,443.00
+2022-10-21,3,Smoke,outcome,140.00
+2022-10-22,3,Others,outcome,2970.00
+2022-10-22,3,Personal,outcome,379.00
+2022-10-22,3,Food and Rest,outcome,500.00
+2022-10-22,3,Public Transport,outcome,300.00
+2022-10-22,2,Public Transport,outcome,74.90
+2022-10-22,3,Food and Rest,outcome,204.00
+2022-10-22,3,Personal,outcome,2300.00
+2022-10-23,3,Salary,income,12763.00
+2022-10-23,3,Public Transport,outcome,514.00
+2022-10-23,3,Salary,income,37953.12
+2022-10-23,3,Food and Rest,outcome,332.00
+2022-10-23,3,Public Transport,outcome,51.00
+2022-10-24,3,Public Transport,outcome,51.00
+2022-10-24,3,Food and Rest,outcome,995.95
+2022-10-25,3,Food and Rest,outcome,490.00
+2022-10-25,3,Salary,income,444.30
+2022-10-26,3,Smoke,outcome,155.00
+2022-10-26,3,Food and Rest,outcome,1048.37
+2022-10-26,3,Public Transport,outcome,51.00
+2022-10-28,3,Food and Rest,outcome,345.00
+2022-10-28,3,Smoke,outcome,140.00
+2022-10-28,3,Public Transport,outcome,6523.00
+2022-10-29,3,Partner,outcome,2260.00
+2022-10-29,3,Party,outcome,2350.00
+2022-10-29,3,Public Transport,outcome,1998.00
+2022-10-29,3,Public Transport,outcome,1060.00
+2022-10-29,3,Public Transport,outcome,8401.00
+2022-10-29,3,Food and Rest,outcome,501.00
+2022-10-29,3,Public Transport,outcome,51.00
+2022-10-30,3,Smoke,outcome,140.00
+2022-10-30,2,Transactions,outcome,290.88
+2022-10-30,3,Transactions,outcome,5600.00
+2022-10-31,3,Salary,income,1465.07
+2022-11-02,3,Others,outcome,882.00
+2022-11-03,3,Food and Rest,outcome,889.99
+2022-11-03,3,Others,outcome,103.00
+2022-11-03,3,Party,outcome,1400.00
+2022-11-04,3,Others,outcome,1000.00
+2022-11-04,3,Food and Rest,outcome,74.99
+2022-11-05,3,Food and Rest,outcome,219.99
+2022-11-05,3,Others,outcome,500.00
+2022-11-07,3,Others,outcome,5640.00
+2022-11-08,3,Food and Rest,outcome,617.99
+2022-11-08,3,Salary,income,63464.01
+2022-11-08,3,Smoke,outcome,140.00
+2022-11-08,3,Public Transport,outcome,40.00
+2022-11-08,3,Salary,income,4143.00
+2022-11-08,3,Food and Rest,outcome,890.00
+2022-11-09,3,Public Transport,outcome,112.00
+2022-11-09,3,Food and Rest,outcome,151.00
+2022-11-09,3,Others,outcome,444.30
+2022-11-10,3,Public Transport,outcome,149.00
+2022-11-10,3,Food and Rest,outcome,1908.00
+2022-11-10,3,Transactions,income,1000.00
+2022-11-10,3,Transactions,outcome,1000.00
+2022-11-11,3,Public Transport,outcome,79.00
+2022-11-11,3,Smoke,outcome,139.00
+2022-11-11,3,Others,outcome,130.00
+2022-11-11,3,Personal,outcome,600.00
+2022-11-11,3,Clothes,outcome,2999.00
+2022-11-11,2,Food and Rest,outcome,190.00
+2022-11-12,3,Others,outcome,509.75
+2022-11-12,3,Public Transport,outcome,426.00
+2022-11-12,3,Clothes,outcome,14259.00
+2022-11-12,3,Public Transport,outcome,102.00
+2022-11-12,3,Salary,income,12209.00
+2022-11-13,3,Food and Rest,outcome,806.00
+2022-11-13,3,Public Transport,outcome,404.00
+2022-11-13,3,Others,outcome,1500.00
+2022-11-13,3,Transactions,income,10000.00
+2022-11-13,3,Transactions,outcome,1000.00
+2022-11-14,3,Food and Rest,outcome,882.00
+2022-11-14,3,Smoke,outcome,150.00
+2022-11-14,3,Transactions,outcome,500.00
+2022-11-15,3,Food and Rest,outcome,1584.00
+2022-11-16,3,Food and Rest,outcome,1124.00
+2022-11-17,3,Others,outcome,4000.00
+2022-11-19,3,Public Transport,outcome,934.00
+2022-11-19,3,Party,outcome,1600.00
+2022-11-19,3,Smoke,outcome,150.00
+2022-11-20,3,Food and Rest,outcome,1104.08
+2022-11-21,3,Others,outcome,50.00
+2022-11-21,3,Public Transport,outcome,102.00
+2022-11-21,3,Smoke,outcome,165.00
+2022-11-22,3,Public Transport,outcome,770.00
+2022-11-22,3,Food and Rest,outcome,335.00
+2022-11-23,3,Food and Rest,outcome,390.00
+2022-11-23,3,Salary,income,37639.20
+2022-11-23,2,Party,outcome,780.00
+2022-11-24,3,Food and Rest,outcome,346.88
+2022-11-24,3,Smoke,outcome,140.00
+2022-11-24,3,Public Transport,outcome,102.00
+2022-11-24,3,Others,outcome,500.00
+2022-11-25,3,Public Transport,outcome,667.00
+2022-11-25,3,Food and Rest,outcome,1234.00
+2022-11-25,3,Personal,outcome,900.00
+2022-11-26,3,Food and Rest,outcome,1257.31
+2022-11-26,2,Food and Rest,outcome,1700.00
+2022-11-26,3,Public Transport,outcome,311.00
+2022-11-26,2,Party,outcome,2700.00
+2022-11-27,3,Smoke,outcome,155.00
+2022-11-27,3,Others,outcome,2200.00
+2022-11-27,3,Public Transport,outcome,5775.00
+2022-11-27,3,Transactions,outcome,1500.00
+2022-11-28,3,Public Transport,outcome,102.00
+2022-11-28,3,Food and Rest,outcome,609.44
+2022-11-29,3,Salary,income,1602.74
+2022-11-30,3,Party,outcome,2000.00
+2022-12-01,3,Food and Rest,outcome,757.60
+2022-12-02,3,Personal,outcome,550.00
+2022-12-02,3,Partner,outcome,999.00
+2022-12-02,3,Party,outcome,3690.00
+2022-12-03,3,Public Transport,outcome,102.00
+2022-12-03,3,Food and Rest,outcome,768.00
+2022-12-03,2,Food and Rest,outcome,300.00
+2022-12-03,3,Others,outcome,999.00
+2022-12-04,3,Public Transport,outcome,102.00
+2022-12-05,3,Food and Rest,outcome,1019.67
+2022-12-05,3,Smoke,outcome,140.00
+2022-12-06,3,Food and Rest,outcome,381.00
+2022-12-06,3,Others,outcome,10000.00
+2022-12-07,3,Food and Rest,outcome,99.80
+2022-12-07,2,Food and Rest,outcome,345.00
+2022-12-07,3,Public Transport,outcome,51.00
+2022-12-08,3,Food and Rest,outcome,264.00
+2022-12-08,3,Smoke,outcome,155.00
+2022-12-08,3,Salary,income,65464.38
+2022-12-09,3,Public Transport,outcome,102.00
+2022-12-09,2,Food and Rest,outcome,445.00
+2022-12-10,3,Smoke,outcome,145.00
+2022-12-10,2,Food and Rest,outcome,240.00
+2022-12-11,3,Transactions,income,12326.00
+2022-12-11,3,Food and Rest,outcome,756.00
+2022-12-11,2,Others,outcome,219.17
+2022-12-12,3,Food and Rest,outcome,724.00
+2022-12-13,3,Smoke,outcome,130.00
+2022-12-13,3,Food and Rest,outcome,967.50
+2022-12-14,3,Food and Rest,outcome,920.50
+2022-12-15,3,Food and Rest,outcome,127.00
+2022-12-16,3,Food and Rest,outcome,1866.59
+2022-12-16,2,Food and Rest,outcome,545.00
+2022-12-16,3,Others,outcome,3330.00
+2022-12-18,3,Food and Rest,outcome,558.00
+2022-12-18,3,Others,outcome,490.00
+2022-12-18,3,Salary,income,2200.00
+2022-12-18,2,Salary,income,4500.00
+2022-12-18,3,Transactions,outcome,8325.00
+2022-12-19,3,Public Transport,outcome,102.00
+2022-12-19,2,Others,outcome,150.00
+2022-12-20,3,Others,outcome,1000.00
+2022-12-20,2,Food and Rest,outcome,350.00
+2022-12-20,3,Public Transport,outcome,741.00
+2022-12-21,3,Food and Rest,outcome,1290.36
+2022-12-21,3,Personal,outcome,700.00
+2022-12-21,2,Personal,outcome,500.00
+2022-12-22,3,Salary,income,38908.99
+2022-12-22,3,Public Transport,outcome,102.00
+2022-12-23,3,Public Transport,outcome,2120.00
+2022-12-23,3,Salary,income,1000.00
+2022-12-23,3,Food and Rest,outcome,824.98
+2022-12-23,3,Party,outcome,500.00
+2022-12-23,2,Party,outcome,4200.00
+2022-12-23,3,Education,outcome,2300.00
+2022-12-24,3,Others,outcome,100.00
+2022-12-24,3,Public Transport,outcome,102.00
+2022-12-24,3,Food and Rest,outcome,360.00
+2022-12-24,3,Party,outcome,624.00
+2022-12-24,3,Transactions,outcome,2000.00
+2022-12-25,3,Food and Rest,outcome,592.00
+2022-12-25,3,Smoke,outcome,140.00
+2022-12-26,3,Food and Rest,outcome,995.97
+2022-12-26,3,Others,outcome,12800.00
+2022-12-27,3,Food and Rest,outcome,398.00
+2022-12-27,3,Salary,income,467.00
+2022-12-27,3,Public Transport,outcome,102.00
+2022-12-27,3,Partner,outcome,3740.00
+2022-12-28,3,Others,outcome,550.00
+2022-12-28,3,Smoke,outcome,140.00
+2022-12-28,3,Salary,income,223.00
+2022-12-28,2,Food and Rest,outcome,240.00
+2022-12-28,3,Salary,income,136355.01
+2022-12-28,3,Food and Rest,outcome,2023.00
+2022-12-28,3,Public Transport,outcome,102.00
+2022-12-29,3,Clothes,outcome,5643.00
+2022-12-30,3,Public Transport,outcome,153.00
+2022-12-30,3,Food and Rest,outcome,696.00
+2022-12-30,3,Party,outcome,1600.00
+2022-12-30,3,Salary,income,1921.17
+2022-12-31,3,Public Transport,outcome,1368.00
+2022-12-31,3,Transactions,outcome,1000.00
+2022-12-31,2,Transactions,income,1000.00
+2023-01-01,3,Party,outcome,1800.00
+2023-01-01,3,Public Transport,outcome,51.00
+2023-01-01,3,Public Transport,outcome,1800.00
+2023-01-01,3,Food and Rest,outcome,1470.00
+2023-01-02,3,Others,outcome,299.00
+2023-01-02,3,Smoke,outcome,140.00
+2023-01-02,3,Clothes,outcome,4198.00
+2023-01-03,3,Party,outcome,600.00
+2023-01-03,3,Others,outcome,550.00
+2023-01-03,3,Others,outcome,600.00
+2023-01-03,3,Others,outcome,370.20
+2023-01-03,3,Others,outcome,500.00
+2023-01-03,3,Party,outcome,3990.00
+2023-01-03,2,Party,outcome,600.00
+2023-01-03,3,Transactions,outcome,5500.00
+2023-01-03,2,Transactions,income,5500.00
+2023-01-04,3,Public Transport,outcome,918.00
+2023-01-04,3,Food and Rest,outcome,790.99
+2023-01-04,3,Others,outcome,337.80
+2023-01-04,3,Partner,outcome,1500.00
+2023-01-04,3,Partner,outcome,5000.00
+2023-01-04,3,Others,outcome,216.00
+2023-01-05,3,Smoke,outcome,140.00
+2023-01-05,3,Public Transport,outcome,83.00
+2023-01-05,3,Party,outcome,1800.00
+2023-01-07,3,Clothes,outcome,3688.00
+2023-01-07,3,Transactions,outcome,8000.00
+2023-01-07,2,Transactions,income,8000.00
+2023-01-07,3,Others,outcome,603.90
+2023-01-08,3,Public Transport,outcome,210.00
+2023-01-08,2,Personal,outcome,2500.00
+2023-01-09,3,Public Transport,outcome,1495.00
+2023-01-09,3,Food and Rest,outcome,787.00
+2023-01-09,3,Smoke,outcome,140.00
+2023-01-09,3,Transactions,outcome,110.00
+2023-01-09,2,Transactions,income,110.00
+2023-01-10,3,Food and Rest,outcome,490.00
+2023-01-10,2,Others,outcome,257.55
+2023-01-11,3,Public Transport,outcome,305.00
+2023-01-11,3,Food and Rest,outcome,829.97
+2023-01-11,2,Food and Rest,outcome,280.00
+2023-01-11,3,Smoke,outcome,140.00
+2023-01-11,3,Public Transport,outcome,112.00
+2023-01-11,3,Salary,income,15208.65
+2023-01-12,3,Personal,outcome,500.00
+2023-01-12,3,Party,outcome,2920.00
+2023-01-12,3,Transactions,outcome,330.00
+2023-01-12,2,Transactions,income,330.00
+2023-01-12,3,Transactions,outcome,2550.00
+2023-01-12,2,Transactions,income,2550.00
+2023-01-13,3,Personal,outcome,1803.00
+2023-01-13,3,Food and Rest,outcome,1449.35
+2023-01-13,3,Public Transport,outcome,56.00
+2023-01-14,3,Public Transport,outcome,570.00
+2023-01-14,3,Public Transport,outcome,112.00
+2023-01-14,3,Smoke,outcome,140.00
+2023-01-14,3,Food and Rest,outcome,610.00
+2023-01-15,3,Food and Rest,outcome,972.00
+2023-01-15,3,Public Transport,outcome,56.00
+2023-01-16,3,Party,outcome,3750.00
+2023-01-17,3,Others,outcome,356.00
+2023-01-17,3,Food and Rest,outcome,416.00
+2023-01-17,3,Smoke,outcome,140.00
+2023-01-17,2,Public Transport,outcome,300.00
+2023-01-18,3,Food and Rest,outcome,380.00
+2023-01-18,2,Food and Rest,outcome,65.00
+2023-01-18,3,Food and Rest,outcome,299.97
+2023-01-19,3,Salary,income,18250.98
+2023-01-19,3,Public Transport,outcome,112.00
+2023-01-19,2,Public Transport,outcome,400.00
+2023-01-19,3,Party,outcome,881.00
+2023-01-19,3,Party,outcome,1600.00
+2023-01-19,3,Transactions,outcome,5700.00
+2023-01-19,2,Transactions,income,5700.00
+2023-01-20,3,Food and Rest,outcome,706.00
+2023-01-20,2,Food and Rest,outcome,240.00
+2023-01-20,3,Public Transport,outcome,56.00
+2023-01-20,3,Smoke,outcome,145.00
+2023-01-20,3,Others,outcome,750.00
+2023-01-21,3,Public Transport,outcome,56.00
+2023-01-21,3,Personal,outcome,4550.00
+2023-01-21,3,Food and Rest,outcome,1564.00
+2023-01-21,3,Food and Rest,outcome,552.00
+2023-01-22,3,Others,outcome,200.00
+2023-01-22,3,Food and Rest,outcome,425.00
+2023-01-23,3,Others,outcome,235.00
+2023-01-23,3,Salary,income,33729.03
+2023-01-23,3,Smoke,outcome,140.00
+2023-01-23,3,Food and Rest,outcome,2049.88
+2023-01-23,2,Food and Rest,outcome,200.00
+2023-01-25,3,Food and Rest,outcome,199.98
+2023-01-26,3,Smoke,outcome,140.00
+2023-01-26,3,Public Transport,outcome,112.00
+2023-01-26,3,Food and Rest,outcome,1275.14
+2023-01-27,3,Clothes,outcome,908.00
+2023-01-28,3,Food and Rest,outcome,478.69
+2023-01-28,3,Public Transport,outcome,112.00
+2023-01-28,3,Personal,outcome,1550.00
+2023-01-28,3,Public Transport,outcome,519.00
+2023-01-28,3,Party,outcome,978.50
+2023-01-28,3,Public Transport,outcome,930.00
+2023-01-29,3,Public Transport,outcome,271.00
+2023-01-29,3,Public Transport,outcome,112.00
+2023-01-29,3,Smoke,outcome,140.00
+2023-01-29,3,Food and Rest,outcome,411.00
+2023-01-29,2,Transactions,income,300.00
+2023-01-30,3,Food and Rest,outcome,590.00
+2023-01-30,3,Salary,income,2961.99
+2023-01-31,3,Education,outcome,429.00
+2023-01-31,3,Public Transport,outcome,112.00
+2023-01-31,3,Food and Rest,outcome,423.48
+2023-01-31,2,Food and Rest,outcome,200.00
+2023-01-31,3,Food and Rest,outcome,439.00
+2023-02-01,3,Others,outcome,299.00
+2023-02-01,3,Public Transport,outcome,404.00
+2023-02-01,3,Food and Rest,outcome,646.00
+2023-02-01,2,Personal,outcome,1000.00
+2023-02-02,3,Food and Rest,outcome,1400.00
+2023-02-03,3,Public Transport,outcome,56.00
+2023-02-03,3,Others,outcome,600.00
+2023-02-03,3,Smoke,outcome,140.00
+2023-02-03,3,Food and Rest,outcome,39.99
+2023-02-03,3,Food and Rest,outcome,354.60
+2023-02-03,2,Food and Rest,outcome,365.00
+2023-02-04,3,Public Transport,outcome,470.00
+2023-02-04,3,Public Transport,outcome,112.00
+2023-02-04,3,Food and Rest,outcome,365.87
+2023-02-05,3,Food and Rest,outcome,1446.28
+2023-02-05,3,Smoke,outcome,140.00
+2023-02-05,3,Rent Fee,outcome,25000.00
+2023-02-05,3,Transactions,income,1.00
+2023-02-05,2,Transactions,outcome,400.00
+2023-02-06,3,Partner,outcome,1266.00
+2023-02-06,3,Food and Rest,outcome,450.00
+2023-02-06,3,Food and Rest,outcome,68.00
+2023-02-06,3,Others,outcome,600.00
+2023-02-07,3,Others,outcome,60.00
+2023-02-07,3,Public Transport,outcome,518.00
+2023-02-07,3,Food and Rest,outcome,1252.39
+2023-02-07,3,Smoke,outcome,145.00
+2023-02-07,3,Partner,outcome,761.00
+2023-02-08,3,Salary,income,40357.43
+2023-02-09,2,Party,outcome,2000.00
+2023-02-10,3,Public Transport,outcome,1090.00
+2023-02-10,2,Personal,outcome,700.00
+2023-02-11,3,Food and Rest,outcome,1549.13
+2023-02-11,2,Food and Rest,outcome,250.00
+2023-02-12,3,Food and Rest,outcome,557.00
+2023-02-13,3,Partner,outcome,2650.00
+2023-02-13,3,Food and Rest,outcome,119.99
+2023-02-14,3,Food and Rest,outcome,918.47
+2023-02-16,3,Food and Rest,outcome,665.00
+2023-02-16,3,Others,outcome,600.00
+2023-02-16,2,Others,outcome,429.25
+2023-02-16,3,Party,outcome,1600.00
+2023-02-17,3,Food and Rest,outcome,904.00
+2023-02-17,3,Smoke,outcome,150.00
+2023-02-18,3,Public Transport,outcome,56.00
+2023-02-19,3,Food and Rest,outcome,658.00
+2023-02-19,3,Personal,outcome,768.00
+2023-02-20,3,Food and Rest,outcome,713.00
+2023-02-21,3,Salary,income,54867.67
+2023-02-22,3,Personal,outcome,4000.00
+2023-02-22,3,Others,outcome,6344.00
+2023-02-22,3,Others,outcome,70.00
+2023-02-22,3,Food and Rest,outcome,1563.34
+2023-02-22,3,Partner,outcome,1083.96
+2023-02-23,3,Others,outcome,17.00
+2023-02-24,3,Party,outcome,1660.00
+2023-02-24,3,Transactions,outcome,1730.00
+2023-02-24,2,Transactions,income,1730.00
+2023-02-25,3,Personal,outcome,6900.00
+2023-02-25,3,Food and Rest,outcome,1516.92
+2023-02-27,3,Food and Rest,outcome,869.78
+2023-02-27,3,Salary,income,2617.80
+2023-02-28,3,Partner,outcome,541.00
+2023-02-28,3,Food and Rest,outcome,445.00
+2023-02-28,2,Transactions,outcome,4000.00
+2023-03-01,3,Rent Fee,outcome,25000.00
+2023-03-01,3,Food and Rest,outcome,879.15
+2023-03-02,3,Public Transport,outcome,224.00
+2023-03-02,3,Food and Rest,outcome,1185.43
+2023-03-02,3,Transactions,income,816.00
+2023-03-03,3,Others,outcome,299.00
+2023-03-03,3,Food and Rest,outcome,458.00
+2023-03-03,3,Food and Rest,outcome,50.00
+2023-03-04,3,Food and Rest,outcome,1713.30
+2023-03-05,3,Others,outcome,367.00
+2023-03-05,3,Food and Rest,outcome,50.00
+2023-03-05,3,Public Transport,outcome,112.00
+2023-03-05,3,Food and Rest,outcome,70.00
+2023-03-05,3,Clothes,outcome,594.00
+2023-03-06,3,Others,outcome,1000.00
+2023-03-06,3,Public Transport,outcome,470.00
+2023-03-06,3,Food and Rest,outcome,458.00
+2023-03-06,3,Public Transport,outcome,56.00
+2023-03-06,3,Food and Rest,outcome,512.00
+2023-03-06,2,Partner,outcome,3600.00
+2023-03-07,3,Others,outcome,4000.00
+2023-03-07,3,Food and Rest,outcome,738.42
+2023-03-08,3,Public Transport,outcome,56.00
+2023-03-08,3,Food and Rest,outcome,507.00
+2023-03-08,3,Salary,income,45356.33
+2023-03-09,3,Food and Rest,outcome,420.00
+2023-03-10,3,Public Transport,outcome,468.00
+2023-03-10,3,Party,outcome,1430.00
+2023-03-11,3,Food and Rest,outcome,668.24
+2023-03-12,3,Public Transport,outcome,369.00
+2023-03-12,3,Others,outcome,750.00
+2023-03-12,3,Food and Rest,outcome,634.99
+2023-03-13,3,Public Transport,outcome,556.00
+2023-03-13,3,Food and Rest,outcome,490.00
+2023-03-15,3,Party,outcome,1400.00
+2023-03-16,3,Others,outcome,400.00
+2023-03-16,3,Clothes,outcome,584.00
+2023-03-16,3,Food and Rest,outcome,287.15
+2023-03-17,3,Public Transport,outcome,542.00
+2023-03-17,3,Partner,outcome,2655.00
+2023-03-18,3,Food and Rest,outcome,680.99
+2023-03-18,3,Party,outcome,240.00
+2023-03-19,3,Food and Rest,outcome,2164.15
+2023-03-19,3,Smoke,outcome,140.00
+2023-03-20,3,Food and Rest,outcome,215.00
+2023-03-21,3,Public Transport,outcome,112.00
+2023-03-22,3,Food and Rest,outcome,742.50
+2023-03-22,3,Public Transport,outcome,56.00
+2023-03-23,3,Smoke,outcome,150.00
+2023-03-23,3,Public Transport,outcome,112.00
+2023-03-23,3,Food and Rest,outcome,344.97
+2023-03-23,3,Salary,income,40811.09
+2023-03-24,3,Others,outcome,10.00
+2023-03-24,2,Public Transport,outcome,63.00
+2023-03-24,3,Clothes,outcome,2427.00
+2023-03-25,3,Food and Rest,outcome,594.98
+2023-03-25,3,Personal,outcome,416.50
+2023-03-25,2,Public Transport,outcome,24.00
+2023-03-26,3,Food and Rest,outcome,450.00
+2023-03-26,3,Others,outcome,12510.00
+2023-03-27,3,Food and Rest,outcome,910.42
+2023-03-27,2,Public Transport,outcome,43.50
+2023-03-28,3,Party,outcome,1800.00
+2023-03-28,3,Food and Rest,outcome,249.98
+2023-03-29,3,Others,outcome,2000.00
+2023-03-29,3,Public Transport,outcome,56.00
+2023-03-29,2,Public Transport,outcome,487.50
+2023-03-29,3,Food and Rest,outcome,209.00
+2023-03-30,3,Rent Fee,outcome,55000.00
+2023-03-30,3,Food and Rest,outcome,2240.00
+2023-03-30,3,Public Transport,outcome,56.00
+2023-03-30,3,Salary,income,3057.53
+2023-03-30,3,Food and Rest,outcome,209.36
+2023-03-31,3,Food and Rest,outcome,1296.59
+2023-04-01,3,Public Transport,outcome,56.00
+2023-04-02,3,Smoke,outcome,145.00
+2023-04-03,3,Food and Rest,outcome,443.00
+2023-04-03,3,Public Transport,outcome,750.00
+2023-04-04,3,Food and Rest,outcome,644.89
+2023-04-04,3,Smoke,outcome,140.00
+2023-04-05,3,Others,outcome,600.00
+2023-04-05,3,Public Transport,outcome,470.00
+2023-04-05,2,Public Transport,outcome,22.50
+2023-04-05,3,Food and Rest,outcome,250.79
+2023-04-06,3,Others,outcome,700.00
+2023-04-06,3,Food and Rest,outcome,60.00
+2023-04-06,3,Salary,income,59412.91
+2023-04-06,2,Public Transport,outcome,171.50
+2023-04-07,3,Food and Rest,outcome,817.86
+2023-04-08,3,Others,outcome,579.00
+2023-04-08,3,Food and Rest,outcome,1746.38
+2023-04-08,2,Public Transport,outcome,14.00
+2023-04-09,3,Smoke,outcome,140.00
+2023-04-10,3,Food and Rest,outcome,560.00
+2023-04-10,2,Public Transport,outcome,37.50
+2023-04-10,3,Transactions,outcome,800.00
+2023-04-10,2,Transactions,income,800.00
+2023-04-11,3,Partner,outcome,1526.00
+2023-04-11,3,Food and Rest,outcome,590.00
+2023-04-11,3,Smoke,outcome,140.00
+2023-04-11,2,Public Transport,outcome,30.96
+2023-04-12,3,Food and Rest,outcome,416.00
+2023-04-12,2,Public Transport,outcome,30.00
+2023-04-12,3,Transactions,income,100.00
+2023-04-13,3,Food and Rest,outcome,1140.00
+2023-04-13,2,Public Transport,outcome,7.50
+2023-04-14,3,Smoke,outcome,155.00
+2023-04-14,3,Others,outcome,311.00
+2023-04-14,2,Public Transport,outcome,528.50
+2023-04-15,3,Party,outcome,3200.00
+2023-04-15,3,Food and Rest,outcome,432.68
+2023-04-16,3,Food and Rest,outcome,622.97
+2023-04-17,3,Food and Rest,outcome,215.00
+2023-04-17,2,Public Transport,outcome,29.00
+2023-04-18,3,Food and Rest,outcome,1170.00
+2023-04-18,2,Public Transport,outcome,29.50
+2023-04-19,3,Food and Rest,outcome,1121.00
+2023-04-19,2,Public Transport,outcome,32.96
+2023-04-21,3,Food and Rest,outcome,1199.71
+2023-04-21,3,Others,outcome,382.00
+2023-04-21,3,Public Transport,outcome,16338.00
+2023-04-23,3,Salary,income,44892.00
+2023-04-23,3,Food and Rest,outcome,638.25
+2023-04-23,3,Others,outcome,1000.00
+2023-04-23,3,Transactions,outcome,6000.00
+2023-04-23,2,Transactions,income,6000.00
+2023-04-24,3,Transactions,income,2564.00
+2023-04-24,2,Transactions,outcome,7780.00
+2023-04-24,3,Food and Rest,outcome,1122.00
+2023-04-25,3,Food and Rest,outcome,141.17
+2023-04-25,3,Food and Rest,outcome,501.00
+2023-04-26,3,Food and Rest,outcome,706.00
+2023-04-26,3,Smoke,outcome,150.00
+2023-04-27,3,Food and Rest,outcome,990.00
+2023-04-28,3,Others,outcome,106.00
+2023-04-28,3,Party,outcome,900.00
+2023-04-28,3,Food and Rest,outcome,527.00
+2023-04-28,3,Smoke,outcome,140.00
+2023-04-28,3,Transactions,outcome,1800.00
+2023-04-28,2,Transactions,income,1800.00
+2023-04-29,3,Others,outcome,1000.00
+2023-04-29,3,Public Transport,outcome,500.00
+2023-04-29,3,Salary,income,2866.44
+2023-04-30,3,Rent Fee,outcome,55000.00
+2023-05-01,3,Smoke,outcome,519.96
+2023-05-04,3,Food and Rest,outcome,300.00
+2023-05-04,3,Salary,income,52764.24
+2023-05-05,3,Food and Rest,outcome,264.98
+2023-05-05,3,Others,outcome,1000.00
+2023-05-06,3,Food and Rest,outcome,300.00
+2023-05-07,3,Food and Rest,outcome,350.00
+2023-05-07,3,Public Transport,outcome,500.00
+2023-05-07,3,Public Transport,outcome,470.00
+2023-05-08,3,Food and Rest,outcome,439.00
+2023-05-08,3,Others,outcome,2200.00
+2023-05-08,3,Food and Rest,outcome,837.36
+2023-05-09,3,Others,outcome,200.00
+2023-05-10,3,Food and Rest,outcome,274.00
+2023-05-10,3,Party,outcome,1390.50
+2023-05-10,2,Public Transport,outcome,397.93
+2023-05-11,3,Food and Rest,outcome,2263.83
+2023-05-11,3,Public Transport,outcome,56.00
+2023-05-12,3,Public Transport,outcome,558.00
+2023-05-12,2,Public Transport,outcome,229.16
+2023-05-12,3,Food and Rest,outcome,833.00
+2023-05-12,3,Party,outcome,800.00
+2023-05-12,3,Others,outcome,2000.00
+2023-05-12,2,Transactions,income,450.08
+2023-05-13,3,Public Transport,outcome,56.00
+2023-05-13,3,Food and Rest,outcome,979.36
+2023-05-14,3,Others,outcome,252.48
+2023-05-14,2,Public Transport,outcome,97.86
+2023-05-15,3,Food and Rest,outcome,544.99
+2023-05-15,2,Public Transport,outcome,27.96
+2023-05-16,3,Food and Rest,outcome,1084.58
+2023-05-18,3,Food and Rest,outcome,505.96
+2023-05-19,3,Clothes,outcome,5695.00
+2023-05-19,3,Food and Rest,outcome,565.00
+2023-05-19,3,Others,outcome,500.00
+2023-05-19,2,Public Transport,outcome,106.55
+2023-05-20,3,Party,outcome,2800.00
+2023-05-20,3,Public Transport,outcome,56.00
+2023-05-20,2,Public Transport,outcome,102.06
+2023-05-20,3,Food and Rest,outcome,1376.96
+2023-05-21,3,Public Transport,outcome,56.00
+2023-05-21,3,Food and Rest,outcome,247.96
+2023-05-22,3,Food and Rest,outcome,390.00
+2023-05-22,2,Public Transport,outcome,20.97
+2023-05-23,3,Food and Rest,outcome,1506.80
+2023-05-23,3,Salary,income,35913.00
+2023-05-23,2,Public Transport,outcome,41.94
+2023-05-24,3,Food and Rest,outcome,250.00
+2023-05-24,3,Food and Rest,outcome,169.00
+2023-05-24,2,Public Transport,outcome,128.34
+2023-05-25,3,Others,outcome,352.00
+2023-05-25,3,Clothes,outcome,607.00
+2023-05-25,3,Food and Rest,outcome,774.99
+2023-05-25,2,Public Transport,outcome,118.83
+2023-05-27,3,Others,outcome,2010.00
+2023-05-27,3,Food and Rest,outcome,533.00
+2023-05-28,3,Food and Rest,outcome,304.47
+2023-05-28,2,Public Transport,outcome,130.29
+2023-05-29,3,Others,outcome,307.00
+2023-05-29,3,Food and Rest,outcome,1318.00
+2023-05-29,2,Public Transport,outcome,169.56
+2023-05-30,3,Food and Rest,outcome,446.99
+2023-05-30,3,Salary,income,2930.14
+2023-05-30,2,Public Transport,outcome,71.90
+2023-05-31,3,Others,outcome,600.00
+2023-05-31,3,Food and Rest,outcome,490.00
+2023-05-31,2,Public Transport,outcome,111.35
+2023-06-01,3,Rent Fee,outcome,55000.00
+2023-06-01,3,Food and Rest,outcome,834.65
+2023-06-01,3,Others,outcome,204.00
+2023-06-01,3,Smoke,outcome,140.00
+2023-06-02,3,Others,outcome,26438.00
+2023-06-02,2,Public Transport,outcome,65.36
+2023-06-03,3,Food and Rest,outcome,2921.40
+2023-06-03,3,Others,outcome,1290.00
+2023-06-03,3,Party,outcome,270.00
+2023-06-03,2,Public Transport,outcome,15.18
+2023-06-04,3,Smoke,outcome,140.00
+2023-06-04,2,Public Transport,outcome,14.38
+2023-06-05,3,Party,outcome,900.00
+2023-06-05,3,Others,outcome,1000.00
+2023-06-05,3,Others,outcome,13000.00
+2023-06-05,3,Food and Rest,outcome,359.21
+2023-06-06,3,Public Transport,outcome,470.00
+2023-06-06,2,Public Transport,outcome,112.77
+2023-06-06,3,Smoke,outcome,140.00
+2023-06-06,3,Food and Rest,outcome,616.98
+2023-06-07,3,Food and Rest,outcome,522.96
+2023-06-08,3,Salary,income,68095.90
+2023-06-08,3,Food and Rest,outcome,484.90
+2023-06-08,2,Public Transport,outcome,64.71
+2023-06-09,3,Food and Rest,outcome,720.73
+2023-06-09,2,Public Transport,outcome,22.77
+2023-06-10,3,Others,outcome,770.00
+2023-06-10,3,Food and Rest,outcome,575.00
+2023-06-11,3,Smoke,outcome,150.00
+2023-06-11,3,Food and Rest,outcome,1149.99
+2023-06-11,2,Public Transport,outcome,22.77
+2023-06-12,2,Public Transport,outcome,79.09
+2023-06-14,3,Food and Rest,outcome,350.00
+2023-06-14,3,Smoke,outcome,145.00
+2023-06-14,2,Public Transport,outcome,136.38
+2023-06-15,3,Food and Rest,outcome,869.60
+2023-06-15,2,Public Transport,outcome,71.90
+2023-06-16,3,Food and Rest,outcome,337.17
+2023-06-16,3,Food and Rest,outcome,899.00
+2023-06-16,2,Public Transport,outcome,136.62
+2023-06-16,2,Personal,outcome,100.00
+2023-06-17,3,Food and Rest,outcome,530.00
+2023-06-17,3,Food and Rest,outcome,574.00
+2023-06-17,3,Personal,outcome,539.00
+2023-06-17,2,Public Transport,outcome,43.74
+2023-06-17,3,Transactions,outcome,989.20
+2023-06-17,2,Transactions,income,700.00
+2023-06-18,3,Food and Rest,outcome,793.98
+2023-06-18,3,Public Transport,outcome,112.00
+2023-06-18,2,Public Transport,outcome,37.95
+2023-06-19,3,Public Transport,outcome,112.00
+2023-06-19,2,Public Transport,outcome,57.52
+2023-06-19,3,Food and Rest,outcome,410.00
+2023-06-19,3,Smoke,outcome,145.00
+2023-06-20,3,Food and Rest,outcome,794.99
+2023-06-21,3,Food and Rest,outcome,1451.00
+2023-06-21,3,Smoke,outcome,150.00
+2023-06-22,3,Salary,income,42753.86
+2023-06-22,3,Food and Rest,outcome,830.00
+2023-06-22,2,Public Transport,outcome,45.54
+2023-06-23,3,Food and Rest,outcome,100.00
+2023-06-23,2,Public Transport,outcome,23.37
+2023-06-24,3,Party,outcome,3040.00
+2023-06-24,3,Food and Rest,outcome,900.00
+2023-06-24,3,Others,outcome,200.00
+2023-06-24,2,Public Transport,outcome,166.98
+2023-06-25,3,Personal,outcome,388.00
+2023-06-25,3,Food and Rest,outcome,562.85
+2023-06-26,3,Smoke,outcome,150.00
+2023-06-26,3,Food and Rest,outcome,364.98
+2023-06-26,2,Public Transport,outcome,86.28
+2023-06-27,3,Others,outcome,593.00
+2023-06-27,3,Food and Rest,outcome,456.97
+2023-06-28,3,Public Transport,outcome,11073.00
+2023-06-28,2,Public Transport,outcome,21.57
+2023-06-28,3,Party,outcome,4396.00
+2023-06-28,3,Transactions,outcome,19340.00
+2023-06-28,2,Transactions,income,19390.00
+2023-06-28,3,Transactions,income,20000.00
+2023-06-28,2,Transactions,outcome,20000.00
+2023-06-29,3,Salary,income,2570.55
+2023-06-29,3,Party,outcome,4576.50
+2023-06-29,3,Public Transport,outcome,647.00
+2023-06-29,3,Transactions,outcome,14080.00
+2023-06-29,2,Transactions,income,14080.00
+2023-06-30,3,Food and Rest,outcome,907.00
+2023-07-01,3,Rent Fee,outcome,55000.00
+2023-07-01,3,Food and Rest,outcome,1733.91
+2023-07-01,3,Smoke,outcome,150.00
+2023-07-01,2,Public Transport,outcome,68.31
+2023-07-02,3,Food and Rest,outcome,549.96
+2023-07-02,3,Transactions,income,15000.00
+2023-07-02,2,Transactions,outcome,15000.00
+2023-07-02,2,Public Transport,outcome,84.48
+2023-07-03,3,Smoke,outcome,150.00
+2023-07-03,3,Food and Rest,outcome,300.00
+2023-07-03,2,Public Transport,outcome,64.71
+2023-07-04,3,Food and Rest,outcome,740.00
+2023-07-04,2,Personal,outcome,1100.00
+2023-07-04,2,Public Transport,outcome,117.12
+2023-07-05,3,Food and Rest,outcome,200.00
+2023-07-05,3,Party,outcome,450.00
+2023-07-05,2,Public Transport,outcome,90.79
+2023-07-06,3,Public Transport,outcome,1901.00
+2023-07-06,3,Others,outcome,1000.00
+2023-07-06,3,Smoke,outcome,145.00
+2023-07-06,3,Food and Rest,outcome,5331.00
+2023-07-06,3,Salary,income,57470.14
+2023-07-09,3,Personal,outcome,2600.00
+2023-07-10,3,Smoke,outcome,134.99
+2023-07-10,3,Food and Rest,outcome,799.00
+2023-07-10,3,Transactions,outcome,0.22
+2023-07-11,3,Others,outcome,3711.00
+2023-07-12,3,Others,outcome,969.80
+2023-07-12,3,Food and Rest,outcome,8542.44
+2023-07-13,3,Smoke,outcome,700.00
+2023-07-13,3,Party,outcome,4721.50
+2023-07-13,3,Transactions,outcome,615.00
+2023-07-13,2,Transactions,income,615.00
+2023-07-15,3,Food and Rest,outcome,159.78
+2023-07-16,3,Smoke,outcome,139.00
+2023-07-16,3,Others,outcome,600.00
+2023-07-18,2,Food and Rest,outcome,390.00
+2023-07-19,3,Others,outcome,1200.00
+2023-07-19,3,Transactions,outcome,1200.00
+2023-07-19,2,Transactions,income,1200.00
+2023-07-19,3,Food and Rest,outcome,198.99
+2023-07-20,3,Food and Rest,outcome,581.02
+2023-07-21,3,Others,outcome,6430.00
+2023-07-21,3,Food and Rest,outcome,149.00
+2023-07-22,3,Food and Rest,outcome,299.45
+2023-07-23,3,Food and Rest,outcome,180.00
+2023-07-23,3,Salary,income,42753.86
+2023-07-23,3,Public Transport,outcome,8003.00
+2023-07-24,3,Food and Rest,outcome,376.00
+2023-07-24,3,Public Transport,outcome,1624.00
+2023-07-25,3,Others,outcome,1500.00
+2023-07-25,3,Party,outcome,400.00
+2023-07-25,3,Food and Rest,outcome,1242.00
+2023-07-26,3,Smoke,outcome,150.00
+2023-07-27,3,Food and Rest,outcome,3152.99
+2023-07-27,3,Others,outcome,1000.00
+2023-07-28,3,Food and Rest,outcome,3068.99
+2023-07-28,3,Others,outcome,50.00
+2023-07-29,3,Food and Rest,outcome,1149.99
+2023-07-29,3,Smoke,outcome,150.00
+2023-07-29,3,Public Transport,outcome,112.00
+2023-07-29,2,Public Transport,outcome,23.37
+2023-07-30,3,Others,outcome,2000.00
+2023-07-30,3,Public Transport,outcome,168.00
+2023-07-30,3,Food and Rest,outcome,320.97
+2023-07-30,3,Salary,income,2643.49
+2023-07-31,3,Food and Rest,outcome,450.00
+2023-07-31,2,Public Transport,outcome,44.34
+2023-07-31,3,Personal,outcome,13612.00
+2023-08-01,3,Food and Rest,outcome,388.84
+2023-08-01,3,Public Transport,outcome,112.00
+2023-08-01,2,Public Transport,outcome,22.47
+2023-08-01,3,Rent Fee,outcome,55000.00
+2023-08-01,3,Smoke,outcome,145.00
+2023-08-02,3,Food and Rest,outcome,625.00
+2023-08-02,3,Public Transport,outcome,56.00
+2023-08-02,2,Public Transport,outcome,67.41
+2023-08-03,3,Food and Rest,outcome,351.00
+2023-08-03,3,Smoke,outcome,150.00
+2023-08-03,3,Public Transport,outcome,112.00
+2023-08-03,2,Public Transport,outcome,47.34
+2023-08-03,3,Food and Rest,outcome,440.00
+2023-08-04,3,Food and Rest,outcome,100.00
+2023-08-04,3,Food and Rest,outcome,149.98
+2023-08-04,2,Public Transport,outcome,149.91
+2023-08-05,3,Others,outcome,1000.00
+2023-08-05,3,Food and Rest,outcome,1962.38
+2023-08-05,3,Food and Rest,outcome,17.39
+2023-08-05,3,Smoke,outcome,150.00
+2023-08-05,3,Food and Rest,outcome,550.00
+2023-08-05,2,Public Transport,outcome,55.23
+2023-08-06,3,Public Transport,outcome,56.00
+2023-08-06,2,Public Transport,outcome,172.27
+2023-08-06,3,Food and Rest,outcome,330.00
+2023-08-07,3,Smoke,outcome,145.00
+2023-08-07,3,Public Transport,outcome,122.00
+2023-08-07,2,Public Transport,outcome,112.35
+2023-08-08,3,Salary,income,57470.14
+2023-08-08,3,Food and Rest,outcome,260.00
+2023-08-08,2,Public Transport,outcome,63.92
+2023-08-09,3,Smoke,outcome,145.00
+2023-08-09,3,Food and Rest,outcome,1277.47
+2023-08-10,3,Food and Rest,outcome,500.00
+2023-08-10,3,Others,outcome,690.00
+2023-08-10,3,Others,outcome,130.00
+2023-08-10,3,Transactions,outcome,700.00
+2023-08-10,2,Transactions,income,700.00
+2023-08-11,3,Food and Rest,outcome,1450.25
+2023-08-11,3,Public Transport,outcome,112.00
+2023-08-11,2,Public Transport,outcome,248.50
+2023-08-12,3,Public Transport,outcome,112.00
+2023-08-12,2,Public Transport,outcome,48.00
+2023-08-12,3,Food and Rest,outcome,656.17
+2023-08-12,3,Party,outcome,1470.00
+2023-08-13,3,Food and Rest,outcome,230.00
+2023-08-13,2,Public Transport,outcome,22.50
+2023-08-14,3,Public Transport,outcome,112.00
+2023-08-14,2,Public Transport,outcome,33.00
+2023-08-14,3,Food and Rest,outcome,455.00
+2023-08-14,3,Food and Rest,outcome,189.98
+2023-08-14,3,Smoke,outcome,150.00
+2023-08-14,3,Others,outcome,6437.00
+2023-08-15,3,Food and Rest,outcome,551.00
+2023-08-15,2,Public Transport,outcome,320.50
+2023-08-16,3,Food and Rest,outcome,330.00
+2023-08-17,3,Food and Rest,outcome,329.00
+2023-08-17,3,Smoke,outcome,150.00
+2023-08-17,3,Others,outcome,252.48
+2023-08-17,2,Public Transport,outcome,48.00
+2023-08-18,3,Food and Rest,outcome,227.47
+2023-08-18,3,Food and Rest,outcome,362.00
+2023-08-18,3,Public Transport,outcome,112.00
+2023-08-18,2,Public Transport,outcome,373.17
+2023-08-18,3,Food and Rest,outcome,150.00
+2023-08-18,3,Others,outcome,1000.00
+2023-08-19,3,Public Transport,outcome,168.00
+2023-08-19,3,Food and Rest,outcome,95.00
+2023-08-19,3,Food and Rest,outcome,850.00
+2023-08-19,3,Food and Rest,outcome,427.00
+2023-08-20,3,Food and Rest,outcome,490.00
+2023-08-20,3,Smoke,outcome,170.00
+2023-08-20,3,Food and Rest,outcome,360.00
+2023-08-20,3,Others,outcome,1469.43
+2023-08-20,2,Public Transport,outcome,135.50
+2023-08-21,3,Food and Rest,outcome,242.97
+2023-08-21,3,Public Transport,outcome,112.00
+2023-08-22,3,Public Transport,outcome,347.00
+2023-08-22,2,Public Transport,outcome,247.72
+2023-08-22,3,Others,outcome,10412.00
+2023-08-22,3,Food and Rest,outcome,325.00
+2023-08-22,3,Smoke,outcome,150.00
+2023-08-23,3,Food and Rest,outcome,431.00
+2023-08-23,3,Salary,income,59254.97
+2023-08-23,2,Public Transport,outcome,23.97
+2023-08-24,3,Public Transport,outcome,1469.00
+2023-08-24,2,Public Transport,outcome,40.00
+2023-08-24,3,Food and Rest,outcome,450.00
+2023-08-25,3,Public Transport,outcome,112.00
+2023-08-25,3,Others,outcome,120.00
+2023-08-30,3,Salary,income,2484.25
+2023-09-01,3,Rent Fee,outcome,35000.00
+2023-09-01,3,Others,outcome,1000.00
+2023-09-07,3,Salary,income,41669.65
+2023-09-08,3,Others,outcome,3000.00
+2023-09-08,3,Food and Rest,outcome,1063.83
+2023-09-09,3,Food and Rest,outcome,19.99
+2023-09-09,3,Public Transport,outcome,3879.40
+2023-09-11,3,Public Transport,outcome,1600.00
+2023-09-11,3,Others,outcome,1000.00
+2023-09-12,3,Food and Rest,outcome,940.49
+2023-09-13,3,Food and Rest,outcome,430.00
+2023-09-14,3,Public Transport,outcome,112.00
+2023-09-15,3,Food and Rest,outcome,1906.03
+2023-09-16,3,Food and Rest,outcome,380.00
+2023-09-16,3,Rent Fee,outcome,55000.00
+2023-09-16,3,Transactions,outcome,55000.00
+2023-09-16,3,Others,outcome,345.00
+2023-09-16,2,Others,outcome,600.00
+2023-09-16,3,Food and Rest,outcome,300.00
+2023-09-17,3,Public Transport,outcome,112.00
+2023-09-18,3,Clothes,outcome,1392.00
+2023-09-18,3,Food and Rest,outcome,221.98
+2023-09-19,3,Food and Rest,outcome,430.00
+2023-09-20,3,Public Transport,outcome,112.00
+2023-09-20,3,Food and Rest,outcome,680.94
+2023-09-21,3,Salary,income,42753.86
+2023-09-21,3,Food and Rest,outcome,425.00
+2023-09-21,3,Personal,outcome,2969.00
+2023-09-22,3,Food and Rest,outcome,535.00
+2023-09-22,3,Public Transport,outcome,112.00
+2023-09-22,2,Public Transport,outcome,84.50
+2023-09-23,3,Personal,outcome,12070.00
+2023-09-23,3,Party,outcome,1500.00
+2023-09-23,3,Others,outcome,7.50
+2023-09-23,3,Public Transport,outcome,112.00
+2023-09-23,2,Public Transport,outcome,17.00
+2023-09-23,3,Food and Rest,outcome,2395.15
+2023-09-24,3,Others,outcome,100.00
+2023-09-25,3,Personal,outcome,600.00
+2023-09-26,3,Public Transport,outcome,112.00
+2023-09-27,3,Public Transport,outcome,112.00
+2023-09-27,3,Food and Rest,outcome,430.00
+2023-09-28,3,Food and Rest,outcome,1097.96
+2023-09-28,3,Public Transport,outcome,112.00
+2023-09-29,3,Food and Rest,outcome,1315.98
+2023-09-29,3,Clothes,outcome,729.00
+2023-09-29,3,Smoke,outcome,150.00
+2023-09-29,3,Salary,income,2576.71
+2023-10-01,3,Food and Rest,outcome,1201.00
+2023-10-02,3,Food and Rest,outcome,251.18
+2023-10-03,3,Food and Rest,outcome,441.00
+2023-10-03,3,Others,outcome,1000.00
+2023-10-04,3,Food and Rest,outcome,595.97
+2023-10-04,3,Public Transport,outcome,112.00
+2023-10-05,3,Food and Rest,outcome,1016.98
+2023-10-05,3,Public Transport,outcome,112.00
+2023-10-06,3,Clothes,outcome,1580.00
+2023-10-06,3,Food and Rest,outcome,1727.65
+2023-10-06,3,Public Transport,outcome,70.00
+2023-10-07,3,Public Transport,outcome,112.00
+2023-10-08,3,Public Transport,outcome,882.00
+2023-10-08,2,Public Transport,outcome,60.00
+2023-10-08,3,Food and Rest,outcome,496.00
+2023-10-08,3,Salary,income,53194.85
+2023-10-09,3,Public Transport,outcome,56.00
+2023-10-09,3,Smoke,outcome,145.00
+2023-10-10,3,Food and Rest,outcome,483.00
+2023-10-11,3,Food and Rest,outcome,1067.41
+2023-10-12,3,Smoke,outcome,145.00
+2023-10-13,3,Party,outcome,600.00
+2023-10-13,3,Food and Rest,outcome,611.16
+2023-10-14,3,Food and Rest,outcome,864.88
+2023-10-15,3,Food and Rest,outcome,691.00
+2023-10-15,3,Smoke,outcome,150.00
+2023-10-16,3,Food and Rest,outcome,467.00
+2023-10-16,3,Rent Fee,outcome,55000.00
+2023-10-16,2,Rent Fee,outcome,50.60
+2023-10-16,3,Food and Rest,outcome,75.00
+2023-10-17,3,Food and Rest,outcome,572.00
+2023-10-17,3,Smoke,outcome,150.00
+2023-10-19,3,Party,outcome,3770.00
+2023-10-19,3,Public Transport,outcome,1000.00
+2023-10-19,3,Food and Rest,outcome,3097.03
+2023-10-19,3,Public Transport,outcome,61.00
+2023-10-20,3,Smoke,outcome,150.00
+2023-10-22,3,Food and Rest,outcome,519.00
+2023-10-22,3,Others,outcome,396.00
+2023-10-23,3,Salary,income,40811.09
+2023-10-23,3,Food and Rest,outcome,461.00
+2023-10-24,3,Public Transport,outcome,122.00
+2023-10-24,3,Food and Rest,outcome,119.98
+2023-10-24,3,Smoke,outcome,150.00
+2023-10-25,3,Public Transport,outcome,8468.00
+2023-10-25,3,Food and Rest,outcome,899.00
+2023-10-26,3,Smoke,outcome,150.00
+2023-10-27,3,Party,outcome,1535.00
+2023-10-27,3,Food and Rest,outcome,1439.39
+2023-10-28,3,Food and Rest,outcome,158.48
+2023-10-28,3,Others,outcome,268.00
+2023-10-30,3,Food and Rest,outcome,400.00
+2023-10-30,3,Smoke,outcome,170.00
+2023-10-30,3,Salary,income,2799.77
+2023-10-30,3,Party,outcome,2700.00
+2023-10-31,3,Food and Rest,outcome,1768.16
+2023-10-31,3,Public Transport,outcome,122.00
+2023-11-01,3,Food and Rest,outcome,434.84
+2023-11-01,2,Smoke,outcome,150.00
+2023-11-02,3,Food and Rest,outcome,566.00
+2023-11-03,3,Others,outcome,4.00
+2023-11-03,3,Food and Rest,outcome,641.17
+2023-11-03,2,Smoke,outcome,150.00
+2023-11-04,3,Food and Rest,outcome,357.90
+2023-11-05,3,Public Transport,outcome,183.00
+2023-11-05,3,Others,outcome,2000.00
+2023-11-05,3,Public Transport,outcome,61.00
+2023-11-06,3,Food and Rest,outcome,1351.00
+2023-11-06,3,Public Transport,outcome,61.00
+2023-11-07,3,Food and Rest,outcome,279.97
+2023-11-07,2,Smoke,outcome,150.00
+2023-11-08,3,Salary,income,59412.91
+2023-11-09,3,Others,outcome,2210.00
+2023-11-09,3,Food and Rest,outcome,920.00
+2023-11-09,3,Transactions,outcome,4000.00
+2023-11-09,2,Transactions,income,4000.00
+2023-11-10,3,Food and Rest,outcome,1732.49
+2023-11-10,3,Others,outcome,5000.00
+2023-11-11,3,Transactions,income,1.00
+2023-11-11,3,Food and Rest,outcome,1285.47
+2023-11-11,3,Public Transport,outcome,122.00
+2023-11-12,3,Smoke,outcome,170.00
+2023-11-12,3,Food and Rest,outcome,430.00
+2023-11-12,3,Public Transport,outcome,122.00
+2023-11-12,3,Others,outcome,200.00
+2023-11-13,3,Public Transport,outcome,500.00
+2023-11-13,3,Food and Rest,outcome,480.00
+2023-11-13,3,Public Transport,outcome,122.00
+2023-11-13,3,Others,outcome,1000.00
+2023-11-14,3,Public Transport,outcome,228.00
+2023-11-14,2,Personal,outcome,1330.00
+2023-11-15,3,Food and Rest,outcome,19.99
+2023-11-16,3,Others,outcome,230.00
+2023-11-16,3,Rent Fee,outcome,55000.00
+2023-11-16,2,Rent Fee,outcome,67.80
+2023-11-16,3,Smoke,outcome,990.00
+2023-11-16,3,Food and Rest,outcome,1886.86
+2023-11-17,3,Food and Rest,outcome,1230.00
+2023-11-17,3,Others,outcome,4939.00
+2023-11-19,3,Food and Rest,outcome,39.98
+2023-11-21,3,Public Transport,outcome,313.00
+2023-11-23,3,Salary,income,42753.86
+2023-11-23,3,Food and Rest,outcome,460.99
+2023-11-23,3,Party,outcome,590.00
+2023-11-23,3,Others,outcome,1000.00
+2023-11-23,3,Transactions,outcome,300.00
+2023-11-23,2,Transactions,income,300.00
+2023-11-25,3,Others,outcome,2400.00
+2023-11-27,3,Smoke,outcome,1190.00
+2023-11-28,3,Personal,outcome,10000.00
+2023-11-28,3,Public Transport,outcome,135.00
+2023-11-28,3,Food and Rest,outcome,413.00
+2023-11-30,3,Food and Rest,outcome,24.15
+2023-11-30,3,Others,outcome,500.00
+2023-12-01,3,Others,outcome,7100.00
+2023-12-01,3,Food and Rest,outcome,807.00
+2023-12-02,3,Others,outcome,1000.00
+2023-12-02,3,Food and Rest,outcome,47.68
+2023-12-02,3,Public Transport,outcome,2768.00
+2023-12-02,3,Others,outcome,90.00
+2023-12-03,3,Others,outcome,1000.00
+2023-12-04,3,Public Transport,outcome,550.00
+2023-12-05,3,Others,income,3.00
+2023-12-05,3,Food and Rest,outcome,1811.19
+2023-12-05,3,Public Transport,outcome,61.00
+2023-12-06,3,Food and Rest,outcome,285.97
+2023-12-06,3,Salary,income,74673.86
+2023-12-07,3,Smoke,outcome,170.00
+2023-12-07,3,Food and Rest,outcome,89.00
+2023-12-07,3,Public Transport,outcome,122.00
+2023-12-07,3,Party,outcome,3690.00
+2023-12-07,3,Public Transport,outcome,967.00
+2023-12-07,3,Others,outcome,467.63
+2023-12-09,3,Food and Rest,outcome,2450.11
+2023-12-09,3,Public Transport,outcome,61.00
+2023-12-10,3,Public Transport,outcome,122.00
+2023-12-10,3,Others,outcome,550.00
+2023-12-10,2,Smoke,outcome,150.00
+2023-12-12,3,Others,outcome,555.00
+2023-12-13,3,Food and Rest,outcome,430.00
+2023-12-13,3,Smoke,outcome,170.00
+2023-12-13,3,Others,outcome,2008.00
+2023-12-13,2,Others,outcome,700.00
+2023-12-13,3,Transactions,outcome,2400.00
+2023-12-13,2,Transactions,income,2400.00
+2023-12-13,3,Public Transport,outcome,122.00
+2023-12-14,3,Food and Rest,outcome,390.00
+2023-12-14,3,Smoke,outcome,170.00
+2023-12-14,3,Public Transport,outcome,183.00
+2023-12-15,3,Personal,outcome,430.00
+2023-12-15,3,Food and Rest,outcome,2671.41
+2023-12-16,3,Public Transport,outcome,122.00
+2023-12-16,3,Clothes,outcome,7097.00
+2023-12-16,3,Party,outcome,920.00
+2023-12-16,3,Transactions,outcome,55000.00
+2023-12-16,2,Transactions,income,55000.00
+2023-12-16,2,Rent Fee,outcome,55058.50
+2023-12-17,3,Public Transport,outcome,244.00
+2023-12-17,2,Smoke,outcome,151.50
+2023-12-19,3,Food and Rest,outcome,390.00
+2023-12-19,2,Smoke,outcome,151.50
+2023-12-19,2,Others,outcome,150.00
+2023-12-20,3,Public Transport,outcome,1595.00
+2023-12-20,3,Food and Rest,outcome,95.00
+2023-12-20,3,Public Transport,outcome,244.00
+2023-12-21,3,Food and Rest,outcome,1148.00
+2023-12-21,3,Salary,income,47030.14
+2023-12-21,3,Others,outcome,293.00
+2023-12-21,3,Others,outcome,7406.00
+2023-12-21,3,Public Transport,outcome,122.00
+2023-12-21,2,Smoke,outcome,151.50
+2023-12-22,2,Others,outcome,3054.24
+2023-12-22,3,Transactions,outcome,1700.00
+2023-12-22,2,Transactions,income,1700.00
+2023-12-23,3,Party,outcome,2850.00
+2023-12-23,3,Food and Rest,outcome,1182.00
+2023-12-23,3,Public Transport,outcome,183.00
+2023-12-24,3,Public Transport,outcome,1.00
+2023-12-24,3,Others,outcome,1000.00
+2023-12-24,3,Food and Rest,outcome,105.00
+2023-12-24,3,Food and Rest,outcome,3940.00
+2023-12-24,2,Smoke,outcome,93.90
+2023-12-25,3,Public Transport,outcome,122.00
+2023-12-25,3,Food and Rest,outcome,190.00
+2023-12-25,3,Transactions,income,389.00
+2023-12-25,3,Food and Rest,outcome,250.00
+2023-12-25,3,Smoke,outcome,170.00
+2023-12-26,3,Public Transport,outcome,122.00
+2023-12-26,3,Food and Rest,outcome,796.00
+2023-12-27,3,Public Transport,outcome,779.00
+2023-12-27,3,Food and Rest,outcome,335.00
+2023-12-27,3,Salary,income,71671.60
+2023-12-28,3,Others,outcome,688.00
+2023-12-28,3,Food and Rest,outcome,280.00
+2023-12-28,3,Food and Rest,outcome,861.40
+2023-12-28,2,Smoke,outcome,151.50
+2023-12-29,3,Party,outcome,3300.00
+2023-12-29,3,Food and Rest,outcome,801.00
+2023-12-30,3,Public Transport,outcome,1.00
+2023-12-30,3,Food and Rest,outcome,1487.39
+2023-12-30,3,Others,outcome,1300.00
+2023-12-30,3,Smoke,outcome,1190.00
+2023-12-30,3,Salary,income,3223.15
+2023-12-31,3,Food and Rest,outcome,39.98
+2024-01-02,3,Food and Rest,outcome,410.00
+2024-01-03,3,Public Transport,outcome,1621.23
+2024-01-03,3,Others,outcome,2310.00
+2024-01-04,3,Food and Rest,outcome,460.00
+2024-01-04,3,Party,outcome,3170.00
+2024-01-04,2,Party,outcome,1100.00
+2024-01-05,3,Public Transport,outcome,359.00
+2024-01-06,3,Food and Rest,outcome,1399.89
+2024-01-07,3,Others,income,45.00
+2024-01-08,3,Smoke,outcome,1190.00
+2024-01-08,3,Others,outcome,252.48
+2024-01-08,3,Food and Rest,outcome,482.06
+2024-01-08,3,Transactions,income,0.07
+2024-01-09,3,Others,outcome,3148.00
+2024-01-10,3,Public Transport,outcome,120.00
+2024-01-12,3,Others,outcome,379.00
+2024-01-12,3,Others,outcome,6800.00
+2024-01-13,3,Others,outcome,300.00
+2024-01-13,3,Food and Rest,outcome,350.00
+2024-01-13,3,Public Transport,outcome,1902.00
+2024-01-14,3,Others,outcome,4575.00
+2024-01-14,3,Others,outcome,800.00
+2024-01-14,3,Party,outcome,600.00
+2024-01-14,3,Transactions,outcome,900.00
+2024-01-14,2,Transactions,income,900.00
+2024-01-15,3,Food and Rest,outcome,2051.20
+2024-01-15,3,Others,outcome,1000.00
+2024-01-16,2,Rent Fee,outcome,55061.00
+2024-01-16,3,Transactions,outcome,55000.00
+2024-01-16,2,Transactions,income,55000.00
+2024-01-16,3,Food and Rest,outcome,545.00
+2024-01-16,3,Smoke,outcome,170.00
+2024-01-16,2,Personal,outcome,707.00
+2024-01-16,3,Clothes,outcome,2526.00
+2024-01-16,3,Transactions,income,2500.00
+2024-01-16,3,Transactions,outcome,2265.00
+2024-01-17,3,Food and Rest,outcome,1170.00
+2024-01-17,3,Salary,income,4600.00
+2024-01-17,3,Public Transport,outcome,183.00
+2024-01-17,3,Transactions,outcome,780.00
+2024-01-17,2,Transactions,income,780.00
+2024-01-18,3,Party,outcome,775.00
+2024-01-18,3,Public Transport,outcome,122.00
+2024-01-18,3,Public Transport,outcome,1899.00
+2024-01-18,3,Public Transport,outcome,1350.00
+2024-01-20,3,Party,outcome,4500.00
+2024-01-20,3,Public Transport,outcome,61.00
+2024-01-20,3,Food and Rest,outcome,300.00
+2024-01-20,3,Food and Rest,outcome,309.99
+2024-01-20,3,Public Transport,outcome,122.00
+2024-01-20,2,Smoke,outcome,150.00
+2024-01-21,3,Food and Rest,outcome,1536.85
+2024-01-21,3,Others,outcome,87.75
+2024-01-22,3,Food and Rest,outcome,384.00
+2024-01-22,3,Smoke,outcome,170.00
+2024-01-22,3,Party,outcome,1900.00
+2024-01-23,3,Salary,income,7042.90
+2024-01-23,3,Food and Rest,outcome,720.00
+2024-01-23,3,Others,outcome,4000.00
+2024-01-23,3,Public Transport,outcome,122.00
+2024-01-23,3,Transactions,outcome,2000.00
+2024-01-23,2,Transactions,income,2000.00
+2024-01-24,3,Public Transport,outcome,61.00
+2024-01-25,3,Food and Rest,outcome,585.00
+2024-01-25,3,Smoke,outcome,170.00
+2024-01-25,3,Food and Rest,outcome,2390.00
+2024-01-25,3,Party,outcome,1970.00
+2024-01-25,3,Transactions,outcome,1500.00
+2024-01-25,2,Transactions,income,1500.00
+2024-01-25,3,Transactions,outcome,1000.00
+2024-01-25,2,Transactions,income,1000.00
+2024-01-26,3,Food and Rest,outcome,150.00
+2024-01-26,3,Partner,outcome,1030.00
+2024-01-26,3,Food and Rest,outcome,1000.00
+2024-01-26,3,Transactions,outcome,2000.00
+2024-01-26,2,Transactions,income,2000.00
+2024-01-26,3,Public Transport,outcome,61.00
+2024-01-27,3,Others,outcome,299.00
+2024-01-27,3,Smoke,outcome,150.00
+2024-01-27,3,Food and Rest,outcome,233.00
+2024-01-27,3,Public Transport,outcome,122.00
+2024-01-27,3,Public Transport,outcome,704.00
+2024-01-28,3,Public Transport,outcome,696.00
+2024-01-28,3,Food and Rest,outcome,959.00
+2024-01-28,3,Partner,outcome,827.00
+2024-01-29,3,Others,outcome,598.00
+2024-01-29,3,Food and Rest,outcome,414.00
+2024-01-29,2,Smoke,outcome,153.00
+2024-01-30,3,Partner,outcome,2589.00
+2024-01-30,3,Food and Rest,outcome,960.15
+2024-01-30,3,Personal,outcome,700.00
+2024-01-30,3,Personal,outcome,1350.00
+2024-01-30,3,Transactions,outcome,1350.00
+2024-01-30,2,Transactions,income,1350.00
+2024-01-30,3,Salary,income,2897.57
+2024-01-31,3,Food and Rest,outcome,2470.00
+2024-02-01,3,Food and Rest,outcome,250.00
+2024-02-01,3,Others,outcome,400.00
+2024-02-01,3,Others,outcome,750.00
+2024-02-01,3,Party,outcome,3750.00
+2024-02-01,3,Party,outcome,1900.00
+2024-02-02,3,Food and Rest,outcome,345.00
+2024-02-02,3,Public Transport,outcome,122.00
+2024-02-02,3,Food and Rest,outcome,60.00
+2024-02-02,3,Others,outcome,300.00
+2024-02-02,3,Partner,outcome,300.00
+2024-02-02,3,Public Transport,outcome,560.00
+2024-02-02,3,Food and Rest,outcome,791.00
+2024-02-03,3,Food and Rest,outcome,1150.00
+2024-02-03,3,Others,outcome,2000.00
+2024-02-03,3,Partner,outcome,2277.00
+2024-02-03,3,Food and Rest,outcome,1628.00
+2024-02-04,3,Public Transport,outcome,1431.00
+2024-02-04,3,Food and Rest,outcome,1445.00
+2024-02-05,3,Food and Rest,outcome,89.00
+2024-02-05,3,Food and Rest,outcome,728.00
+2024-02-05,3,Public Transport,outcome,61.00
+2024-02-05,3,Others,outcome,2400.00
+2024-02-06,3,Public Transport,outcome,61.00
+2024-02-06,3,Others,outcome,2950.00
+2024-02-06,3,Food and Rest,outcome,525.00
+2024-02-06,3,Public Transport,outcome,122.00
+2024-02-06,2,Smoke,outcome,150.00
+2024-02-07,3,Public Transport,outcome,305.00
+2024-02-07,3,Food and Rest,outcome,1473.00
+2024-02-08,3,Salary,income,81848.12
+2024-02-08,3,Food and Rest,outcome,430.00
+2024-02-08,3,Food and Rest,outcome,89.00
+2024-02-08,3,Party,outcome,1300.00
+2024-02-08,3,Public Transport,outcome,1705.00
+2024-02-08,3,Public Transport,outcome,122.00
+2024-02-08,2,Smoke,outcome,150.00
+2024-02-09,3,Public Transport,outcome,1732.00
+2024-02-09,3,Food and Rest,outcome,1094.00
+2024-02-09,3,Transactions,outcome,3000.00
+2024-02-09,2,Transactions,income,3000.00
+2024-02-09,2,Smoke,outcome,150.00
+2024-02-11,3,Partner,outcome,4010.00
+2024-02-11,2,Smoke,outcome,150.00
+2024-02-12,3,Personal,outcome,10000.00
+2024-02-12,3,Food and Rest,outcome,990.00
+2024-02-12,3,Food and Rest,outcome,426.00
+2024-02-13,3,Food and Rest,outcome,434.00
+2024-02-13,2,Smoke,outcome,300.00
+2024-02-14,3,Food and Rest,outcome,1040.00
+2024-02-15,3,Party,outcome,1600.00
+2024-02-15,3,Food and Rest,outcome,1714.33
+2024-02-15,3,Public Transport,outcome,122.00
+2024-02-16,2,Rent Fee,outcome,55059.00
+2024-02-16,3,Transactions,outcome,55000.00
+2024-02-16,2,Transactions,income,55000.00
+2024-02-16,3,Food and Rest,outcome,1408.98
+2024-02-16,3,Others,outcome,1300.00
+2024-02-16,3,Public Transport,outcome,122.00
+2024-02-17,3,Public Transport,outcome,909.00
+2024-02-17,3,Party,outcome,2700.00
+2024-02-17,3,Food and Rest,outcome,1950.00
+2024-02-17,3,Transactions,outcome,21447.00
+2024-02-17,2,Smoke,outcome,303.00
+2024-02-18,3,Public Transport,outcome,366.00
+2024-02-18,3,Food and Rest,outcome,770.00
+2024-02-19,3,Food and Rest,outcome,1473.00
+2024-02-19,3,Transactions,outcome,70336.00
+2024-02-19,3,Party,outcome,5740.00
+2024-02-19,3,Partner,outcome,1500.00
+2024-02-19,3,Public Transport,outcome,1238.00
+2024-02-19,3,Food and Rest,outcome,52.99
+2024-02-20,2,Smoke,outcome,303.00
+2024-02-21,3,Public Transport,outcome,61.00
+2024-02-21,3,Others,outcome,703.50
+2024-02-21,3,Salary,income,53734.45
+2024-02-21,3,Food and Rest,outcome,700.00
+2024-02-21,3,Partner,outcome,700.00
+2024-02-21,3,Food and Rest,outcome,3229.00
+2024-02-21,3,Public Transport,outcome,495.00
+2024-02-22,3,Public Transport,outcome,122.00
+2024-02-23,3,Food and Rest,outcome,1273.98
+2024-02-23,3,Others,outcome,50.00
+2024-02-23,2,Others,outcome,200.00
+2024-02-24,3,Food and Rest,outcome,1194.00
+2024-02-24,3,Transactions,income,80000.00
+2024-02-24,2,Transactions,income,70500.00
+2024-02-24,2,Transactions,outcome,80000.00
+2024-02-24,3,Transactions,income,20000.00
+2024-02-24,3,Transactions,outcome,4020.00
+2024-02-24,3,Clothes,outcome,2745.00
+2024-02-24,3,Personal,outcome,8847.00
+2024-02-25,3,Food and Rest,outcome,250.00
+2024-02-25,3,Food and Rest,outcome,94.00
+2024-02-25,2,Smoke,outcome,303.00
+2024-02-26,3,Others,outcome,3336.00
+2024-02-26,3,Food and Rest,outcome,1037.00
+2024-02-26,3,Others,outcome,299.00
+2024-02-26,3,Public Transport,outcome,61.00
+2024-02-27,3,Partner,outcome,3466.00
+2024-02-27,3,Food and Rest,outcome,611.00
+2024-02-27,3,Public Transport,outcome,122.00
+2024-02-28,3,Food and Rest,outcome,419.00
+2024-02-28,3,Partner,outcome,360.00
+2024-02-28,3,Public Transport,outcome,655.00
+2024-02-28,3,Salary,income,1394.53
+2024-02-29,3,Food and Rest,outcome,945.00
+2024-02-29,3,Public Transport,outcome,1450.00
+2024-02-29,3,Others,outcome,2000.00
+2024-02-29,2,Others,outcome,150.00
+2024-02-29,3,Party,outcome,1450.00
+2024-02-29,3,Transactions,outcome,9000.00
+2024-02-29,2,Transactions,income,9000.00
+2024-03-01,3,Food and Rest,outcome,404.97
+2024-03-01,3,Smoke,outcome,140.00
+2024-03-02,3,Others,outcome,559.00
+2024-03-02,3,Public Transport,outcome,61.00
+2024-03-02,3,Food and Rest,outcome,778.95
+2024-03-02,3,Smoke,outcome,140.00
+2024-03-03,3,Party,outcome,4910.00
+2024-03-03,3,Food and Rest,outcome,1307.00
+2024-03-03,3,Food and Rest,outcome,98.00
+2024-03-03,3,Others,outcome,800.00
+2024-03-03,3,Others,outcome,1000.00
+2024-03-03,3,Public Transport,outcome,1171.00
+2024-03-04,3,Food and Rest,outcome,896.00
+2024-03-05,3,Public Transport,outcome,61.00
+2024-03-05,3,Smoke,outcome,1349.00
+2024-03-05,3,Food and Rest,outcome,1284.00
+2024-03-06,3,Partner,outcome,1960.00
+2024-03-06,3,Salary,income,287873.00
+2024-03-06,3,Public Transport,outcome,672.00
+2024-03-06,3,Food and Rest,outcome,874.97
+2024-03-06,3,Transactions,outcome,2500.00
+2024-03-06,2,Transactions,income,2500.00
+2024-03-07,3,Food and Rest,outcome,1196.44
+2024-03-07,3,Public Transport,outcome,639.00
+2024-03-07,3,Partner,outcome,690.00
+2024-03-07,3,Clothes,outcome,3599.00
+2024-03-08,3,Public Transport,outcome,61.00
+2024-03-08,3,Partner,outcome,5500.00
+2024-03-08,3,Partner,outcome,640.00
+2024-03-08,3,Personal,outcome,2240.00
+2024-03-08,3,Food and Rest,outcome,453.99
+2024-03-08,3,Others,outcome,720.00
+2024-03-09,3,Public Transport,outcome,636.00
+2024-03-09,3,Food and Rest,outcome,1954.00
+2024-03-09,3,Public Transport,outcome,183.00
+2024-03-10,3,Public Transport,outcome,792.00
+2024-03-10,3,Food and Rest,outcome,840.41
+2024-03-10,2,Food and Rest,outcome,130.00
+2024-03-11,3,Clothes,outcome,12900.00
+2024-03-11,3,Others,outcome,5000.00
+2024-03-11,3,Public Transport,outcome,376.00
+2024-03-11,3,Transactions,outcome,5000.00
+2024-03-11,2,Transactions,income,5000.00
+2024-03-12,3,Others,outcome,2277.00
+2024-03-12,3,Food and Rest,outcome,1204.00
+2024-03-13,3,Public Transport,outcome,21684.00
+2024-03-13,3,Partner,outcome,2009.00
+2024-03-13,3,Transactions,outcome,18250.00
+2024-03-13,2,Transactions,income,18250.00
+2024-03-15,3,Food and Rest,outcome,1805.72
+2024-03-16,3,Partner,outcome,807.00
+2024-03-16,2,Rent Fee,outcome,55052.80
+2024-03-16,3,Transactions,outcome,20000.00
+2024-03-16,2,Transactions,income,20000.00
+2024-03-16,3,Smoke,outcome,1600.00
+2024-03-16,3,Food and Rest,outcome,1429.98
+2024-03-17,3,Others,outcome,250.00
+2024-03-17,3,Partner,outcome,250.00
+2024-03-17,3,Public Transport,outcome,122.00
+2024-03-17,3,Food and Rest,outcome,480.00
+2024-03-17,3,Transactions,outcome,250.00
+2024-03-17,2,Transactions,income,250.00
+2024-03-18,3,Food and Rest,outcome,659.00
+2024-03-18,3,Others,outcome,421.00
+2024-03-19,3,Food and Rest,outcome,1140.00
+2024-03-19,3,Personal,outcome,800.00
+2024-03-20,3,Food and Rest,outcome,900.00
+2024-03-20,3,Public Transport,outcome,122.00
+2024-03-20,3,Food and Rest,outcome,89.00
+2024-03-20,3,Others,outcome,3100.00
+2024-03-21,3,Salary,income,53287.00
+2024-03-21,3,Public Transport,outcome,61.00
+2024-03-21,3,Food and Rest,outcome,270.00
+2024-03-22,3,Public Transport,outcome,1756.00
+2024-03-22,3,Food and Rest,outcome,634.13
+2024-03-22,3,Public Transport,outcome,122.00
+2024-03-23,3,Food and Rest,outcome,756.00
+2024-03-24,3,Personal,outcome,1370.00
+2024-03-24,3,Partner,outcome,3145.00
+2024-03-25,3,Food and Rest,outcome,406.30
+2024-03-25,3,Public Transport,outcome,351.00
+2024-03-25,3,Food and Rest,outcome,465.00
+2024-03-25,3,Others,outcome,374.00
+2024-03-25,3,Public Transport,outcome,351.00
+2024-03-26,3,Transactions,income,4.00
+2024-03-26,3,Food and Rest,outcome,1470.00
+2024-03-27,3,Public Transport,outcome,5055.00
+2024-03-27,3,Others,outcome,1502.00
+2024-03-27,3,Food and Rest,outcome,35.99
+2024-03-28,3,Smoke,outcome,1349.00
+2024-03-28,3,Public Transport,outcome,550.00
+2024-03-28,3,Food and Rest,outcome,350.00
+2024-03-29,3,Food and Rest,outcome,3378.00
+2024-03-29,3,Public Transport,outcome,61.00
+2024-03-29,3,Public Transport,outcome,790.00
+2024-03-30,3,Party,outcome,4950.00
+2024-03-30,3,Public Transport,outcome,1493.00
+2024-03-30,3,Food and Rest,outcome,300.00
+2024-03-30,3,Food and Rest,outcome,119.99
+2024-03-30,3,Salary,income,2375.82
+2024-03-30,3,Transactions,outcome,1000.00
+2024-03-30,2,Transactions,income,1000.00
+2024-03-31,3,Food and Rest,outcome,806.00
+2024-03-31,3,Others,outcome,2000.00
+2024-04-01,3,Food and Rest,outcome,700.00
+2024-04-01,3,Food and Rest,outcome,1466.00
+2024-04-02,3,Food and Rest,outcome,980.00
+2024-04-02,3,Public Transport,outcome,122.00
+2024-04-03,3,Food and Rest,outcome,1057.18
+2024-04-04,3,Food and Rest,outcome,1028.00
+2024-04-05,3,Public Transport,outcome,1228.00
+2024-04-05,3,Party,outcome,420.00
+2024-04-05,3,Smoke,outcome,249.00
+2024-04-05,3,Party,outcome,5550.00
+2024-04-06,3,Public Transport,outcome,1616.00
+2024-04-06,3,Others,outcome,169.00
+2024-04-06,3,Clothes,outcome,3935.00
+2024-04-06,3,Food and Rest,outcome,795.00
+2024-04-06,3,Public Transport,outcome,61.00
+2024-04-07,3,Public Transport,outcome,61.00
+2024-04-07,3,Food and Rest,outcome,768.00
+2024-04-08,3,Salary,income,63728.00
+2024-04-08,3,Public Transport,outcome,1160.00
+2024-04-08,3,Public Transport,outcome,122.00
+2024-04-09,3,Others,outcome,3086.00
+2024-04-09,3,Food and Rest,outcome,1526.00
+2024-04-10,3,Public Transport,outcome,122.00
+2024-04-10,3,Food and Rest,outcome,746.00
+2024-04-11,3,Public Transport,outcome,1012.00
+2024-04-11,3,Others,outcome,2000.00
+2024-04-11,3,Food and Rest,outcome,348.00
+2024-04-12,3,Party,outcome,5470.00
+2024-04-12,3,Food and Rest,outcome,728.00
+2024-04-13,3,Public Transport,outcome,61.00
+2024-04-13,2,Public Transport,outcome,127.00
+2024-04-13,3,Partner,outcome,2295.00
+2024-04-13,3,Food and Rest,outcome,864.85
+2024-04-14,3,Food and Rest,outcome,1218.00
+2024-04-14,3,Public Transport,outcome,183.00
+2024-04-15,3,Food and Rest,outcome,1500.95
+2024-04-15,3,Public Transport,outcome,122.00
+2024-04-16,3,Food and Rest,outcome,982.97
+2024-04-16,3,Public Transport,outcome,244.00
+2024-04-16,3,Transactions,outcome,55000.00
+2024-04-16,2,Transactions,income,55000.00
+2024-04-16,2,Rent Fee,outcome,55050.00
+2024-04-17,3,Food and Rest,outcome,1459.00
+2024-04-17,3,Public Transport,outcome,122.00
+2024-04-17,2,Public Transport,outcome,50.97
+2024-04-18,3,Smoke,outcome,1600.00
+2024-04-18,3,Party,outcome,600.00
+2024-04-18,3,Transactions,outcome,1000.00
+2024-04-18,2,Transactions,income,1000.00
+2024-04-19,3,Public Transport,outcome,1439.00
+2024-04-19,3,Food and Rest,outcome,1405.67
+2024-04-20,3,Personal,outcome,1000.00
+2024-04-20,3,Public Transport,outcome,122.00
+2024-04-21,3,Food and Rest,outcome,3070.00
+2024-04-22,3,Others,outcome,1461.00
+2024-04-22,3,Public Transport,outcome,3275.00
+2024-04-22,3,Food and Rest,outcome,673.00
+2024-04-22,3,Public Transport,outcome,122.00
+2024-04-23,3,Public Transport,outcome,891.00
+2024-04-23,3,Food and Rest,outcome,2774.00
+2024-04-23,3,Public Transport,outcome,61.00
+2024-04-23,3,Salary,income,63298.14
+2024-04-24,3,Public Transport,outcome,727.00
+2024-04-24,2,Public Transport,outcome,81.50
+2024-04-24,3,Food and Rest,outcome,823.00
+2024-04-24,3,Salary,income,7844.20
+2024-04-24,3,Smoke,outcome,1499.00
+2024-04-24,3,Others,outcome,800.00
+2024-04-25,3,Food and Rest,outcome,2476.00
+2024-04-25,3,Public Transport,outcome,61.00
+2024-04-25,2,Public Transport,outcome,72.00
+2024-04-25,3,Partner,outcome,3780.00
+2024-04-26,3,Others,outcome,299.00
+2024-04-26,3,Public Transport,outcome,61.00
+2024-04-26,3,Food and Rest,outcome,701.00
+2024-04-27,3,Food and Rest,outcome,360.00
+2024-04-27,3,Food and Rest,outcome,373.95
+2024-04-27,2,Partner,outcome,2000.00
+2024-04-28,3,Food and Rest,outcome,5184.95
+2024-04-28,3,Clothes,outcome,1294.00
+2024-04-28,3,Partner,outcome,740.00
+2024-04-28,3,Food and Rest,outcome,380.00
+2024-04-28,3,Others,outcome,8000.00
+2024-04-28,2,Public Transport,outcome,94.94
+2024-04-28,3,Transactions,outcome,1700.00
+2024-04-28,2,Transactions,income,1700.00
+2024-04-29,3,Transactions,outcome,4000.00
+2024-04-29,2,Transactions,income,4000.00
+2024-04-29,3,Smoke,outcome,1600.00
+2024-04-29,3,Public Transport,outcome,2339.00
+2024-04-29,2,Public Transport,outcome,72.00
+2024-04-29,3,Food and Rest,outcome,1120.00
+2024-04-29,3,Others,outcome,2040.00
+2024-04-29,2,Others,outcome,3939.00
+2024-04-29,3,Salary,income,3381.15
+2024-04-30,3,Food and Rest,outcome,730.00
+2024-04-30,2,Food and Rest,outcome,7300.00
+2024-04-30,3,Public Transport,outcome,61.00
+2024-04-30,3,Transactions,outcome,10000.00
+2024-04-30,2,Transactions,income,10000.00
+2024-05-01,3,Food and Rest,outcome,300.00
+2024-05-01,3,Salary,income,3922.10
+2024-05-02,3,Partner,outcome,100.00
+2024-05-02,3,Personal,outcome,24000.00
+2024-05-03,3,Food and Rest,outcome,800.00
+2024-05-03,3,Transactions,income,3500.00
+2024-05-04,3,Others,outcome,2200.00
+2024-05-05,3,Food and Rest,outcome,5132.00
+2024-05-05,3,Others,outcome,2000.00
+2024-05-05,3,Public Transport,outcome,2597.00
+2024-05-06,3,Food and Rest,outcome,1437.94
+2024-05-07,3,Food and Rest,outcome,1124.00
+2024-05-07,3,Salary,income,67983.86
+2024-05-08,3,Food and Rest,outcome,4430.38
+2024-05-08,3,Personal,outcome,1352.00
+2024-05-09,3,Public Transport,outcome,122.00
+2024-05-10,3,Food and Rest,outcome,459.99
+2024-05-10,3,Transactions,outcome,50000.00
+2024-05-11,3,Others,outcome,1900.00
+2024-05-11,3,Public Transport,outcome,779.00
+2024-05-12,3,Others,outcome,3910.00
+2024-05-12,3,Public Transport,outcome,655.00
+2024-05-12,3,Others,outcome,1000.00
+2024-05-12,3,Food and Rest,outcome,517.96
+2024-05-13,3,Personal,outcome,7623.00
+2024-05-14,3,Food and Rest,outcome,821.98
+2024-05-15,3,Food and Rest,outcome,1561.95
+2024-05-15,3,Public Transport,outcome,122.00
+2024-05-16,3,Public Transport,outcome,12546.00
+2024-05-16,3,Food and Rest,outcome,1938.00
+2024-05-16,3,Others,outcome,1349.00
+2024-05-16,3,Transactions,outcome,55000.00
+2024-05-16,2,Transactions,income,55000.00
+2024-05-16,2,Rent Fee,outcome,55138.00
+2024-05-17,3,Food and Rest,outcome,3171.99
+2024-05-17,3,Public Transport,outcome,122.00
+2024-05-17,2,Public Transport,outcome,72.00
+2024-05-18,3,Partner,outcome,1458.60
+2024-05-18,3,Public Transport,outcome,1853.00
+2024-05-18,3,Food and Rest,outcome,250.00
+2024-05-19,3,Public Transport,outcome,1590.70
+2024-05-19,3,Public Transport,outcome,3894.00
+2024-05-20,3,Public Transport,outcome,313.48
+2024-05-21,3,Others,outcome,770.00
+2024-05-21,2,Others,outcome,100.00
+2024-05-21,2,Public Transport,outcome,76.00
+2024-05-22,3,Others,outcome,20883.48
+2024-05-23,3,Others,outcome,1100.00
+2024-05-23,3,Food and Rest,outcome,812.92
+2024-05-23,3,Salary,income,30211.00
+2024-05-24,3,Food and Rest,outcome,2260.00
+2024-05-24,3,Public Transport,outcome,550.00
+2024-05-24,2,Public Transport,outcome,157.88
+2024-05-24,3,Clothes,outcome,3443.00
+2024-05-25,3,Food and Rest,outcome,3731.96
+2024-05-25,3,Others,outcome,2030.00
+2024-05-26,3,Food and Rest,outcome,3123.00
+2024-05-26,3,Others,outcome,299.00
+2024-05-27,3,Public Transport,outcome,1053.00
+2024-05-27,2,Public Transport,outcome,65.98
+2024-05-27,3,Food and Rest,outcome,6789.80
+2024-05-28,3,Public Transport,outcome,876.00
+2024-05-28,2,Public Transport,outcome,174.00
+2024-05-28,3,Others,outcome,215.00
+2024-05-28,3,Food and Rest,outcome,949.00
+2024-05-28,3,Personal,outcome,900.00
+2024-05-29,3,Others,outcome,3000.00
+2024-05-29,3,Food and Rest,outcome,1529.00
+2024-05-29,3,Clothes,outcome,1799.00
+2024-05-29,2,Public Transport,outcome,72.00
+2024-05-29,3,Transactions,outcome,9131.00
+2024-05-29,2,Transactions,income,2443.00
+2024-05-30,3,Public Transport,outcome,192.00
+2024-05-30,2,Public Transport,outcome,17.00
+2024-05-30,3,Food and Rest,outcome,2760.00
+2024-05-30,3,Others,outcome,6690.00
+2024-05-30,3,Salary,income,308704.41
+2024-05-30,3,Transactions,outcome,2500.00
+2024-05-30,2,Transactions,income,2500.00
+2024-05-31,3,Food and Rest,outcome,11211.00
+2024-05-31,3,Public Transport,outcome,128.00
+2024-05-31,2,Public Transport,outcome,85.00
+2024-06-01,3,Food and Rest,outcome,806.99
+2024-06-01,3,Smoke,outcome,1600.00
+2024-06-01,2,Public Transport,outcome,9.00
+2024-06-01,2,Transactions,income,700.00
+2024-06-02,3,Food and Rest,outcome,775.00
+2024-06-02,3,Public Transport,outcome,128.00
+2024-06-03,3,Others,outcome,217.62
+2024-06-07,3,Food and Rest,outcome,13688.77
+2024-06-11,3,Clothes,outcome,4506.00
+2024-06-11,3,Others,outcome,100.00
+2024-06-13,3,Clothes,outcome,7038.00
+2024-06-13,3,Others,outcome,699.00
+2024-06-16,3,Transactions,outcome,55000.00
+2024-06-16,2,Transactions,income,55000.00
+2024-06-16,2,Rent Fee,outcome,55050.00
+2024-06-18,3,Partner,outcome,500.00
+2024-06-20,3,Transactions,outcome,21031.00
+2024-06-22,3,Food and Rest,outcome,11809.59
+2024-06-24,3,Others,outcome,1.00
+2024-06-25,3,Others,outcome,299.00
+2024-06-26,3,Others,outcome,14.70
+2024-06-29,3,Salary,income,3327.05
+2024-06-30,3,Others,outcome,1000.00
+2024-07-01,3,Others,outcome,4000.00
+2024-07-03,3,Food and Rest,outcome,10033.19
+2024-07-05,3,Others,outcome,6000.00
+2024-07-05,2,Transactions,income,1700.00
+2024-07-08,3,Public Transport,outcome,5000.00
+2024-07-08,3,Food and Rest,outcome,1187.97
+2024-07-08,3,Transactions,outcome,12000.00
+2024-07-08,2,Transactions,income,12000.00
+2024-07-08,3,Transactions,outcome,11968.00
+2024-07-09,3,Salary,income,220110.00
+2024-07-11,3,Others,outcome,18100.00
+2024-07-11,3,Public Transport,outcome,5000.00
+2024-07-11,3,Others,outcome,100.00
+2024-07-13,3,Public Transport,outcome,630.58
+2024-07-13,3,Others,outcome,163.85
+2024-07-14,3,Public Transport,outcome,905.01
+2024-07-14,3,Transactions,outcome,16075.25
+2024-07-14,3,Partner,outcome,1309.00
+2024-07-15,3,Public Transport,outcome,1578.76
+2024-07-15,2,Public Transport,outcome,337.90
+2024-07-15,3,Transactions,outcome,10100.00
+2024-07-15,1,Transactions,income,10100.00
+2024-07-15,3,Clothes,outcome,4387.00
+2024-07-15,1,Clothes,outcome,5624.00
+2024-07-15,3,Food and Rest,outcome,3870.00
+2024-07-15,1,Food and Rest,outcome,1014.00
+2024-07-15,3,Public Transport,outcome,128.00
+2024-07-16,2,Rent Fee,outcome,55050.00
+2024-07-16,3,Transactions,income,1050.00
+2024-07-16,1,Transactions,outcome,1048.50
+2024-07-16,3,Transactions,outcome,55000.00
+2024-07-16,2,Transactions,income,55000.00
+2024-07-16,1,Clothes,outcome,6999.00
+2024-07-16,3,Transactions,outcome,410000.00
+2024-07-16,1,Transactions,income,410000.00
+2024-07-16,1,Food and Rest,outcome,3147.00
+2024-07-16,1,Public Transport,outcome,1077.00
+2024-07-17,3,Transactions,outcome,8000.00
+2024-07-17,1,Transactions,income,8000.00
+2024-07-17,3,Others,outcome,15.00
+2024-07-17,1,Food and Rest,outcome,255.00
+2024-07-17,1,Personal,outcome,1290.00
+2024-07-17,1,Transactions,outcome,500.00
+2024-07-17,1,Food and Rest,outcome,898.00
+2024-07-17,2,Public Transport,outcome,28.80
+2024-07-18,1,Food and Rest,outcome,680.00
+2024-07-18,1,Food and Rest,outcome,466.00
+2024-07-18,1,Food and Rest,outcome,2020.00
+2024-07-18,1,Transactions,outcome,1400.00
+2024-07-19,1,Food and Rest,outcome,890.00
+2024-07-19,3,Others,outcome,10000.00
+2024-07-19,1,Others,outcome,600.00
+2024-07-19,3,Transactions,income,1200.00
+2024-07-19,1,Transactions,outcome,1200.00
+2024-07-19,3,Transactions,income,1200.00
+2024-07-19,1,Transactions,outcome,1200.00
+2024-07-20,1,Food and Rest,outcome,2235.00
+2024-07-20,1,Food and Rest,outcome,6935.00
+2024-07-20,1,Others,outcome,300.00
+2024-07-21,1,Food and Rest,outcome,1022.00
+2024-07-21,1,Food and Rest,outcome,1000.00
+2024-07-21,1,Others,outcome,684.00
+2024-07-22,2,Public Transport,outcome,284.20
+2024-07-22,1,Personal,outcome,269.99
+2024-07-22,1,Smoke,outcome,255.00
+2024-07-22,1,Food and Rest,outcome,70.00
+2024-07-22,1,Public Transport,outcome,64.00
+2024-07-23,2,Public Transport,outcome,26.40
+2024-07-23,1,Public Transport,outcome,1659.00
+2024-07-23,1,Food and Rest,outcome,2000.00
+2024-07-23,1,Others,outcome,600.00
+2024-07-23,1,Food and Rest,outcome,660.00
+2024-07-23,1,Food and Rest,outcome,3800.00
+2024-07-24,3,Salary,income,106399.00
+2024-07-24,1,Salary,income,933.20
+2024-07-24,3,Transactions,outcome,150000.00
+2024-07-24,1,Transactions,income,150000.00
+2024-07-24,1,Food and Rest,outcome,841.00
+2024-07-24,3,Transactions,income,584.00
+2024-07-24,1,Transactions,outcome,584.00
+2024-07-24,2,Public Transport,outcome,95.70
+2024-07-24,1,Public Transport,outcome,1105.00
+2024-07-25,1,Partner,outcome,1000.00
+2024-07-25,1,Others,outcome,1660.00
+2024-07-25,1,Food and Rest,outcome,537.00
+2024-07-25,3,Transactions,income,2500.00
+2024-07-25,3,Transactions,outcome,3000.00
+2024-07-25,1,Transactions,income,3000.00
+2024-07-25,2,Public Transport,outcome,26.40
+2024-07-26,1,Others,outcome,7252.52
+2024-07-26,3,Transactions,income,1000.00
+2024-07-26,1,Transactions,outcome,1000.00
+2024-07-26,3,Transactions,income,1000.00
+2024-07-26,1,Transactions,outcome,1000.00
+2024-07-27,1,Public Transport,outcome,128.00
+2024-07-27,1,Food and Rest,outcome,3115.68
+2024-07-27,1,Smoke,outcome,179.99
+2024-07-27,2,Public Transport,outcome,35.20
+2024-07-27,1,Public Transport,outcome,554.00
+2024-07-28,3,Transactions,income,25999.29
+2024-07-28,3,Transactions,outcome,27000.00
+2024-07-28,1,Transactions,income,27000.00
+2024-07-28,2,Transactions,outcome,15000.00
+2024-07-28,1,Transactions,income,15000.00
+2024-07-28,1,Food and Rest,outcome,2218.00
+2024-07-29,1,Food and Rest,outcome,1818.07
+2024-07-30,3,Transactions,income,500.00
+2024-07-30,1,Smoke,outcome,350.00
+2024-07-30,2,Public Transport,outcome,28.50
+2024-07-30,1,Public Transport,outcome,64.00
+2024-07-30,1,Food and Rest,outcome,530.00
+2024-07-31,2,Public Transport,outcome,54.90
+2024-07-31,1,Public Transport,outcome,128.00
+2024-07-31,1,Others,outcome,3145.00
+2024-07-31,1,Party,outcome,5700.00
+2024-08-01,1,Public Transport,outcome,504.00
+2024-08-01,1,Partner,outcome,600.00
+2024-08-01,1,Food and Rest,outcome,1257.00
+2024-08-02,2,Public Transport,outcome,27.60
+2024-08-02,1,Public Transport,outcome,839.00
+2024-08-02,1,Food and Rest,outcome,1455.99
+2024-08-02,1,Partner,outcome,3172.00
+2024-08-02,1,Smoke,outcome,180.00
+2024-08-02,3,Transactions,outcome,3000.00
+2024-08-02,1,Transactions,income,3000.00
+2024-08-03,1,Personal,outcome,1290.00
+2024-08-03,1,Smoke,outcome,254.00
+2024-08-03,1,Food and Rest,outcome,357.98
+2024-08-03,2,Public Transport,outcome,27.90
+2024-08-04,1,Others,outcome,1000.00
+2024-08-04,1,Transactions,outcome,500.00
+2024-08-08,1,Party,outcome,2000.00
+2024-08-08,3,Salary,income,220110.00
+2024-08-10,1,Food and Rest,outcome,1000.00
+2024-08-10,3,Others,outcome,100.00
+2024-08-11,3,Transactions,outcome,220000.00
+2024-08-11,1,Transactions,income,220000.00
+2024-08-11,1,Others,outcome,303.00
+2024-08-12,1,Others,outcome,25783.00
+2024-08-15,1,Food and Rest,outcome,2000.00
+2024-08-15,1,Partner,outcome,4000.00
+2024-08-15,1,Personal,outcome,2856.02
+2024-08-15,1,Food and Rest,outcome,971.00
+2024-08-15,2,Public Transport,outcome,28.80
+2024-08-16,2,Transactions,income,55000.00
+2024-08-16,1,Transactions,outcome,55000.00
+2024-08-16,1,Food and Rest,outcome,1355.00
+2024-08-16,1,Others,outcome,1974.00
+2024-08-16,2,Rent Fee,outcome,59183.93
+2024-08-16,2,Public Transport,outcome,18.00
+2024-08-17,3,Others,outcome,100.00
+2024-08-17,1,Clothes,outcome,15924.00
+2024-08-17,1,Food and Rest,outcome,1155.00
+2024-08-17,2,Public Transport,outcome,64.50
+2024-08-18,2,Public Transport,outcome,198.76
+2024-08-18,1,Public Transport,outcome,1458.00
+2024-08-18,1,Food and Rest,outcome,1296.86
+2024-08-19,2,Public Transport,outcome,26.10
+2024-08-19,1,Public Transport,outcome,383.00
+2024-08-19,1,Food and Rest,outcome,269.97
+2024-08-20,2,Public Transport,outcome,83.40
+2024-08-20,1,Public Transport,outcome,978.00
+2024-08-20,1,Food and Rest,outcome,824.97
+2024-08-21,1,Food and Rest,outcome,284.00
+2024-08-21,2,Public Transport,outcome,27.00
+2024-08-21,1,Public Transport,outcome,1000.00
+2024-08-21,1,Public Transport,outcome,932.00
+2024-08-21,1,Partner,outcome,3870.00
+2024-08-22,1,Smoke,outcome,190.00
+2024-08-22,1,Food and Rest,outcome,499.98
+2024-08-22,1,Public Transport,outcome,64.00
+2024-08-22,1,Salary,income,26400.00
+2024-08-23,1,Food and Rest,outcome,139.99
+2024-08-23,1,Others,outcome,10000.00
+2024-08-23,2,Public Transport,outcome,149.00
+2024-08-24,1,Food and Rest,outcome,1095.00
+2024-08-24,1,Public Transport,outcome,1308.00
+2024-08-25,1,Smoke,outcome,180.00
+2024-08-25,1,Others,outcome,2000.00
+2024-08-25,1,Salary,income,5417.23
+2024-08-25,1,Food and Rest,outcome,742.00
+2024-08-26,1,Personal,outcome,1290.00
+2024-08-26,1,Food and Rest,outcome,560.86
+2024-08-26,2,Public Transport,outcome,51.60
+2024-08-26,1,Public Transport,outcome,768.00
+2024-08-26,1,Partner,outcome,2100.00
+2024-08-26,1,Public Transport,outcome,64.00
+2024-08-27,1,Food and Rest,outcome,1750.93
+2024-08-28,1,Food and Rest,outcome,780.86
+2024-08-28,2,Public Transport,outcome,56.10
+2024-08-28,1,Public Transport,outcome,128.00
+2024-08-29,1,Smoke,outcome,1499.00
+2024-08-29,2,Public Transport,outcome,22.50
+2024-08-29,1,Public Transport,outcome,64.00
+2024-08-29,1,Food and Rest,outcome,2130.00
+2024-08-30,1,Party,outcome,3990.00
+2024-08-30,1,Food and Rest,outcome,643.95
+2024-08-30,1,Food and Rest,outcome,592.00
+2024-08-30,1,Public Transport,outcome,2300.00
+2024-08-30,1,Others,outcome,8000.00
+2024-08-31,1,Food and Rest,outcome,1834.98
+2024-08-31,2,Public Transport,outcome,120.20
+2024-08-31,1,Public Transport,outcome,1005.00
+2024-08-31,1,Others,outcome,2319.00
+2024-09-01,2,Public Transport,outcome,81.00
+2024-09-01,1,Public Transport,outcome,2507.00
+2024-09-01,1,Food and Rest,outcome,420.00
+2024-09-01,2,Others,outcome,250.00
+2024-09-01,1,Transactions,outcome,200000.00
+2024-09-02,2,Public Transport,outcome,54.00
+2024-09-02,1,Public Transport,outcome,64.00
+2024-09-02,1,Party,outcome,1500.00
+2024-09-02,2,Transactions,income,500.00
+2024-09-02,1,Transactions,outcome,500.00
+2024-09-03,1,Public Transport,outcome,1740.00
+2024-09-03,1,Food and Rest,outcome,710.00
+2024-09-04,1,Others,outcome,200.00
+2024-09-04,1,Food and Rest,outcome,549.99
+2024-09-04,1,Transactions,income,15000.00
+2024-09-05,1,Personal,outcome,5000.00
+2024-09-05,1,Transactions,income,185000.00
+2024-09-05,1,Others,outcome,8919.00
+2024-09-06,1,Food and Rest,outcome,409.00
+2024-09-07,1,Food and Rest,outcome,850.00
+2024-09-07,1,Public Transport,outcome,2362.00
+2024-09-08,1,Food and Rest,outcome,1145.00
+2024-09-08,1,Partner,outcome,365.00
+2024-09-08,1,Personal,outcome,615.00
+2024-09-08,2,Public Transport,outcome,8.50
+2024-09-09,3,Salary,income,220110.00
+2024-09-10,3,Transactions,outcome,220000.00
+2024-09-10,1,Transactions,income,220000.00
+2024-09-12,1,Others,outcome,7100.00
+2024-09-12,1,Others,outcome,1500.00
+2024-09-12,3,Transactions,income,500.00
+2024-09-15,1,Food and Rest,outcome,10500.00
+2024-09-16,2,Transactions,income,55000.00
+2024-09-16,1,Transactions,outcome,55000.00
+2024-09-16,2,Rent Fee,outcome,55050.00
+2024-09-17,1,Personal,outcome,3464.00
+2024-09-19,1,Transactions,income,1.00
+2024-09-19,1,Transactions,income,21031.00
+2024-09-19,1,Transactions,income,11968.00
+2024-09-20,1,Public Transport,outcome,524.32
+2024-09-20,1,Others,outcome,5913.20
+2024-09-20,1,Food and Rest,outcome,1408.75
+2024-09-21,1,Others,outcome,9369.73
+2024-09-21,3,Public Transport,outcome,209.00
+2024-09-21,2,Public Transport,outcome,17.00
+2024-09-21,1,Public Transport,outcome,128.00
+2024-09-21,1,Others,outcome,170.00
+2024-09-21,2,Transactions,outcome,149.00
+2024-09-22,1,Public Transport,outcome,1146.00
+2024-09-22,1,Food and Rest,outcome,1560.00
+2024-09-23,1,Food and Rest,outcome,2395.95
+2024-09-23,1,Public Transport,outcome,1348.00
+2024-09-24,1,Public Transport,outcome,4016.20
+2024-09-24,1,Others,outcome,8800.00
+2024-09-24,1,Food and Rest,outcome,492.88
+2024-09-24,1,Public Transport,outcome,64.00
+2024-09-24,1,Salary,income,28583.74
+2024-09-25,2,Public Transport,outcome,16.00
+2024-09-25,1,Public Transport,outcome,192.00
+2024-09-25,1,Others,outcome,5567.00
+2024-09-25,1,Food and Rest,outcome,1369.90
+2024-09-25,1,Smoke,outcome,185.00
+2024-09-26,1,Clothes,outcome,2964.00
+2024-09-26,1,Public Transport,outcome,64.00
+2024-09-26,1,Partner,outcome,3850.00
+2024-09-26,1,Public Transport,outcome,1027.00
+2024-09-27,1,Smoke,outcome,1899.00
+2024-09-27,1,Public Transport,outcome,128.00
+2024-09-27,1,Others,outcome,2762.00
+2024-09-27,1,Food and Rest,outcome,1309.47
+2024-09-28,1,Others,outcome,249.00
+2024-09-28,1,Food and Rest,outcome,613.43
+2024-09-28,1,Party,outcome,1500.00
+2024-09-28,2,Public Transport,outcome,14.00
+2024-09-30,1,Food and Rest,outcome,981.00
+2024-09-30,2,Public Transport,outcome,75.50
+2024-09-30,1,Public Transport,outcome,1309.00
+2024-09-30,1,Others,outcome,1990.00
+2024-09-30,1,Personal,outcome,800.00
+2024-09-30,1,Others,income,10.00
+2024-10-01,1,Food and Rest,outcome,445.00
+2024-10-01,1,Others,outcome,2000.00
+2024-10-01,1,Others,outcome,3200.00
+2024-10-01,2,Public Transport,outcome,17.00
+2024-10-02,1,Salary,income,8477.62
+2024-10-02,1,Food and Rest,outcome,957.89
+2024-10-02,3,Public Transport,outcome,65.00
+2024-10-02,2,Public Transport,outcome,7.00
+2024-10-02,1,Public Transport,outcome,1098.00
+2024-10-03,1,Food and Rest,outcome,1136.00
+2024-10-03,1,Public Transport,outcome,64.00
+2024-10-03,1,Party,outcome,2800.00
+2024-10-03,1,Public Transport,outcome,64.00
+2024-10-04,2,Public Transport,outcome,77.00
+2024-10-04,1,Public Transport,outcome,1518.00
+2024-10-04,1,Partner,outcome,1900.00
+2024-10-04,3,Transactions,income,1900.00
+2024-10-04,1,Transactions,outcome,1900.00
+2024-10-05,1,Food and Rest,outcome,1150.00
+2024-10-05,1,Others,outcome,1000.00
+2024-10-07,1,Transactions,income,400.00
+2024-10-09,1,Salary,income,220110.00
+2024-10-09,1,Others,outcome,1500.00
+2024-10-11,1,Partner,outcome,5096.12
+2024-10-11,1,Personal,outcome,2099.48
+2024-10-11,1,Others,outcome,1850.00
+2024-10-12,1,Party,outcome,1200.00
+2024-10-12,1,Public Transport,outcome,64.00
+2024-10-12,1,Food and Rest,outcome,1060.98
+2024-10-13,1,Public Transport,outcome,832.00
+2024-10-13,1,Food and Rest,outcome,1358.10
+2024-10-14,1,Food and Rest,outcome,379.98
+2024-10-15,1,Public Transport,outcome,2525.00
+2024-10-15,1,Food and Rest,outcome,489.94
+2024-10-15,1,Others,outcome,3200.00
+2024-10-16,1,Public Transport,outcome,1163.00
+2024-10-16,1,Food and Rest,outcome,1843.00
+2024-10-16,2,Transactions,income,55500.00
+2024-10-16,1,Transactions,outcome,55500.00
+2024-10-16,1,Salary,income,11400.00
+2024-10-16,2,Rent Fee,outcome,55050.00
+2024-10-17,1,Personal,outcome,17000.00
+2024-10-17,1,Food and Rest,outcome,734.94
+2024-10-18,1,Food and Rest,outcome,972.94
+2024-10-18,1,Partner,outcome,1410.00
+2024-10-18,1,Smoke,outcome,1499.00
+2024-10-18,1,Public Transport,outcome,128.00
+2024-10-19,1,Food and Rest,outcome,1139.09
+2024-10-19,2,Public Transport,outcome,74.87
+2024-10-19,1,Public Transport,outcome,192.00
+2024-10-19,1,Others,outcome,60.00
+2024-10-20,1,Public Transport,outcome,1098.00
+2024-10-20,1,Party,outcome,650.00
+2024-10-20,1,Others,outcome,2584.00
+2024-10-22,1,Food and Rest,outcome,1018.96
+2024-10-22,1,Others,outcome,1139.00
+2024-10-22,1,Public Transport,outcome,936.00
+2024-10-22,1,Public Transport,outcome,63.00
+2024-10-23,1,Public Transport,outcome,2081.00
+2024-10-23,1,Food and Rest,outcome,370.00
+2024-10-24,1,Others,outcome,496.00
+2024-10-24,1,Others,outcome,5000.00
+2024-10-24,1,Public Transport,outcome,128.00
+2024-10-24,1,Food and Rest,outcome,1710.00
+2024-10-24,1,Salary,income,1102.03
+2024-10-25,1,Clothes,outcome,5938.00
+2024-10-25,1,Food and Rest,outcome,1162.91
+2024-10-25,2,Public Transport,outcome,15.80
+2024-10-26,1,Public Transport,outcome,530.00
+2024-10-26,1,Food and Rest,outcome,835.97
+2024-10-26,1,Others,outcome,7000.00
+2024-10-27,1,Food and Rest,outcome,631.97
+2024-10-27,1,Others,outcome,3000.00
+2024-10-28,2,Public Transport,outcome,15.80
+2024-10-28,1,Public Transport,outcome,12941.00
+2024-10-29,2,Public Transport,outcome,16.00
+2024-10-29,1,Public Transport,outcome,920.00
+2024-10-29,1,Partner,outcome,5275.00
+2024-10-30,1,Food and Rest,outcome,1736.85
+2024-10-31,1,Food and Rest,outcome,1158.00
+2024-10-31,1,Others,outcome,1990.00
+2024-10-31,1,Party,outcome,1200.00
+2024-11-01,1,Food and Rest,outcome,522.05
+2024-11-01,1,Public Transport,outcome,64.00
+2024-11-02,1,Salary,income,9776.96
+2024-11-02,1,Public Transport,outcome,1250.00
+2024-11-02,1,Others,outcome,600.00
+2024-11-02,1,Food and Rest,outcome,1216.00
+2024-11-03,1,Partner,outcome,2880.00
+2024-11-03,1,Public Transport,outcome,128.00
+2024-11-03,2,Transactions,income,400.00
+2024-11-04,1,Others,outcome,1700.00
+2024-11-04,1,Food and Rest,outcome,826.85
+2024-11-05,1,Others,outcome,5000.00
+2024-11-05,1,Public Transport,outcome,128.00
+2024-11-05,1,Partner,outcome,1310.00
+2024-11-05,1,Transactions,outcome,0.99
+2024-11-07,1,Salary,income,220110.00
+2024-11-07,1,Public Transport,outcome,64.00
+2024-11-07,1,Personal,outcome,863.00
+2024-11-07,1,Party,outcome,3650.00
+2024-11-07,2,Others,outcome,150.00
+2024-11-07,1,Others,outcome,423.00
+2024-11-07,1,Public Transport,outcome,1111.00
+2024-11-08,1,Partner,outcome,6000.00
+2024-11-08,1,Others,outcome,99000.00
+2024-11-08,2,Public Transport,outcome,65.00
+2024-11-08,1,Public Transport,outcome,128.00
+2024-11-08,1,Food and Rest,outcome,59.99
+2024-11-08,1,Food and Rest,outcome,631.00
+2024-11-08,1,Others,outcome,749.00
+2024-11-09,1,Others,outcome,24.00
+2024-11-09,1,Public Transport,outcome,400.10
+2024-11-09,1,Smoke,outcome,1600.00
+2024-11-09,1,Partner,outcome,230.00
+2024-11-11,1,Others,outcome,1000.00
+2024-11-12,1,Others,outcome,1200.00
+2024-11-12,1,Partner,outcome,892.00
+2024-11-13,1,Transactions,outcome,10130.00
+2024-11-16,2,Rent Fee,outcome,55050.00
+2024-11-16,2,Transactions,income,55000.00
+2024-11-16,1,Transactions,outcome,55000.00
+2024-11-21,1,Partner,outcome,588.00
+2024-11-22,1,Others,outcome,8045.11
+2024-11-22,1,Public Transport,outcome,43.85
+2024-11-22,1,Food and Rest,outcome,1011.00
+2024-11-23,1,Food and Rest,outcome,2915.58
+2024-11-24,1,Partner,outcome,2625.00
+2024-11-24,1,Food and Rest,outcome,219.98
+2024-11-24,1,Salary,income,1512.93
+2024-11-25,1,Food and Rest,outcome,1987.16
+2024-11-25,1,Others,outcome,756.00
+2024-11-26,1,Partner,outcome,1000.00
+2024-11-26,1,Public Transport,outcome,1062.00
+2024-11-26,1,Others,outcome,540.00
+2024-11-26,1,Food and Rest,outcome,635.00
+2024-11-27,1,Public Transport,outcome,2362.00
+2024-11-27,1,Food and Rest,outcome,1487.96
+2024-11-27,1,Others,outcome,4400.00
+2024-11-27,3,Others,outcome,400.00
+2024-11-27,1,Others,outcome,808.00
+2024-11-28,1,Others,outcome,329.00
+2024-11-28,1,Public Transport,outcome,136.00
+2024-11-29,1,Public Transport,outcome,550.00
+2024-11-29,1,Smoke,outcome,1499.00
+2024-11-29,1,Food and Rest,outcome,725.00
+2024-11-29,1,Salary,income,28900.00
+2024-11-30,1,Food and Rest,outcome,466.00
+2024-11-30,1,Others,outcome,2839.00
+2024-12-01,1,Education,outcome,9600.00
+2024-12-02,1,Salary,income,9602.05
+2024-12-02,1,Others,outcome,3340.00
+2024-12-02,1,Others,outcome,500.00
+2024-12-03,1,Others,outcome,379.00
+2024-12-03,1,Food and Rest,outcome,668.55
+2024-12-03,1,Salary,income,400.00
+2024-12-03,1,Partner,outcome,438.00
+2024-12-05,1,Others,outcome,513.44
+2024-12-06,1,Partner,outcome,1035.00
+2024-12-06,1,Others,outcome,970.00
+2024-12-06,1,Others,outcome,4000.00
+2024-12-07,1,Public Transport,outcome,21663.00
+2024-12-07,1,Food and Rest,outcome,350.00
+2024-12-07,1,Public Transport,outcome,1443.00
+2024-12-07,1,Food and Rest,outcome,1289.00
+2024-12-08,1,Food and Rest,outcome,5036.13
+2024-12-08,1,Public Transport,outcome,128.00
+2024-12-09,1,Partner,outcome,1880.00
+2024-12-09,1,Salary,income,220110.00
+2024-12-09,1,Food and Rest,outcome,425.98
+2024-12-10,1,Food and Rest,outcome,838.93
+2024-12-11,1,Public Transport,outcome,128.00
+2024-12-12,1,Partner,outcome,21500.00
+2024-12-12,1,Others,outcome,2500.00
+2024-12-12,1,Public Transport,outcome,64.00
+2024-12-13,1,Partner,outcome,1575.52
+2024-12-13,1,Public Transport,outcome,256.00
+2024-12-13,1,Public Transport,outcome,444.00
+2024-12-13,1,Others,outcome,24.30
+2024-12-13,2,Transactions,income,500.00
+2024-12-13,1,Transactions,outcome,500.00
+2024-12-14,1,Public Transport,outcome,587.00
+2024-12-14,1,Partner,outcome,3055.00
+2024-12-14,1,Food and Rest,outcome,168.00
+2024-12-14,1,Partner,outcome,390.00
+2024-12-15,1,Transactions,outcome,10000.00
+2024-12-16,2,Transactions,income,55000.00
+2024-12-16,1,Transactions,outcome,55000.00
+2024-12-16,2,Rent Fee,outcome,55050.00
+2024-12-16,1,Partner,outcome,3657.00
+2024-12-18,1,Others,outcome,3200.00
+2024-12-18,1,Others,outcome,2000.00
+2024-12-18,1,Others,outcome,666.00
+2024-12-18,1,Partner,outcome,1500.00
+2024-12-19,2,Others,outcome,150.00
+2024-12-19,1,Others,outcome,3617.89
+2024-12-19,1,Transactions,outcome,14433.51
+2024-12-20,1,Food and Rest,outcome,2110.85
+2024-12-21,1,Others,outcome,150.00
+2024-12-21,1,Food and Rest,outcome,2249.90
+2024-12-22,1,Personal,outcome,1400.00
+2024-12-22,1,Food and Rest,outcome,1303.87
+2024-12-22,1,Others,outcome,9974.00
+2024-12-23,1,Transactions,income,500.00
+2024-12-23,1,Partner,outcome,579.98
+2024-12-23,3,Transactions,income,14435.00
+2024-12-24,1,Public Transport,outcome,128.00
+2024-12-24,1,Personal,outcome,10772.00
+2024-12-24,1,Food and Rest,outcome,59.96
+2024-12-24,1,Salary,income,11400.00
+2024-12-24,1,Food and Rest,outcome,615.58
+2024-12-24,1,Others,outcome,686.00
+2024-12-25,1,Food and Rest,outcome,680.00
+2024-12-25,1,Others,outcome,5000.00
+2024-12-25,1,Public Transport,outcome,128.00
+2024-12-25,1,Partner,outcome,4177.00
+2024-12-26,1,Public Transport,outcome,650.00
+2024-12-26,1,Food and Rest,outcome,650.00
+2024-12-26,3,Others,outcome,59.00
+2024-12-27,1,Clothes,outcome,2000.00
+2024-12-27,1,Others,outcome,7802.00
+2024-12-27,1,Others,outcome,400.00
+2024-12-27,1,Others,outcome,454.97
+2024-12-27,3,Transactions,outcome,16500.00
+2024-12-27,1,Transactions,income,16500.00
+2024-12-29,1,Others,outcome,3000.00
+2024-12-29,1,Food and Rest,outcome,4430.00
+2024-12-29,1,Public Transport,outcome,413.00
+2024-12-29,1,Food and Rest,outcome,47.99
+2024-12-30,1,Public Transport,outcome,128.00
+2024-12-30,1,Food and Rest,outcome,2596.32
+2024-12-30,1,Salary,income,385192.00
+2024-12-31,1,Food and Rest,outcome,1071.98
+2024-12-31,1,Others,outcome,1990.00
+2024-12-31,1,Partner,outcome,1655.90
+2025-01-01,1,Food and Rest,outcome,1609.47
+2025-01-02,1,Salary,income,10067.36
+2025-01-02,1,Public Transport,outcome,140.00
+2025-01-02,1,Others,outcome,8000.00
+2025-01-02,1,Transactions,income,5000.00
+2025-01-02,1,Food and Rest,outcome,409.99
+2025-01-03,1,Public Transport,outcome,70.00
+2025-01-03,1,Food and Rest,outcome,949.99
+2025-01-03,1,Transactions,income,400.00
+2025-01-04,1,Food and Rest,outcome,907.00
+2025-01-05,1,Public Transport,outcome,1319.00
+2025-01-05,1,Food and Rest,outcome,400.00
+2025-01-06,1,Food and Rest,outcome,3423.87
+2025-01-06,1,Smoke,outcome,340.00
+2025-01-07,1,Transactions,income,5000.00
+2025-01-07,1,Food and Rest,outcome,700.97
+2025-01-07,1,Transactions,income,1524.69
+2025-01-08,1,Food and Rest,outcome,244.92
+2025-01-09,1,Food and Rest,outcome,719.95
+2025-01-09,1,Others,outcome,2380.00
+2025-01-10,1,Food and Rest,outcome,2054.75
+2025-01-11,1,Smoke,outcome,170.00
+2025-01-11,1,Food and Rest,outcome,530.16
+2025-01-11,1,Salary,income,220110.00
+2025-01-11,1,Others,outcome,198.70
+2025-01-12,1,Others,outcome,2867.00
+2025-01-12,1,Public Transport,outcome,1180.00
+2025-01-12,1,Food and Rest,outcome,276.74
+2025-01-13,1,Public Transport,outcome,2547.00
+2025-01-13,1,Food and Rest,outcome,810.13
+2025-01-13,1,Others,outcome,500.00
+2025-01-14,1,Food and Rest,outcome,1338.00
+2025-01-14,1,Education,outcome,9600.00
+2025-01-15,1,Salary,income,2793.98
+2025-01-15,1,Food and Rest,outcome,1449.79
+2025-01-15,1,Others,outcome,1212.00
+2025-01-15,1,Public Transport,outcome,140.00
+2025-01-16,1,Partner,outcome,2400.00
+2025-01-16,1,Food and Rest,outcome,651.99
+2025-01-16,1,Rent Fee,outcome,55000.00
+2025-01-17,1,Public Transport,outcome,140.00
+2025-01-17,1,Food and Rest,outcome,3130.00
+2025-01-17,1,Partner,outcome,1599.00
+2025-01-18,1,Food and Rest,outcome,578.85
+2025-01-18,1,Others,outcome,2168.00
+2025-01-18,1,Party,outcome,3300.00
+2025-01-19,3,Transactions,income,500.00
+2025-01-19,3,Transactions,outcome,500.00
+2025-01-19,1,Transactions,income,500.00
+2025-01-19,1,Others,outcome,1500.00
+2025-01-21,1,Partner,outcome,681.00
+2025-01-22,1,Partner,outcome,3000.00
+2025-01-24,1,Salary,income,921.13
+2025-01-25,1,Partner,outcome,497.00
+2025-01-26,1,Others,outcome,400.00
+2025-01-28,1,Transactions,outcome,12400.00
+2025-01-29,1,Partner,outcome,4850.00
+2025-02-01,1,Partner,outcome,409.00
+2025-02-02,1,Salary,income,10242.15
+2025-02-03,1,Transactions,income,500.00
+2025-02-05,1,Others,outcome,3000.00
+2025-02-06,1,Transactions,income,21.00
+2025-02-07,1,Food and Rest,outcome,738.00
+2025-02-07,1,Public Transport,outcome,1400.00
+2025-02-07,1,Party,outcome,3300.00
+2025-02-08,1,Partner,outcome,475.00
+2025-02-08,1,Food and Rest,outcome,953.95
+2025-02-08,1,Party,outcome,2800.00
+2025-02-08,1,Others,outcome,2800.00
+2025-02-09,1,Transactions,income,13279.00
+2025-02-09,1,Salary,income,220110.00
+2025-02-09,1,Food and Rest,outcome,753.55
+2025-02-09,1,Others,outcome,10600.00
+2025-02-10,1,Salary,income,43900.00
+2025-02-10,1,Food and Rest,outcome,507.13
+2025-02-11,1,Partner,outcome,6495.00
+2025-02-11,1,Food and Rest,outcome,998.71
+2025-02-12,1,Food and Rest,outcome,1334.82
+2025-02-12,1,Public Transport,outcome,2070.00
+2025-02-12,1,Smoke,outcome,340.00
+2025-02-13,1,Food and Rest,outcome,1468.15
+2025-02-13,1,Partner,outcome,3400.00
+2025-02-14,1,Food and Rest,outcome,1396.95
+2025-02-14,1,Others,outcome,1293.22
+2025-02-15,1,Salary,income,11833.73
+2025-02-15,1,Food and Rest,outcome,478.00
+2025-02-15,1,Salary,income,12500.00
+2025-02-16,1,Rent Fee,outcome,55000.00
+2025-02-16,1,Others,outcome,9000.00
+2025-02-16,1,Others,outcome,2870.00
+2025-02-16,1,Food and Rest,outcome,1740.04
+2025-02-17,1,Partner,outcome,1000.00
+2025-02-17,1,Smoke,outcome,340.00
+2025-02-17,1,Food and Rest,outcome,239.00
+2025-02-17,1,Food and Rest,outcome,962.42
+2025-02-18,1,Food and Rest,outcome,2066.77
+2025-02-19,1,Others,outcome,1.00
+2025-02-19,1,Food and Rest,outcome,813.00
+2025-02-20,1,Food and Rest,outcome,5625.39
+2025-02-21,1,Food and Rest,outcome,2002.97
+2025-02-22,1,Food and Rest,outcome,1161.94
+2025-02-22,1,Public Transport,outcome,829.00
+2025-02-22,1,Smoke,outcome,340.00
+2025-02-24,1,Salary,income,4387.03
+2025-02-25,1,Salary,income,242.70
+2025-02-26,1,Partner,outcome,650.00
+2025-02-27,1,Food and Rest,outcome,5000.00
+2025-03-01,1,Others,outcome,1526.00
+2025-03-02,1,Others,outcome,431.00
+2025-03-02,1,Others,outcome,16500.00
+2025-03-02,1,Transactions,income,500.00
+2025-03-02,1,Transactions,income,9388.71
+2025-03-03,1,Transactions,income,500.00
+2025-03-03,1,Partner,outcome,500.00
+2025-03-04,1,Others,outcome,5550.96
+2025-03-04,1,Smoke,outcome,170.00
+2025-03-04,1,Food and Rest,outcome,257.98
+2025-03-05,1,Food and Rest,outcome,478.00
+2025-03-05,1,Partner,outcome,3439.00
+2025-03-05,1,Others,outcome,3000.00
+2025-03-05,1,Others,outcome,790.00
+2025-03-05,1,Others,outcome,2197.20
+2025-03-06,1,Others,outcome,513.00
+2025-03-06,1,Public Transport,outcome,140.00
+2025-03-06,1,Party,outcome,2000.00
+2025-03-07,1,Food and Rest,outcome,3477.00
+2025-03-07,1,Partner,outcome,2810.00
+2025-03-07,1,Public Transport,outcome,140.00
+2025-03-07,1,Others,outcome,99.00
+2025-03-07,1,Others,outcome,1000.00
+2025-03-08,1,Food and Rest,outcome,3022.82
+2025-03-09,1,Salary,income,241510.00
+2025-03-09,1,Transactions,income,47.00
+2025-03-10,1,Public Transport,outcome,140.00
+2025-03-10,1,Food and Rest,outcome,139.00
+2025-03-10,1,Food and Rest,outcome,2632.00
+2025-03-11,1,Food and Rest,outcome,1423.18
+2025-03-12,1,Partner,outcome,49500.00
+2025-03-12,1,Food and Rest,outcome,46.99
+2025-03-13,1,Party,outcome,2623.20
+2025-03-13,1,Food and Rest,outcome,563.00
+2025-03-14,1,Public Transport,outcome,1291.00
+2025-03-14,1,Public Transport,outcome,1535.00
+2025-03-14,1,Food and Rest,outcome,84.00
+2025-03-14,1,Others,outcome,1421.00
+2025-03-15,1,Partner,outcome,1400.00
+2025-03-15,1,Others,outcome,3190.00
+2025-03-15,1,Others,outcome,100.00
+2025-03-15,2,Transactions,outcome,500.00
+2025-03-15,1,Transactions,income,1150.00
+2025-03-15,1,Salary,income,12000.00
+2025-03-15,1,Food and Rest,outcome,441.00
+2025-03-16,1,Others,outcome,1988.00
+2025-03-16,1,Public Transport,outcome,159.00
+2025-03-16,1,Rent Fee,outcome,55000.00
+2025-03-16,1,Partner,outcome,504.00
+2025-03-17,1,Others,outcome,350.00
+2025-03-18,1,Others,outcome,80.00
+2025-03-19,1,Others,outcome,6000.00
+2025-03-19,1,Food and Rest,outcome,325.00
+2025-03-20,1,Others,outcome,149.00
+2025-03-20,1,Food and Rest,outcome,1576.40
+2025-03-21,1,Food and Rest,outcome,900.00
+2025-03-21,1,Public Transport,outcome,768.00
+2025-03-21,1,Food and Rest,outcome,454.93
+2025-03-22,1,Public Transport,outcome,345.00
+2025-03-22,1,Food and Rest,outcome,4218.96
+2025-03-23,1,Food and Rest,outcome,1021.94
+2025-03-24,1,Salary,income,73370.33
+2025-03-24,1,Public Transport,outcome,795.00
+2025-03-24,1,Salary,income,18194.32
+2025-03-24,1,Others,outcome,979.98
+2025-03-25,1,Partner,outcome,2000.00
+2025-03-25,1,Public Transport,outcome,140.00
+2025-03-25,1,Food and Rest,outcome,639.25
+2025-03-26,1,Food and Rest,outcome,994.85
+2025-03-26,1,Others,outcome,1127.00
+2025-03-27,1,Food and Rest,outcome,680.87
+2025-03-27,1,Others,outcome,2630.00
+2025-03-27,1,Others,outcome,400.00
+2025-03-28,1,Party,outcome,2280.00
+2025-03-28,1,Food and Rest,outcome,1045.97
+2025-03-28,1,Public Transport,outcome,70.00
+2025-03-28,1,Others,outcome,1413.00
+2025-03-29,1,Food and Rest,outcome,1116.98
+2025-03-30,1,Food and Rest,outcome,3017.72
+2025-03-31,1,Food and Rest,outcome,264.96
+2025-03-31,1,Others,outcome,4269.00
+2025-04-01,1,Food and Rest,outcome,2673.00
+2025-04-01,1,Public Transport,outcome,140.00
+2025-04-02,1,Transactions,income,4968.49
+2025-04-02,1,Food and Rest,outcome,1264.18
+2025-04-03,1,Food and Rest,outcome,4412.85
+2025-04-03,1,Public Transport,outcome,210.00
+2025-04-04,1,Food and Rest,outcome,615.93
+2025-04-04,1,Party,outcome,2609.00
+2025-04-04,1,Partner,outcome,2150.00
+2025-04-05,1,Public Transport,outcome,70.00
+2025-04-05,1,Partner,outcome,3823.00
+2025-04-05,1,Public Transport,outcome,18942.00
+2025-04-05,1,Partner,outcome,18942.00
+2025-04-05,1,Public Transport,outcome,1228.00
+2025-04-06,1,Food and Rest,outcome,10000.00
+2025-04-09,1,Salary,income,146740.81
+2025-04-13,1,Others,outcome,875.00
+2025-04-15,1,Salary,income,12000.00
+2025-04-16,1,Partner,outcome,4697.00
+2025-04-17,1,Rent Fee,outcome,64400.00
+2025-04-17,1,Others,outcome,4200.00
+2025-04-17,1,Public Transport,outcome,382.71
+2025-04-18,1,Others,outcome,10000.00
+2025-04-18,1,Public Transport,outcome,880.00
+2025-04-18,1,Food and Rest,outcome,1647.13
+2025-04-19,1,Food and Rest,outcome,1564.74
+2025-04-19,1,Public Transport,outcome,298.00
+2025-04-19,1,Others,outcome,1190.00
+2025-04-19,1,Transactions,outcome,206.36
+2025-04-20,1,Others,outcome,1792.00
+2025-04-20,1,Food and Rest,outcome,1805.87
+2025-04-21,1,Food and Rest,outcome,776.95
+2025-04-21,1,Smoke,outcome,200.00
+2025-04-22,1,Food and Rest,outcome,1407.54
+2025-04-23,1,Others,outcome,993.00
+2025-04-23,1,Public Transport,outcome,234.00
+2025-04-23,1,Food and Rest,outcome,369.99
+2025-04-23,1,Partner,outcome,1327.30
+2025-04-23,1,Salary,income,30700.00
+2025-04-24,1,Food and Rest,outcome,1777.12
+2025-04-24,1,Salary,income,115557.50
+2025-04-24,1,Smoke,outcome,200.00
+2025-04-24,1,Salary,income,24078.08
+2025-04-24,1,Salary,income,4047.92
+2025-04-25,1,Party,outcome,1500.00
+2025-04-25,1,Food and Rest,outcome,1036.50
+2025-04-26,1,Food and Rest,outcome,3568.79
+2025-04-28,1,Smoke,outcome,200.00
+2025-04-28,1,Others,outcome,1836.00
+2025-04-29,1,Food and Rest,outcome,1423.64
+2025-04-30,1,Food and Rest,outcome,1554.82
+2025-04-30,1,Public Transport,outcome,1027.00
+2025-04-30,1,Others,outcome,990.00
+2025-05-01,1,Public Transport,outcome,679.00
+2025-05-01,1,Food and Rest,outcome,344.98
+2025-05-01,1,Partner,outcome,2500.00
+2025-05-02,1,Partner,outcome,981.64
+2025-05-02,1,Others,outcome,618.00
+2025-05-02,1,Food and Rest,outcome,2198.56
+2025-05-02,1,Public Transport,outcome,1432.00
+2025-05-03,1,Others,outcome,2500.00
+2025-05-03,1,Food and Rest,outcome,1984.98
+2025-05-03,1,Smoke,outcome,200.00
+2025-05-03,1,Transactions,income,6000.00
+2025-05-04,1,Food and Rest,outcome,4688.74
+2025-05-05,1,Food and Rest,outcome,457.99
+2025-05-05,1,Partner,outcome,985.00
+2025-05-05,1,Public Transport,outcome,1177.00
+2025-05-06,1,Salary,income,115557.50
+2025-05-06,1,Others,outcome,3850.00
+2025-05-06,1,Food and Rest,outcome,2343.94
+2025-05-06,1,Transactions,outcome,360.32
+2025-05-07,1,Smoke,outcome,200.00
+2025-05-08,1,Public Transport,outcome,1672.00
+2025-05-08,1,Food and Rest,outcome,1582.27
+2025-05-08,1,Food and Rest,outcome,1576.17
+2025-05-09,1,Public Transport,outcome,140.00
+2025-05-09,1,Food and Rest,outcome,3906.44
+2025-05-10,1,Smoke,outcome,200.00
+2025-05-11,1,Food and Rest,outcome,300.88
+2025-05-12,1,Food and Rest,outcome,1503.00
+2025-05-12,1,Public Transport,outcome,140.00
+2025-05-13,1,Partner,outcome,1000.00
+2025-05-13,1,Smoke,outcome,200.00
+2025-05-13,1,Food and Rest,outcome,339.98
+2025-05-14,1,Public Transport,outcome,3728.26
+2025-05-14,1,Others,outcome,3000.00
+2025-05-14,1,Food and Rest,outcome,339.96
+2025-05-15,1,Food and Rest,outcome,706.89
+2025-05-15,1,Public Transport,outcome,70.00
+2025-05-16,1,Food and Rest,outcome,2904.09
+2025-05-17,1,Food and Rest,outcome,1688.54
+2025-05-17,1,Public Transport,outcome,210.00
+2025-05-17,1,Others,outcome,5150.00
+2025-05-17,1,Salary,income,12000.00
+2025-05-18,1,Food and Rest,outcome,5000.00
+2025-05-18,1,Others,outcome,130.00
+2025-05-18,1,Rent Fee,outcome,55000.00
+2025-05-19,1,Partner,outcome,647.00
+2025-05-21,1,Salary,income,256.80
+2025-05-22,1,Partner,outcome,2559.64
+2025-05-22,1,Food and Rest,outcome,1300.00
+2025-05-22,1,Salary,income,89878.72
+2025-05-23,1,Public Transport,outcome,2640.00
+2025-05-23,1,Food and Rest,outcome,1865.00
+2025-05-23,1,Others,outcome,6760.00
+2025-05-23,1,Food and Rest,outcome,379.87
+2025-05-24,1,Salary,income,29632.85
+2025-05-24,1,Public Transport,outcome,1707.00
+2025-05-24,1,Smoke,outcome,200.00
+2025-05-24,1,Public Transport,outcome,140.00
+2025-05-24,1,Partner,outcome,5500.00
+2025-05-24,1,Food and Rest,outcome,63.22
+2025-05-25,1,Salary,income,2000.00
+2025-05-25,1,Food and Rest,outcome,1931.14
+2025-05-26,1,Others,outcome,400.00
+2025-05-26,1,Transactions,outcome,649.15
+2025-05-27,1,Public Transport,outcome,125.87
+2025-05-27,1,Food and Rest,outcome,819.00
+2025-05-28,1,Public Transport,outcome,243.38
+2025-05-28,1,Food and Rest,outcome,1309.85
+2025-05-28,1,Salary,income,13200.00
+2025-05-29,1,Personal,outcome,1195.00
+2025-05-29,1,Public Transport,outcome,14.98
+2025-05-29,1,Food and Rest,outcome,1887.77
+2025-05-29,1,Smoke,outcome,200.00
+2025-05-30,1,Others,outcome,20550.00
+2025-05-30,1,Public Transport,outcome,2300.00
+2025-05-31,1,Food and Rest,outcome,3705.83
+2025-05-31,1,Public Transport,outcome,148.00
+2025-05-31,1,Others,outcome,2480.00
+2025-05-31,1,Transactions,income,1.00
+2025-06-01,1,Food and Rest,outcome,479.88
+2025-06-01,1,Transactions,outcome,200.47
+2025-06-02,1,Transactions,outcome,5044.00
+2025-06-02,1,Transactions,income,30500.00
+2025-06-02,1,Partner,outcome,3150.00
+2025-06-03,1,Others,outcome,547.00
+2025-06-03,1,Public Transport,outcome,272.00
+2025-06-03,1,Food and Rest,outcome,922.80
+2025-06-04,1,Food and Rest,outcome,967.00
+2025-06-04,1,Public Transport,outcome,41.00
+2025-06-05,1,Food and Rest,outcome,669.94
+2025-06-05,1,Smoke,outcome,200.00
+2025-06-06,1,Food and Rest,outcome,443.74
+2025-06-06,1,Public Transport,outcome,116.00
+2025-06-06,1,Transactions,outcome,670.88
+2025-06-07,1,Public Transport,outcome,148.00
+2025-06-07,1,Food and Rest,outcome,700.00
+2025-06-07,1,Food and Rest,outcome,779.97
+2025-06-07,1,Others,outcome,1893.96
+2025-06-08,1,Food and Rest,outcome,804.99
+2025-06-09,1,Food and Rest,outcome,2890.22
+2025-06-09,1,Salary,income,141237.28
+2025-06-10,1,Public Transport,outcome,305.97
+2025-06-10,1,Food and Rest,outcome,1070.90
+2025-06-10,1,Others,outcome,1006.00
+2025-06-11,1,Food and Rest,outcome,1055.00
+2025-06-12,1,Partner,outcome,23800.00
+2025-06-12,1,Others,outcome,3000.00
+2025-06-12,1,Public Transport,outcome,174.97
+2025-06-12,1,Others,outcome,1624.10
+2025-06-12,1,Food and Rest,outcome,5233.89
+2025-06-13,1,Others,outcome,1024.00
+2025-06-13,1,Food and Rest,outcome,3120.00
+2025-06-13,1,Others,outcome,99.00
+2025-06-13,1,Food and Rest,outcome,1009.98
+2025-06-13,1,Partner,outcome,759.60
+2025-06-14,1,Food and Rest,outcome,2885.46
+2025-06-14,1,Public Transport,outcome,53.97
+2025-06-15,1,Food and Rest,outcome,1315.68
+2025-06-15,1,Public Transport,outcome,148.00
+2025-06-16,1,Rent Fee,outcome,55000.00
+2025-06-16,1,Public Transport,outcome,35.47
+2025-06-16,1,Food and Rest,outcome,1516.85
+2025-06-17,1,Others,outcome,90.00
+2025-06-17,1,Public Transport,outcome,508.97
+2025-06-17,1,Salary,income,12000.00
+2025-06-17,1,Others,outcome,1616.00
+2025-06-17,1,Food and Rest,outcome,644.96
+2025-06-18,1,Public Transport,outcome,93.00
+2025-06-18,1,Food and Rest,outcome,1661.43
+2025-06-18,1,Others,outcome,699.00
+2025-06-18,1,Others,outcome,5000.00
+2025-06-19,1,Public Transport,outcome,172.00
+2025-06-19,1,Food and Rest,outcome,169.90
+2025-06-20,1,Public Transport,outcome,544.00
+2025-06-20,1,Food and Rest,outcome,219.89
+2025-06-21,1,Public Transport,outcome,166.00
+2025-06-21,1,Food and Rest,outcome,1086.98
+2025-06-21,1,Partner,outcome,8200.00
+2025-06-22,1,Partner,outcome,309.00
+2025-06-22,1,Public Transport,outcome,339.00
+2025-06-22,1,Food and Rest,outcome,984.00
+2025-06-22,1,Partner,outcome,5674.99
+2025-06-23,1,Others,outcome,310.00
+2025-06-23,1,Public Transport,outcome,95.00
+2025-06-23,1,Partner,outcome,2332.00
+2025-06-23,1,Food and Rest,outcome,658.44
+2025-06-24,1,Public Transport,outcome,72.00
+2025-06-24,1,Salary,income,97312.06
+2025-06-24,1,Food and Rest,outcome,435.71
+2025-06-24,1,Salary,income,5177.77
+2025-06-25,1,Salary,income,25355.89
+2025-06-25,1,Public Transport,outcome,240.00
+2025-06-25,1,Personal,outcome,2989.00
+2025-06-25,1,Food and Rest,outcome,279.00
+2025-06-25,1,Partner,outcome,4620.00
+2025-06-26,1,Others,outcome,192.00
+2025-06-26,1,Public Transport,outcome,246.00
+2025-06-26,1,Food and Rest,outcome,689.14
+2025-06-27,1,Public Transport,outcome,148.00
+2025-06-27,1,Food and Rest,outcome,1219.77
+2025-06-28,1,Public Transport,outcome,1225.00
+2025-06-28,1,Food and Rest,outcome,686.94
+2025-06-29,1,Party,outcome,4700.00
+2025-06-29,1,Food and Rest,outcome,4454.12
+2025-06-30,1,Food and Rest,outcome,1020.00
+2025-06-30,1,Public Transport,outcome,43.00
+2025-06-30,1,Others,outcome,1990.00
+2025-07-01,1,Food and Rest,outcome,702.00
+2025-07-01,1,Smoke,outcome,200.00
+2025-07-02,1,Others,outcome,2900.00
+2025-07-02,1,Public Transport,outcome,265.00
+2025-07-02,1,Food and Rest,outcome,216.09
+2025-07-03,1,Public Transport,outcome,22.00
+2025-07-03,1,Personal,outcome,1400.00
+2025-07-03,1,Food and Rest,outcome,139.99
+2025-07-04,1,Food and Rest,outcome,3000.00
+2025-07-04,1,Food and Rest,outcome,2193.29
+2025-07-04,1,Public Transport,outcome,82.00
+2025-07-05,1,Food and Rest,outcome,1054.00
+2025-07-05,1,Public Transport,outcome,222.00
+2025-07-06,1,Others,outcome,850.00
+2025-07-06,1,Others,outcome,8000.00
+2025-07-06,1,Food and Rest,outcome,617.31
+2025-07-06,1,Others,outcome,186.60
+2025-07-07,1,Salary,income,8640.00
+2025-07-07,1,Food and Rest,outcome,1293.90
+2025-07-07,1,Others,outcome,249.00
+2025-07-07,1,Public Transport,outcome,19.00
+2025-07-08,1,Public Transport,outcome,335.97
+2025-07-08,1,Salary,income,2880.00
+2025-07-08,1,Food and Rest,outcome,1340.00
+2025-07-08,1,Others,outcome,180.00
+2025-07-09,1,Salary,income,133804.94
+2025-07-09,1,Food and Rest,outcome,121.98
+2025-07-10,1,Food and Rest,outcome,1243.59
+2025-07-10,1,Others,outcome,861.00
+2025-07-11,1,Public Transport,outcome,222.00
+2025-07-11,1,Food and Rest,outcome,2062.23
+2025-07-12,1,Food and Rest,outcome,3019.97
+2025-07-12,1,Others,outcome,1799.00
+2025-07-13,1,Food and Rest,outcome,876.99
+2025-07-13,1,Partner,outcome,2999.00
+2025-07-14,1,Food and Rest,outcome,2897.89
+2025-07-15,1,Public Transport,outcome,188.00
+2025-07-15,1,Car,outcome,60000.00
+2025-07-16,1,Public Transport,outcome,148.00
+2025-07-16,1,Food and Rest,outcome,8786.99
+2025-07-16,1,Transactions,income,30000.00
+2025-07-16,1,Rent Fee,outcome,55000.00
+2025-07-17,1,Public Transport,outcome,119.00
+2025-07-18,1,Public Transport,outcome,477.00
+2025-07-18,1,Food and Rest,outcome,129.00
+2025-07-18,1,Party,outcome,1500.00
+2025-07-19,1,Public Transport,outcome,245.93
+2025-07-19,1,Others,outcome,550.00
+2025-07-19,1,Food and Rest,outcome,2720.59
+2025-07-19,1,Salary,income,12000.00
+2025-07-19,1,Others,outcome,1848.00
+2025-07-20,1,Food and Rest,outcome,590.00
+2025-07-20,1,Public Transport,outcome,415.74
+2025-07-20,1,Food and Rest,outcome,5000.00
+2025-07-20,1,Transactions,outcome,120000.00
+2025-07-21,1,Transactions,income,120000.00
+2025-07-21,1,Others,outcome,713.00
+2025-07-22,1,Others,outcome,300.00
+2025-07-23,1,Others,outcome,3000.00
+2025-07-24,1,Salary,income,110533.48
+2025-07-24,1,Salary,income,4298.84
+2025-07-25,1,Salary,income,25772.68
+2025-07-25,1,Food and Rest,outcome,5000.00
+2025-07-26,1,Others,outcome,1.00
+2025-07-26,1,Car,outcome,1036000.00
+2025-07-30,1,Car,outcome,526000.00
+2025-07-31,1,Transactions,income,3000.00
+2025-08-01,1,Others,outcome,1990.00
+2025-08-03,1,Car,outcome,280000.00
+2025-08-06,1,Transactions,income,500.00
+2025-08-06,1,Partner,outcome,947.00
+2025-08-07,1,Others,outcome,249.00
+2025-08-07,1,Car,outcome,500.00
+2025-08-07,1,Salary,income,118235.52
+2025-08-08,1,Food and Rest,outcome,1975.64
+2025-08-08,1,Public Transport,outcome,148.00
+2025-08-08,1,Partner,outcome,862.00
+2025-08-09,1,Public Transport,outcome,207.00
+2025-08-09,1,Food and Rest,outcome,1878.72
+2025-08-09,1,Personal,outcome,650.00
+2025-08-10,1,Others,outcome,1272.00
+2025-08-10,1,Food and Rest,outcome,1181.97
+2025-08-10,1,Public Transport,outcome,166.00
+2025-08-11,1,Food and Rest,outcome,259.96
+2025-08-12,1,Public Transport,outcome,171.00
+2025-08-12,1,Personal,outcome,1115.00
+2025-08-12,1,Others,outcome,403.00
+2025-08-12,1,Food and Rest,outcome,700.00
+2025-08-13,1,Public Transport,outcome,361.93
+2025-08-13,1,Food and Rest,outcome,1764.99
+2025-08-13,1,Others,outcome,771.00
+2025-08-13,1,Salary,income,49884.00
+2025-08-14,1,Food and Rest,outcome,6000.00
+2025-08-14,1,Food and Rest,outcome,1975.00
+2025-08-14,1,Public Transport,outcome,144.00
+2025-08-15,1,Others,outcome,389.00
+2025-08-15,1,Partner,outcome,600.00
+2025-08-15,1,Food and Rest,outcome,671.97
+2025-08-16,1,Salary,income,12000.00
+2025-08-16,1,Food and Rest,outcome,678.00
+2025-08-16,1,Rent Fee,outcome,64750.00
+2025-08-16,1,Public Transport,outcome,74.00
+2025-08-17,1,Public Transport,outcome,199.00
+2025-08-17,1,Food and Rest,outcome,1330.77
+2025-08-17,1,Others,outcome,2017.00
+2025-08-17,1,Personal,outcome,653.00
+2025-08-18,1,Food and Rest,outcome,819.94
+2025-08-18,1,Public Transport,outcome,29.00
+2025-08-19,1,Public Transport,outcome,170.00
+2025-08-19,1,Transactions,outcome,820.00
+2025-08-19,1,Food and Rest,outcome,723.99
+2025-08-19,1,Others,outcome,2694.00
+2025-08-20,1,Others,outcome,1474.00
+2025-08-20,1,Food and Rest,outcome,679.96
+2025-08-21,1,Public Transport,outcome,43.00
+2025-08-21,1,Personal,outcome,1400.00
+2025-08-21,1,Food and Rest,outcome,1565.34
+2025-08-22,1,Public Transport,outcome,239.00
+2025-08-22,1,Food and Rest,outcome,145.77
+2025-08-23,1,Food and Rest,outcome,533.78
+2025-08-23,1,Personal,outcome,1929.86
+2025-08-24,1,Salary,income,122851.97
+2025-08-24,1,Others,outcome,20000.00
+2025-08-26,1,Partner,outcome,432.00
+2025-08-26,1,Others,outcome,9023.00
+2025-08-28,1,Partner,outcome,5265.00
+2025-08-29,1,Car,outcome,85000.00
+2025-08-30,1,Car Maintenance,outcome,12174.94
+2025-09-01,1,Others,outcome,1490.00
+2025-09-01,1,Salary,income,53698.37
+2025-09-02,1,Partner,outcome,500.00
+2025-09-03,1,Others,outcome,3039.00
+2025-09-04,1,Car Maintenance,outcome,11017.00
+2025-09-04,1,Public Transport,outcome,74.00
+2025-09-04,1,Car Maintenance,outcome,2800.00
+2025-09-04,1,Fuel,outcome,4169.51
+2025-09-04,1,Car Maintenance,outcome,5680.00
+2025-09-05,1,Others,outcome,2800.96
+2025-09-05,1,Food and Rest,outcome,570.00
+2025-09-05,1,Others,outcome,20000.00
+2025-09-05,1,Transactions,outcome,0.72
+2025-09-06,1,Food and Rest,outcome,3102.25
+2025-09-06,1,Partner,outcome,1370.00
+2025-09-06,1,Others,outcome,789.00
+2025-09-06,1,Personal,outcome,3795.00
+2025-09-06,1,Public Transport,outcome,89.00
+2025-09-07,1,Others,outcome,249.00
+2025-09-07,1,Food and Rest,outcome,490.00
+2025-09-07,1,Public Transport,outcome,1328.00
+2025-09-09,1,Salary,income,107525.48
+2025-09-11,1,Others,outcome,299.00
+2025-09-15,1,Food and Rest,outcome,2023.95
+2025-09-15,1,Car Maintenance,outcome,13060.00
+2025-09-15,1,Car Maintenance,outcome,654.00
+2025-09-15,1,Food and Rest,outcome,149.00
+2025-09-15,1,Salary,income,12000.00
+2025-09-15,1,Salary,income,28200.00
+2025-09-15,1,Public Transport,outcome,1506.00
+2025-09-16,1,Rent Fee,outcome,55000.00
+2025-09-16,1,Partner,outcome,500.00
+2025-09-16,1,Car Maintenance,outcome,100.00
+2025-09-16,1,Food and Rest,outcome,5422.79
+2025-09-17,1,Car Maintenance,outcome,67320.00
+2025-09-18,1,Food and Rest,outcome,299.08
+2025-09-18,1,Public Transport,outcome,148.00
+2025-09-19,1,Food and Rest,outcome,959.77
+2025-09-20,1,Food and Rest,outcome,636.83
+2025-09-21,1,Food and Rest,outcome,2761.97
+2025-09-21,1,Public Transport,outcome,148.00
+2025-09-21,1,Car Maintenance,outcome,1096.00
+2025-09-22,1,Transactions,income,5000.00
+2025-09-22,1,Car Maintenance,outcome,3000.00
+2025-09-22,1,Car Maintenance,outcome,2345.00
+2025-09-22,1,Car Maintenance,outcome,1450.00
+2025-09-22,1,Food and Rest,outcome,399.96
+2025-09-23,1,Car,outcome,85000.00
+2025-09-23,1,Car Maintenance,outcome,730.00
+2025-09-23,1,Food and Rest,outcome,3836.79
+2025-09-23,1,Car Maintenance,outcome,100.00
+2025-09-23,1,Personal,outcome,22000.00
+2025-09-24,1,Salary,income,61583.28
+2025-09-24,1,Fuel,outcome,2730.00
+2025-09-24,1,Partner,outcome,1200.00
+2025-09-24,1,Food and Rest,outcome,650.00
+2025-09-24,1,Salary,income,4016.65
+2025-09-27,1,Others,outcome,40.00
+2025-09-27,1,Food and Rest,outcome,1476.92
+2025-09-27,1,Car Maintenance,outcome,500.00
+2025-09-28,1,Food and Rest,outcome,5000.00
+2025-09-28,1,Partner,outcome,7600.00
+2025-09-29,1,Food and Rest,outcome,5000.00
+2025-09-29,1,Partner,outcome,571.00
+2025-09-30,1,Others,outcome,1000.00
+2025-10-03,1,Car Maintenance,outcome,800.00
+2025-10-05,1,Others,outcome,108.00
+2025-10-05,1,Partner,outcome,525.00
+2025-10-06,1,Food and Rest,outcome,3800.00
+2025-10-08,1,Others,outcome,249.00
+2025-10-09,1,Car Maintenance,outcome,373.00
+2025-10-09,1,Others,outcome,2918.00
+2025-10-09,1,Salary,income,112901.50
+2025-10-09,1,Partner,outcome,3804.65
+2025-10-09,1,Personal,outcome,4000.00
+2025-10-10,1,Partner,outcome,12120.00
+2025-10-10,1,Food and Rest,outcome,144.99
+2025-10-11,1,Partner,outcome,89.00
+2025-10-11,1,Food and Rest,outcome,135.00
+2025-10-11,1,Food and Rest,outcome,5245.69
+2025-10-11,1,Car Maintenance,outcome,100.00
+2025-10-11,1,Fuel,outcome,2065.00
+2025-10-12,1,Personal,outcome,4701.00
+2025-10-13,1,Car Maintenance,outcome,20330.00
+2025-10-13,1,Food and Rest,outcome,624.16
+2025-10-13,1,Car Maintenance,outcome,26740.00
+2025-10-13,1,Salary,income,25000.00
+2025-10-13,1,Car Maintenance,outcome,783.00
+2025-10-14,1,Salary,income,27749.02
+2025-10-14,1,Car Maintenance,outcome,562.50
+2025-10-14,1,Personal,outcome,4608.00
+2025-10-15,1,Food and Rest,outcome,552.94
+2025-10-16,1,Rent Fee,outcome,55000.00
+2025-10-16,1,Food and Rest,outcome,2950.92
+2025-10-16,1,Partner,outcome,66.39
+2025-10-16,1,Public Transport,outcome,176.94
+2025-10-17,1,Salary,income,12000.00
+2025-10-17,1,Partner,outcome,3678.00
+2025-10-17,1,Others,outcome,3000.00
+2025-10-17,1,Car Maintenance,outcome,40.00
+2025-10-17,1,Fuel,outcome,2074.00
+2025-10-17,1,Food and Rest,outcome,209.98
+2025-10-18,1,Food and Rest,outcome,1000.00
+2025-10-18,1,Others,outcome,225.00
+2025-10-18,1,Food and Rest,outcome,251.96
+2025-10-19,1,Food and Rest,outcome,716.00
+2025-10-19,1,Partner,outcome,1000.00
+2025-10-20,1,Food and Rest,outcome,587.00
+2025-10-21,1,Food and Rest,outcome,4440.95
+2025-10-21,1,Car Maintenance,outcome,100.00
+2025-10-21,1,Car Maintenance,outcome,690.00
+2025-10-22,1,Food and Rest,outcome,838.00
+2025-10-22,1,Public Transport,outcome,1.00
+2025-10-23,1,Others,outcome,1181.00
+2025-10-23,1,Personal,outcome,31140.00
+2025-10-23,1,Salary,income,107992.48
+2025-10-23,1,Food and Rest,outcome,920.96
+2025-10-24,1,Salary,income,2637.60
+2025-10-24,1,Food and Rest,outcome,468.95
+2025-10-25,1,Fuel,outcome,7940.00
+2025-10-25,1,Car Maintenance,outcome,360.00
+2025-10-25,1,Food and Rest,outcome,220.00
+2025-10-25,1,Food and Rest,outcome,294.00
+2025-10-26,1,Personal,outcome,1000.00
+2025-10-26,1,Others,outcome,221.00
+2025-10-27,1,Food and Rest,outcome,861.98
+2025-10-28,1,Partner,outcome,2677.00
+2025-10-28,1,Transactions,income,211.72
+2025-10-28,3,Transactions,outcome,400.00
+2025-10-28,1,Transactions,income,400.00
+2025-10-29,1,Car,outcome,85000.00
+2025-10-29,1,Personal,outcome,5000.00
+2025-10-29,1,Food and Rest,outcome,290.00
+2025-10-30,1,Car Maintenance,outcome,250.00
+2025-10-30,1,Food and Rest,outcome,283.98
+2025-10-31,1,Personal,outcome,6250.00
+2025-11-01,1,Food and Rest,outcome,754.92
+2025-11-01,1,Partner,outcome,500.00
+2025-11-02,1,Car Maintenance,outcome,2812.00
+2025-11-02,1,Others,outcome,279.00
+2025-11-03,1,Fuel,outcome,4792.00
+2025-11-03,1,Car Maintenance,outcome,360.00
+2025-11-03,1,Partner,outcome,3186.00
+2025-11-03,1,Food and Rest,outcome,239.97
+2025-11-04,1,Food and Rest,outcome,5945.77
+2025-11-06,1,Others,outcome,2120.00
+2025-11-06,1,Party,outcome,48.78
+2025-11-07,1,Food and Rest,outcome,1220.21
+2025-11-07,1,Car Maintenance,outcome,1623.00
+2025-11-08,1,Others,outcome,249.00
+2025-11-08,1,Fuel,outcome,2095.00
+2025-11-08,1,Food and Rest,outcome,309.00
+2025-11-09,1,Others,outcome,1038.00
+2025-11-09,1,Others,outcome,1000.00
+2025-11-09,1,Salary,income,117810.52
+2025-11-09,1,Personal,outcome,3920.00
+2025-11-10,1,Car Maintenance,outcome,100.00
+2025-11-10,1,Transactions,income,10000.00
+2025-11-10,1,Food and Rest,outcome,639.00
+2025-11-11,1,Partner,outcome,1000.00
+2025-11-11,1,Car Maintenance,outcome,200.00
+2025-11-12,1,Food and Rest,outcome,249.99
+2025-11-12,1,Personal,outcome,5000.00
+2025-11-13,1,Partner,outcome,239.00
+2025-11-13,1,Food and Rest,outcome,1509.58
+2025-11-13,1,Others,outcome,265.00
+2025-11-14,1,Others,outcome,478.00
+2025-11-14,1,Partner,outcome,239.00
+2025-11-14,1,Food and Rest,outcome,504.85
+2025-11-14,1,Others,outcome,485.99
+2025-11-15,1,Food and Rest,outcome,10846.83
+2025-11-15,1,Car Maintenance,outcome,517.00
+2025-11-16,1,Salary,income,12984.89
+2025-11-16,1,Rent Fee,outcome,62823.00
+2025-11-17,1,Salary,income,33000.00
+2025-11-18,1,Others,outcome,3000.00
+2025-11-18,1,Partner,outcome,525.00
+2025-11-20,1,Car,outcome,85000.00
+2025-11-21,1,Partner,outcome,1000.00
+2025-11-22,1,Car Maintenance,outcome,1125.00
+2025-11-22,1,Others,outcome,564.00
+2025-11-22,1,Partner,outcome,3579.00
+2025-11-23,1,Partner,outcome,16595.40
+2025-11-24,1,Salary,income,2575.40
+2025-11-24,1,Salary,income,106959.69
+2025-11-24,1,Car Maintenance,outcome,1101.00
+2025-11-26,1,Others,outcome,195.00
+2025-11-27,1,Others,outcome,571.00
+2025-11-27,1,Partner,outcome,500.00
+2025-11-27,1,Others,outcome,3000.00
+2025-11-28,1,Food and Rest,outcome,5282.05
+2025-11-28,1,Others,outcome,215.00
+2025-12-01,1,Car Maintenance,outcome,704.00
+2025-12-03,1,Partner,outcome,2728.83
+2025-12-03,1,Education,outcome,2500.00
+2025-12-04,1,Food and Rest,outcome,2599.99
+2025-12-04,1,Partner,outcome,3415.00
+2025-12-04,1,Car Maintenance,outcome,5000.00
+2025-12-05,1,Food and Rest,outcome,1281.69
+2025-12-06,1,Others,outcome,1168.00
+2025-12-06,1,Partner,outcome,239.00
+2025-12-06,1,Food and Rest,outcome,4905.41
+2025-12-06,1,Car Maintenance,outcome,2136.00
+2025-12-06,1,Others,outcome,1520.00
+2025-12-07,1,Car Maintenance,outcome,2750.00
+2025-12-07,1,Car Maintenance,outcome,100.00
+2025-12-07,1,Transactions,outcome,1499.98
+2025-12-08,1,Car Maintenance,outcome,100.00
+2025-12-08,1,Others,outcome,1090.00
+2025-12-08,1,Others,outcome,9500.00
+2025-12-09,1,Others,outcome,249.00
+2025-12-09,1,Food and Rest,outcome,446.87
+2025-12-09,1,Salary,income,118843.31
+2025-12-10,1,Food and Rest,outcome,204.97
+2025-12-10,1,Others,outcome,1000.00
+2025-12-11,1,Food and Rest,outcome,2007.99
+2025-12-12,1,Fuel,outcome,4018.60
+2025-12-13,1,Food and Rest,outcome,1149.93
+2025-12-13,1,Personal,outcome,31140.00
+2025-12-13,1,Transactions,outcome,900.00
+2025-12-14,1,Food and Rest,outcome,1129.95
+2025-12-14,1,Car Maintenance,outcome,300.00
+2025-12-14,1,Food and Rest,outcome,274.88
+2025-12-15,1,Food and Rest,outcome,4763.04
+2025-12-15,1,Partner,outcome,480.00
+2025-12-16,1,Salary,income,12000.00
+2025-12-16,1,Rent Fee,outcome,55000.00
+2025-12-16,1,Food and Rest,outcome,438.00
+2025-12-16,1,Salary,income,45700.00
+2025-12-17,1,Partner,outcome,986.00
+2025-12-17,1,Others,outcome,7686.00
+2025-12-17,1,Food and Rest,outcome,1040.00
+2025-12-18,1,Food and Rest,outcome,1095.00
+2025-12-18,1,Public Transport,outcome,74.00
+2025-12-19,2,Public Transport,outcome,150.00
+2025-12-19,1,Public Transport,outcome,1541.00
+2025-12-20,1,Food and Rest,outcome,949.79
+2025-12-20,1,Others,outcome,1532.00
+2025-12-21,1,Car Maintenance,outcome,100.00
+2025-12-21,1,Food and Rest,outcome,5875.53
+2025-12-21,1,Others,outcome,218.00
+2025-12-22,1,Fuel,outcome,2128.00
+2025-12-22,1,Food and Rest,outcome,312.97
+2025-12-22,1,Others,outcome,1370.00
+2025-12-23,1,Food and Rest,outcome,1098.96
+2025-12-23,1,Others,outcome,1322.00
+2025-12-24,1,Food and Rest,outcome,598.68
+2025-12-24,1,Partner,outcome,1530.00
+2025-12-24,1,Salary,income,161767.50
+2025-12-24,1,Public Transport,outcome,74.00
+2025-12-24,1,Salary,income,2718.53
+2025-12-25,1,Public Transport,outcome,74.00
+2025-12-25,1,Others,outcome,1967.00
+2025-12-25,1,Food and Rest,outcome,1531.00
+2025-12-26,1,Others,outcome,409.00
+2025-12-26,1,Food and Rest,outcome,1025.85
+2025-12-27,1,Food and Rest,outcome,6295.19
+2025-12-27,1,Personal,outcome,279.00
+2025-12-27,1,Others,outcome,1755.00
+2025-12-28,1,Food and Rest,outcome,82.99
+2025-12-28,1,Partner,outcome,13980.00
+2025-12-28,1,Transactions,outcome,5000.00
+2025-12-29,1,Personal,outcome,1600.00
+2025-12-29,1,Others,outcome,3955.00
+2025-12-29,1,Food and Rest,outcome,2906.87
+2025-12-29,1,Car,outcome,100000.00
+2025-12-29,1,Salary,income,693349.00
+2025-12-30,1,Others,outcome,21.70
+2025-12-30,1,Food and Rest,outcome,4060.08
+2025-12-31,1,Food and Rest,outcome,299.98
+2025-12-31,3,Salary,income,196.00
+2025-12-31,1,Salary,income,112901.50
+2026-01-01,1,Others,outcome,217.00
+2026-01-01,1,Partner,outcome,2154.94
+2026-01-01,1,Food and Rest,outcome,1203.62
+2026-01-01,1,Others,outcome,89.00
+2026-01-02,1,Fuel,outcome,3454.00
+2026-01-03,1,Others,outcome,340.00
+2026-01-03,1,Food and Rest,outcome,769.97
+2026-01-03,1,Food and Rest,outcome,1741.00
+2026-01-04,1,Food and Rest,outcome,938.97
+2026-01-05,1,Food and Rest,outcome,242.86
+2026-01-05,1,Others,outcome,600.00
+2026-01-05,1,Transactions,outcome,1.00
+2026-01-06,1,Food and Rest,outcome,3189.00
+2026-01-06,1,Transactions,income,9000.00
+2026-01-06,1,Transactions,outcome,600.00
+2026-01-07,1,Food and Rest,outcome,1052.87
+2026-01-07,1,Partner,outcome,1937.00
+2026-01-07,1,Others,outcome,1290.00
+2026-01-08,1,Food and Rest,outcome,697.97
+2026-01-09,1,Others,outcome,402.00
+2026-01-09,1,Food and Rest,outcome,1070.98
+2026-01-10,1,Food and Rest,outcome,2281.00
+2026-01-10,1,Fuel,outcome,2859.00
+2026-01-10,1,Others,outcome,369.00
+2026-01-11,1,Others,outcome,100.00
+2026-01-12,1,Food and Rest,outcome,7000.00
+2026-01-15,1,Car Maintenance,outcome,562.50
+2026-01-15,1,Personal,outcome,31140.00
+2026-01-15,1,Partner,outcome,1500.00
+2026-01-15,1,Public Transport,outcome,397.31
+2026-01-15,1,Salary,income,12000.00
+2026-01-16,1,Rent Fee,outcome,55000.00
+2026-01-16,1,Public Transport,outcome,390.08
+2026-01-17,1,Food and Rest,outcome,2000.00
+2026-01-17,1,Public Transport,outcome,430.07
+2026-01-18,1,Public Transport,outcome,435.25
+2026-01-18,1,Partner,outcome,5231.50
+2026-01-19,1,Transactions,outcome,1000.00
+2026-01-19,1,Partner,outcome,300.00
+2026-01-19,1,Food and Rest,outcome,149.00
+2026-01-19,1,Car Maintenance,outcome,50.00
+2026-01-20,1,Others,outcome,5254.00
+2026-01-20,1,Food and Rest,outcome,535.77
+2026-01-21,1,Food and Rest,outcome,6411.42
+2026-01-21,1,Partner,outcome,2250.00
+2026-01-21,1,Others,outcome,200.00
+2026-01-22,1,Salary,income,61631.26
+2026-01-22,1,Food and Rest,outcome,424.98
+2026-01-22,1,Others,outcome,854.00
+2026-01-22,1,Car,outcome,85000.00
+2026-01-23,1,Food and Rest,outcome,1196.86
+2026-01-23,1,Car Maintenance,outcome,160.00
+2026-01-23,1,Others,outcome,699.00
+2026-01-24,1,Party,outcome,3800.00
+2026-01-24,1,Food and Rest,outcome,545.86
+2026-01-24,1,Salary,income,3631.12
+2026-01-25,1,Food and Rest,outcome,321.80
+2026-01-25,1,Car Maintenance,outcome,1687.50
+2026-01-25,1,Others,outcome,1000.00
+2026-01-25,1,Transactions,income,7.00
+2026-01-26,1,Others,outcome,6000.00
+2026-01-26,1,Party,outcome,3000.00
+2026-01-26,1,Food and Rest,outcome,3250.00
+2026-01-27,1,Food and Rest,outcome,10.00
+2026-01-27,1,Clothes,outcome,5155.00
+2026-01-27,1,Food and Rest,outcome,615.48
+2026-01-28,1,Partner,outcome,720.00
+2026-01-28,1,Food and Rest,outcome,1184.24
+2026-01-28,1,Others,outcome,3.42
+2026-01-29,1,Others,outcome,195.00
+2026-01-29,1,Food and Rest,outcome,550.00
+2026-01-29,1,Car Maintenance,outcome,100.00
+2026-01-29,1,Food and Rest,outcome,564.76
+2026-01-30,1,Food and Rest,outcome,444.00
+2026-01-30,1,Others,outcome,2499.92
+2026-01-30,1,Fuel,outcome,3200.00
+2026-01-31,1,Others,outcome,500.00
+2026-01-31,1,Food and Rest,outcome,277.00
+2026-01-31,1,Transactions,income,1.00
+2026-02-01,1,Food and Rest,outcome,822.86
+2026-02-01,1,Transactions,income,680.00
+2026-02-02,1,Food and Rest,outcome,6547.25
+2026-02-03,1,Food and Rest,outcome,174.99
+2026-02-04,1,Food and Rest,outcome,99.99
+2026-02-04,1,Others,outcome,1800.00
+2026-02-04,1,Car Maintenance,outcome,400.00
+2026-02-05,1,Food and Rest,outcome,730.14
+2026-02-06,1,Food and Rest,outcome,2121.71
+2026-02-06,1,Partner,outcome,399.00
+2026-02-06,1,Car Maintenance,outcome,100.00
+2026-02-07,1,Food and Rest,outcome,634.96
+2026-02-08,1,Food and Rest,outcome,59.99
+2026-02-09,1,Salary,income,169484.74
+2026-02-09,1,Partner,outcome,12300.00
+2026-02-09,1,Others,outcome,575.00
+2026-02-09,1,Food and Rest,outcome,63.99
+2026-02-10,1,Food and Rest,outcome,255.00
+2026-02-10,1,Others,outcome,3100.00
+2026-02-11,1,Food and Rest,outcome,7569.17
+2026-02-12,1,Others,outcome,1721.00
+2026-02-12,1,Others,outcome,790.00
+2026-02-13,1,Food and Rest,outcome,2998.58
+2026-02-13,1,Partner,outcome,900.00
+2026-02-14,1,Food and Rest,outcome,3040.59
+2026-02-14,1,Fuel,outcome,3987.00
+2026-02-15,1,Food and Rest,outcome,400.90
+2026-02-15,1,Personal,outcome,1700.00
+2026-02-16,1,Others,outcome,2400.00
+2026-02-16,1,Transactions,outcome,30.00
+2026-02-16,1,Salary,income,12400.00
+2026-02-17,1,Rent Fee,outcome,66787.00
+2026-02-17,1,Others,outcome,1990.00
+2026-02-18,1,Food and Rest,outcome,349.90
+2026-02-18,1,Smoke,outcome,230.00
+2026-02-19,1,Food and Rest,outcome,409.99
+2026-02-19,1,Others,outcome,31140.00
+2026-02-19,1,Car,outcome,200000.00
+2026-02-20,1,Food and Rest,outcome,2357.79
+2026-02-21,1,Others,outcome,1500.00
+2026-02-21,1,Transactions,outcome,557.44
+2026-02-22,1,Others,outcome,102.21
+2026-02-22,1,Clothes,outcome,4237.40
+2026-02-22,1,Food and Rest,outcome,5914.84
+2026-02-22,1,Car Maintenance,outcome,200.00
+2026-02-22,1,Food and Rest,outcome,551.38
+2026-02-22,1,Personal,outcome,589.40

@@ -1,5 +1,5 @@
 // src/pages/DashboardPage.tsx
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { Dashboard } from "../components/Dashboard";
@@ -35,20 +35,6 @@ export type FormState = {
 
 export type PeriodPreset = "month" | "30d" | "all" | "custom";
 
-// ─── Date helpers ─────────────────────────────────────────────────────────────
-
-function startOfDayMs(iso: string) {
-  const d = new Date(iso);
-  d.setHours(0, 0, 0, 0);
-  return d.getTime();
-}
-
-function endOfDayMs(iso: string) {
-  const d = new Date(iso);
-  d.setHours(23, 59, 59, 999);
-  return d.getTime();
-}
-
 function addDaysISO(baseIso: string, delta: number) {
   const d = new Date(baseIso);
   d.setDate(d.getDate() + delta);
@@ -62,29 +48,18 @@ function firstDayOfCurrentMonthISO() {
   return d.toISOString().slice(0, 10);
 }
 
-function minDateISO(transactions: Transaction[]) {
-  if (!transactions.length) return "1970-01-01";
-  let min = new Date(transactions[0].date).getTime();
-  for (const t of transactions) {
-    const ms = new Date(t.date).getTime();
-    if (ms < min) min = ms;
-  }
-  return new Date(min).toISOString().slice(0, 10);
-}
+type TransactionsRange = { min: string; max: string };
 
-function maxDateISO(transactions: Transaction[]) {
-  if (!transactions.length) return todayISO();
-  let max = new Date(transactions[0].date).getTime();
-  for (const t of transactions) {
-    const ms = new Date(t.date).getTime();
-    if (ms > max) max = ms;
-  }
-  return new Date(max).toISOString().slice(0, 10);
-}
+type DashboardData = {
+  period: { income: number; outcome: number };
+  periodTxCount: number;
+  outcomeByCategory: { category: string; amount: number }[];
+  visibleTx: Transaction[];
+};
 
 // ─── Hook: period filter + date range ────────────────────────────────────────
 
-function usePeriodFilter(transactions: Transaction[]) {
+function usePeriodFilter(range: TransactionsRange | null) {
   const [periodPreset, setPeriodPresetRaw] = useState<PeriodPreset>("30d");
   const [periodFrom, setPeriodFrom] = useState(() => addDaysISO(todayISO(), -29));
   const [periodTo, setPeriodTo] = useState(() => todayISO());
@@ -101,31 +76,21 @@ function usePeriodFilter(transactions: Transaction[]) {
       setPeriodFrom(addDaysISO(today, -29));
       setPeriodTo(today);
     } else if (preset === "all") {
-      const first = minDateISO(transactions);
-      const last = maxDateISO(transactions);
-      setPeriodFrom(first);
-      setPeriodTo(last);
+      if (range) {
+        setPeriodFrom(range.min);
+        setPeriodTo(range.max);
+      }
     }
     // custom — do not override dates
   };
 
   useEffect(() => {
     if (periodPreset !== "all") return;
-    if (!transactions.length) return;
+    if (!range) return;
 
-    const first = minDateISO(transactions);
-    const last = maxDateISO(transactions);
-
-    setPeriodFrom(first);
-    setPeriodTo(last);
-  }, [periodPreset, transactions]);
-
-  const txInPeriod = useMemo(() => {
-    return transactions.filter((t) => {
-      const dt = new Date(t.date).getTime();
-      return dt >= startOfDayMs(periodFrom) && dt <= endOfDayMs(periodTo);
-    });
-  }, [transactions, periodFrom, periodTo]);
+    setPeriodFrom(range.min);
+    setPeriodTo(range.max);
+  }, [periodPreset, range]);
 
   return {
     periodPreset,
@@ -134,54 +99,7 @@ function usePeriodFilter(transactions: Transaction[]) {
     setPeriodFrom,
     periodTo,
     setPeriodTo,
-    txInPeriod,
   };
-}
-
-// ─── Hook: derived KPI / chart metrics ───────────────────────────────────────
-
-function useDerivedMetrics(
-  txInPeriod: Transaction[],
-  filter: "all" | "outcome" | "income"
-) {
-  const period = useMemo(() => {
-    let income = 0;
-    let outcome = 0;
-    for (const t of txInPeriod) {
-      const a = Number(t.amount);
-      if (t.type === "income") income += a;
-      else outcome += a;
-    }
-    return { income, outcome };
-  }, [txInPeriod]);
-
-  const visibleTx = useMemo(() => {
-    return (filter === "all"
-      ? txInPeriod
-      : txInPeriod.filter((t) => t.type === filter)
-    )
-      .slice()
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .slice(0, 10);
-  }, [txInPeriod, filter]);
-
-  const outcomeByCategory = useMemo(() => {
-    const map: Record<string, number> = {};
-    for (const tx of txInPeriod) {
-      if (tx.type !== "outcome") continue;
-      map[tx.category] = (map[tx.category] ?? 0) + Number(tx.amount);
-    }
-    return Object.entries(map)
-      .map(([category, amount]) => ({ category, amount }))
-      .sort((a, b) => b.amount - a.amount);
-  }, [txInPeriod]);
-
-  const totalOutcome = useMemo(
-    () => outcomeByCategory.reduce((sum, item) => sum + item.amount, 0),
-    [outcomeByCategory]
-  );
-
-  return { period, visibleTx, outcomeByCategory, totalOutcome };
 }
 
 // ─── Hook: transactions data + CRUD ──────────────────────────────────────────
@@ -190,9 +108,10 @@ function useTransactions(
   apiFetch: ReturnType<typeof useAuth>["apiFetch"],
   onAuthError: () => void
 ) {
-  const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [summary, setSummary] = useState<Summary | null>(null);
+  const [range, setRange] = useState<TransactionsRange | null>(null);
   const [loading, setLoading] = useState(false);
+  const [revision, setRevision] = useState(0);
 
   const [deleteCandidate, setDeleteCandidate] = useState<Transaction | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -211,25 +130,20 @@ function useTransactions(
   const loadData = async () => {
     setLoading(true);
     try {
-      const [txRes, sumRes] = await Promise.all([
-        apiFetch("/api/transactions?limit=1000&offset=0"), // ✅ важно: явно limit
+      const [sumRes, rangeRes] = await Promise.all([
         apiFetch("/api/summary"),
+        apiFetch("/api/transactions-range"),
       ]);
-  
-      const [txData, sum] = await Promise.all([
-        txRes.json(),
-        sumRes.json(),
-      ]);
-  
-      // ✅ теперь аккуратно достаём items
-      const tx = Array.isArray(txData) ? txData : txData.items;
-  
-      setTransactions(tx ?? []);
+
+      const [sum, nextRange] = await Promise.all([sumRes.json(), rangeRes.json()]);
+
       setSummary(sum);
+      setRange(nextRange);
+      setRevision((current) => current + 1);
     } catch (err) {
       console.error(err);
-      setTransactions([]);
       setSummary(null);
+      setRange(null);
       onAuthError();
     } finally {
       setLoading(false);
@@ -333,9 +247,10 @@ function useTransactions(
   };
 
   return {
-    transactions,
     loading,
     totals,
+    range,
+    revision,
 
     form,
     setForm,
@@ -356,6 +271,83 @@ function useTransactions(
   };
 }
 
+function useDashboardData(
+  apiFetch: ReturnType<typeof useAuth>["apiFetch"],
+  onAuthError: () => void,
+  periodFrom: string,
+  periodTo: string,
+  filter: "all" | "outcome" | "income",
+  revision: number
+) {
+  const [data, setData] = useState<DashboardData>({
+    period: { income: 0, outcome: 0 },
+    periodTxCount: 0,
+    outcomeByCategory: [],
+    visibleTx: [],
+  });
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!periodFrom || !periodTo) return;
+
+    let cancelled = false;
+
+    const load = async () => {
+      setLoading(true);
+      try {
+        const params = new URLSearchParams({
+          from: periodFrom,
+          to: periodTo,
+          filter,
+        });
+
+        const res = await apiFetch(`/api/dashboard?${params.toString()}`);
+        const next = (await res.json()) as DashboardData;
+
+        if (!res.ok) {
+          throw new Error("Failed to load dashboard data");
+        }
+
+        if (!cancelled) {
+          setData(next);
+        }
+      } catch (err) {
+        console.error(err);
+        if (!cancelled) {
+          setData({
+            period: { income: 0, outcome: 0 },
+            periodTxCount: 0,
+            outcomeByCategory: [],
+            visibleTx: [],
+          });
+          onAuthError();
+        }
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+        }
+      }
+    };
+
+    load();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [apiFetch, filter, onAuthError, periodFrom, periodTo, revision]);
+
+  const totalOutcome = useMemo(
+    () => data.outcomeByCategory.reduce((sum, item) => sum + item.amount, 0),
+    [data.outcomeByCategory]
+  );
+
+  return {
+    data,
+    totalOutcome,
+    loading,
+  };
+}
+
 // ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default function DashboardPage() {
@@ -365,18 +357,21 @@ export default function DashboardPage() {
 
   const [filter, setFilter] = useState<"all" | "outcome" | "income">("all");
 
-  const handleLogout = () => {
+  const handleLogout = useCallback(() => {
     logout();
     localStorage.removeItem("token"); // ✅ remove token on logout
     navigate("/auth", { replace: true });
-  };
+  }, [logout, navigate]);
 
-  const handleAuthError = () => navigate("/auth", { replace: true });
+  const handleAuthError = useCallback(() => {
+    navigate("/auth", { replace: true });
+  }, [navigate]);
 
   const {
-    transactions,
     loading,
     totals,
+    range,
+    revision,
 
     form,
     setForm,
@@ -403,13 +398,12 @@ export default function DashboardPage() {
     setPeriodFrom,
     periodTo,
     setPeriodTo,
-    txInPeriod,
-  } = usePeriodFilter(transactions);
+  } = usePeriodFilter(range);
 
-  const { period, visibleTx, outcomeByCategory, totalOutcome } = useDerivedMetrics(
-    txInPeriod,
-    filter
-  );
+  const {
+    data: dashboardData,
+    totalOutcome,
+  } = useDashboardData(apiFetch, handleAuthError, periodFrom, periodTo, filter, revision);
 
   // ✅ Backup CSV (скачать файл)
   const onBackup = async () => {
@@ -443,14 +437,14 @@ export default function DashboardPage() {
     <div className="app">
       <Dashboard
         totals={totals}
-        period={period}
+        period={dashboardData.period}
         cardName={CARD_NAME}
-        outcomeByCategory={outcomeByCategory}
+        outcomeByCategory={dashboardData.outcomeByCategory}
         totalOutcome={totalOutcome}
         filter={filter}
         setFilter={setFilter}
         onBackup={onBackup}
-        visibleTx={visibleTx}
+        visibleTx={dashboardData.visibleTx}
         form={form}
         setForm={setForm}
         onSubmit={handleSubmit}
@@ -466,7 +460,7 @@ export default function DashboardPage() {
         setPeriodFrom={setPeriodFrom}
         periodTo={periodTo}
         setPeriodTo={setPeriodTo}
-        periodTxCount={txInPeriod.length}
+        periodTxCount={dashboardData.periodTxCount}
       />
 
       {deleteCandidate && (

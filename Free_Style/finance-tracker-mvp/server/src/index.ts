@@ -48,6 +48,19 @@ const parseDate = (v: any) => {
   const d = new Date(s);
   return Number.isNaN(d.getTime()) ? null : d;
 };
+
+const parseDateOnly = (v: any) => {
+  const s = toStr(v);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(s)) return null;
+  const d = new Date(`${s}T00:00:00.000Z`);
+  return Number.isNaN(d.getTime()) ? null : d;
+};
+
+const addUtcDays = (date: Date, days: number) => {
+  const next = new Date(date);
+  next.setUTCDate(next.getUTCDate() + days);
+  return next;
+};
   
 
 app.use(
@@ -439,6 +452,98 @@ app.get("/api/summary", authRequired, async (req: AuthRequest, res) => {
   
     res.json({ total, totalsByCard });
   });
+
+app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
+  try {
+    const userId = req.userId!;
+    const from = parseDateOnly(req.query.from);
+    const to = parseDateOnly(req.query.to);
+    const filter = toStr(req.query.filter);
+
+    if (!from || !to) {
+      return res.status(400).json({ error: "from and to are required (YYYY-MM-DD)" });
+    }
+
+    if (to < from) {
+      return res.status(400).json({ error: "to must be greater than or equal to from" });
+    }
+
+    const toExclusive = addUtcDays(to, 1);
+    const periodWhere: Prisma.TransactionWhereInput = {
+      userId,
+      date: {
+        gte: from,
+        lt: toExclusive,
+      },
+    };
+
+    const visibleWhere: Prisma.TransactionWhereInput = {
+      ...periodWhere,
+      ...(filter === "income" || filter === "outcome" ? { type: filter } : {}),
+    };
+
+    const [periodRows, recentRows] = await Promise.all([
+      prisma.transaction.findMany({
+        where: periodWhere,
+        select: {
+          amount: true,
+          category: true,
+          type: true,
+        },
+      }),
+      prisma.transaction.findMany({
+        where: visibleWhere,
+        orderBy: { date: "desc" },
+        take: 10,
+        select: {
+          id: true,
+          date: true,
+          card: true,
+          category: true,
+          type: true,
+          amount: true,
+          createdAt: true,
+        },
+      }),
+    ]);
+
+    let income = 0;
+    let outcome = 0;
+    const outcomeByCategoryMap: Record<string, number> = {};
+
+    for (const row of periodRows) {
+      const amount = Number(row.amount);
+      const isTransfer = row.category === "Transactions";
+
+      if (isTransfer) {
+        continue;
+      }
+
+      if (row.type === "income") {
+        income += amount;
+      } else {
+        outcome += amount;
+        outcomeByCategoryMap[row.category] = (outcomeByCategoryMap[row.category] ?? 0) + amount;
+      }
+    }
+
+    const outcomeByCategory = Object.entries(outcomeByCategoryMap)
+      .map(([category, amount]) => ({ category, amount }))
+      .sort((a, b) => b.amount - a.amount);
+
+    return res.json(
+      jsonSafe({
+        period: { income, outcome },
+        periodTxCount: periodRows.length,
+        outcomeByCategory,
+        visibleTx: recentRows,
+      })
+    );
+  } catch (e) {
+    console.error(e);
+    return res.status(500).json({ error: "Failed to load dashboard data" });
+  }
+});
   
   
 
