@@ -303,6 +303,7 @@ function useDashboardData(
 
         const res = await apiFetch(`/api/dashboard?${params.toString()}`);
         const next = (await res.json()) as DashboardData;
+        console.log('next',next)
 
         if (!res.ok) {
           throw new Error("Failed to load dashboard data");
@@ -405,6 +406,8 @@ export default function DashboardPage() {
     totalOutcome,
   } = useDashboardData(apiFetch, handleAuthError, periodFrom, periodTo, filter, revision);
 
+
+
   // ✅ Backup CSV (скачать файл)
   const onBackup = async () => {
     try {
@@ -462,6 +465,7 @@ export default function DashboardPage() {
         setPeriodTo={setPeriodTo}
         periodTxCount={dashboardData.periodTxCount}
       />
+
 
       {deleteCandidate && (
         <DeleteModal

@@ -322,6 +322,7 @@ export function Dashboard(props: DashboardProps) {
     periodTo,
     setPeriodTo,
   } = props;
+  console.log(period);
 
   const today = new Date().toISOString().slice(0, 10);
   const navigate = useNavigate();
