@@ -300,7 +300,7 @@ JWT_EXPIRES_IN="7d"
 
 ```
 npx prisma generate
-npx prisma migrate dev
+![1774120941768](image/README/1774120941768.png)
 ```
 
 ---

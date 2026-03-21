@@ -63,12 +63,24 @@ const addUtcDays = (date: Date, days: number) => {
 };
   
 
+const allowedOrigins = new Set([
+  "http://localhost:5173",
+  "http://127.0.0.1:5173",
+]);
+
 app.use(
-    cors({
-      origin: "http://localhost:5173", // твой фронт
-      credentials: true,
-    })
-  );
+  cors({
+    origin(origin, callback) {
+      // Allow non-browser tools like curl/Postman and the local Vite dev origins.
+      if (!origin || allowedOrigins.has(origin)) {
+        return callback(null, true);
+      }
+
+      return callback(new Error(`CORS blocked for origin: ${origin}`));
+    },
+    credentials: true,
+  })
+);
   
 app.use(express.json());
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(openapiSpec));

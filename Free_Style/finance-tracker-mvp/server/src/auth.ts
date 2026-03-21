@@ -1,3 +1,4 @@
+import "dotenv/config";
 import jwt, { type Secret } from "jsonwebtoken";
 import type { Request, Response, NextFunction } from "express";
 
