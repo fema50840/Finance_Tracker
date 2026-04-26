@@ -387,6 +387,16 @@ input[type="date"] {
   border-color: rgba(239, 68, 68, 0.32);
 }
 
+.iosToggle.currencyToggle.rub {
+  background: rgba(255, 221, 45, 0.28);
+  border-color: rgba(255, 221, 45, 0.55);
+}
+
+.iosToggle.currencyToggle.eur {
+  background: rgba(59, 130, 246, 0.18);
+  border-color: rgba(59, 130, 246, 0.32);
+}
+
 .iosThumb {
   width: 32px;
   height: 32px;
@@ -401,6 +411,14 @@ input[type="date"] {
 }
 
 .iosToggle.income .iosThumb { transform: translateX(28px); }
+.iosToggle.currencyToggle.eur .iosThumb { transform: translateX(28px); }
+
+.togglePair {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+}
 
 /* =========================
    LIST
@@ -887,6 +905,33 @@ body.authMode .container {
 .chartPanelBody {
   flex: 1;
   min-height: 360px; /* чтобы график не схлопывался */
+}
+
+.exchangeBox {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  padding: 12px;
+  border: 1px solid var(--stroke);
+  border-radius: 16px;
+  background: #fff;
+}
+
+.exchangeValue {
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.exchangeNative {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+  font-weight: 900;
+  white-space: nowrap;
 }
 
 .trashBtn {

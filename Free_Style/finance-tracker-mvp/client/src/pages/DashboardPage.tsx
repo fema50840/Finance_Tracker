@@ -8,7 +8,7 @@ import { EditModal } from "../components/EditModal";
 
 import { useAuth } from "../hooks/useAuth";
 
-import type { Transaction, TxType, Summary } from "../types";
+import type { Currency, ExchangeRate, Transaction, TxType, Summary } from "../types";
 import { todayISO } from "../utils/format";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -17,6 +17,7 @@ const CARDS = [
   { id: 1, name: "Tbank" },
   { id: 2, name: "Sberbank" },
   { id: 3, name: "Alfa-bank" },
+  { id: 4, name: "PLATA" },
 ] as const;
 
 const CARD_NAME: Record<number, string> = Object.fromEntries(
@@ -31,6 +32,7 @@ export type FormState = {
   category: string;
   type: TxType;
   amount: string;
+  currency: Currency;
 };
 
 export type PeriodPreset = "month" | "30d" | "all" | "custom";
@@ -55,6 +57,7 @@ type DashboardData = {
   periodTxCount: number;
   outcomeByCategory: { category: string; amount: number }[];
   visibleTx: Transaction[];
+  exchangeRate?: ExchangeRate;
 };
 
 // ─── Hook: period filter + date range ────────────────────────────────────────
@@ -125,6 +128,7 @@ function useTransactions(
     category: "",
     type: "outcome",
     amount: "",
+    currency: "RUB",
   });
 
   const loadData = async () => {
@@ -244,6 +248,9 @@ function useTransactions(
     c1: summary?.totalsByCard?.[1] ?? 0,
     c2: summary?.totalsByCard?.[2] ?? 0,
     c3: summary?.totalsByCard?.[3] ?? 0,
+    c4: summary?.totalsByCard?.[4] ?? 0,
+    nativeTotals: summary?.nativeTotals ?? { RUB: 0, EUR: 0 },
+    exchangeRate: summary?.exchangeRate ?? null,
   };
 
   return {

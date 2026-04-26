@@ -1,5 +1,5 @@
 import type React from "react";
-import type { FormState, TxType } from "../types";
+import type { Currency, FormState, TxType } from "../types";
 import { getCategoriesForType } from "../constants/categories";
 import { Calendar } from "./icons/Calendar";
 
@@ -7,6 +7,7 @@ const CARDS = [
   { id: 1, name: "Tbank" },
   { id: 2, name: "Sberbank" },
   { id: 3, name: "Alfa-bank" },
+  { id: 4, name: "PLATA" },
 ] as const;
 
 export function TransactionForm(props: {
@@ -80,19 +81,42 @@ export function TransactionForm(props: {
 
       <div>
         <div className="fieldLabel">Type</div>
-        <button
-          type="button"
-          className={`iosToggle ${form.type === "income" ? "income" : "outcome"}`}
-          onClick={() =>
-            setForm({
-              ...form,
-              type: (form.type === "income" ? "outcome" : "income") as TxType,
-            })
-          }
-          aria-label="Toggle type"
-        >
-          <span className="iosThumb">{form.type === "income" ? "I" : "O"}</span>
-        </button>
+        <div className="togglePair">
+          <button
+            type="button"
+            className={`iosToggle ${form.type === "income" ? "income" : "outcome"}`}
+            onClick={() =>
+              setForm({
+                ...form,
+                type: (form.type === "income" ? "outcome" : "income") as TxType,
+              })
+            }
+            aria-label="Toggle type"
+          >
+            <span className="iosThumb">{form.type === "income" ? "I" : "O"}</span>
+          </button>
+          <span className={`typeHint ${form.type === "income" ? "plus" : "minus"}`}>{form.type}</span>
+        </div>
+      </div>
+
+      <div>
+        <div className="fieldLabel">Currency</div>
+        <div className="togglePair">
+          <button
+            type="button"
+            className={`iosToggle currencyToggle ${form.currency === "EUR" ? "eur" : "rub"}`}
+            onClick={() =>
+              setForm({
+                ...form,
+                currency: (form.currency === "RUB" ? "EUR" : "RUB") as Currency,
+              })
+            }
+            aria-label="Toggle currency"
+          >
+            <span className="iosThumb">{form.currency === "RUB" ? "₽" : "€"}</span>
+          </button>
+          <span className="typeHint">{form.currency}</span>
+        </div>
       </div>
 
       <div>

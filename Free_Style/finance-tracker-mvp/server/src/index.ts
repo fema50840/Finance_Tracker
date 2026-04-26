@@ -61,6 +61,114 @@ const addUtcDays = (date: Date, days: number) => {
   next.setUTCDate(next.getUTCDate() + days);
   return next;
 };
+
+type Currency = "RUB" | "EUR";
+
+type ExchangeRate = {
+  base: "EUR";
+  quote: "RUB";
+  rate: number;
+  date: string;
+  requestedDate: string;
+  source: string;
+  isFallback?: boolean;
+};
+
+const CBR_SOURCE = "https://www.cbr.ru/scripts/XML_daily.asp";
+const RATE_CACHE_TTL_MS = 60 * 60 * 1000;
+let exchangeRateCache: { value: ExchangeRate; expiresAt: number } | null = null;
+
+const toCbrDate = (date = new Date()) => {
+  const formatter = new Intl.DateTimeFormat("en-GB", {
+    timeZone: "Europe/Moscow",
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+  return formatter.format(date);
+};
+
+const fromCbrDate = (date: string) => {
+  const [day, month, year] = date.split(".");
+  if (!day || !month || !year) return date;
+  return `${year}-${month}-${day}`;
+};
+
+const fetchEurRubRate = async (): Promise<ExchangeRate> => {
+  const now = Date.now();
+  if (exchangeRateCache && exchangeRateCache.expiresAt > now) {
+    return exchangeRateCache.value;
+  }
+
+  const requestedDate = toCbrDate();
+  const url = `${CBR_SOURCE}?date_req=${encodeURIComponent(requestedDate)}`;
+  const response = await fetch(url, {
+    headers: {
+      "User-Agent": "FinanceTracker/1.0",
+      Accept: "application/xml,text/xml,*/*",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error(`CBR rate request failed: ${response.status}`);
+  }
+
+  const xml = await response.text();
+  const dateMatch = xml.match(/<ValCurs[^>]*Date="([^"]+)"/);
+  const eurMatch = xml.match(/<Valute[^>]*>\s*<NumCode>978<\/NumCode>[\s\S]*?<Value>([^<]+)<\/Value>/);
+
+  if (!eurMatch?.[1]) {
+    throw new Error("CBR EUR rate was not found in response");
+  }
+
+  const rate = Number(eurMatch[1].replace(",", "."));
+  if (!Number.isFinite(rate) || rate <= 0) {
+    throw new Error(`Invalid CBR EUR rate: ${eurMatch[1]}`);
+  }
+
+  const value: ExchangeRate = {
+    base: "EUR",
+    quote: "RUB",
+    rate,
+    date: fromCbrDate(dateMatch?.[1] ?? requestedDate.replace(/\//g, ".")),
+    requestedDate: requestedDate.split("/").reverse().join("-"),
+    source: CBR_SOURCE,
+  };
+
+  exchangeRateCache = {
+    value,
+    expiresAt: now + RATE_CACHE_TTL_MS,
+  };
+
+  return value;
+};
+
+const getEurRubRate = async (): Promise<ExchangeRate> => {
+  try {
+    return await fetchEurRubRate();
+  } catch (e) {
+    console.error(e);
+    if (exchangeRateCache) return exchangeRateCache.value;
+
+    const fallbackRate = Number(process.env.EUR_RUB_FALLBACK_RATE ?? 100);
+    return {
+      base: "EUR",
+      quote: "RUB",
+      rate: Number.isFinite(fallbackRate) && fallbackRate > 0 ? fallbackRate : 100,
+      date: new Date().toISOString().slice(0, 10),
+      requestedDate: new Date().toISOString().slice(0, 10),
+      source: "fallback",
+      isFallback: true,
+    };
+  }
+};
+
+const parseCurrency = (v: unknown): Currency => (v === "EUR" ? "EUR" : "RUB");
+
+const toRubAmount = (amount: Prisma.Decimal | number, currency: Currency, eurRubRate: number) => {
+  const n = Number(amount);
+  return currency === "EUR" ? n * eurRubRate : n;
+};
   
 
 const allowedOrigins = new Set([
@@ -113,6 +221,7 @@ app.get("/api/backup/transactions.csv", authRequired, async (req: AuthRequest, r
         category: true,
         type: true,
         amount: true,
+        currency: true,
         createdAt: true,
         userId: true,
       },
@@ -138,6 +247,7 @@ app.get("/api/backup/transactions.csv", authRequired, async (req: AuthRequest, r
         "category",
         "type",
         "amount",
+        "currency",
         "userId",
         "createdAt",
       ].join(",") + "\n"
@@ -156,6 +266,7 @@ app.get("/api/backup/transactions.csv", authRequired, async (req: AuthRequest, r
         csvEscape(t.category),
         csvEscape(t.type),
         csvEscape(amountStr),
+        csvEscape(t.currency),
         csvEscape(t.userId.toString()),
         csvEscape(toISODateTime(t.createdAt)),
       ].join(",");
@@ -190,6 +301,7 @@ app.post(
         category?: string;
         type?: string;
         amount?: string;
+        currency?: string;
         userId?: string;
         createdAt?: string;
       };
@@ -244,12 +356,13 @@ app.post(
             throw new Error(`Invalid amount: "${row.amount}"`);
           }
           const amount = new Prisma.Decimal(amountStr);
+          const currency = parseCurrency((row.currency || "").trim());
 
           // ✅ Idempotency key: repeated import of same backup won't duplicate
           const importKey =
             row.id && row.createdAt
               ? `backup:${row.id}:${row.createdAt}`
-              : `row:${row.date}|${row.card}|${row.category}|${row.type}|${row.amount}`;
+              : `row:${row.date}|${row.card}|${row.category}|${row.type}|${row.amount}|${currency}`;
 
           data.push({
             userId, // IMPORTANT: ignore userId from CSV, use current logged user
@@ -258,6 +371,7 @@ app.post(
             category,
             type: type as any,
             amount,
+            currency,
             createdAt: createdAt ?? undefined,
             importKey,
           });
@@ -363,6 +477,16 @@ app.get("/health", (req, res) => {
   res.json({ ok: true });
 });
 
+app.get("/api/exchange-rate", authRequired, async (req: AuthRequest, res) => {
+  try {
+    const rate = await getEurRubRate();
+    return res.json(rate);
+  } catch (e) {
+    console.error(e);
+    return res.status(502).json({ error: "Failed to load EUR/RUB exchange rate" });
+  }
+});
+
 app.get("/api/transactions", authRequired, async (req: AuthRequest, res) => {
   try {
     const userId = req.userId!;
@@ -428,6 +552,7 @@ app.get("/api/transactions", authRequired, async (req: AuthRequest, res) => {
           category: true,
           type: true,
           amount: true,
+          currency: true,
           createdAt: true,
         },
       }),
@@ -449,20 +574,33 @@ app.get("/api/transactions", authRequired, async (req: AuthRequest, res) => {
   
 
 app.get("/api/summary", authRequired, async (req: AuthRequest, res) => {
+  try {
+    const exchangeRate = await getEurRubRate();
     const transactions = await prisma.transaction.findMany({
       where: { userId: req.userId! },
     });
   
     let total = 0;
-    const totalsByCard: Record<number, number> = { 1: 0, 2: 0, 3: 0 };
+    const totalsByCard: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0 };
+    const nativeTotals: Record<Currency, number> = { RUB: 0, EUR: 0 };
   
     transactions.forEach((t) => {
-      const value = t.type === "income" ? Number(t.amount) : -Number(t.amount);
+      const currency = parseCurrency(t.currency);
+      const signedNative = t.type === "income" ? Number(t.amount) : -Number(t.amount);
+      const value = t.type === "income"
+        ? toRubAmount(t.amount, currency, exchangeRate.rate)
+        : -toRubAmount(t.amount, currency, exchangeRate.rate);
+
       total += value;
+      nativeTotals[currency] += signedNative;
       totalsByCard[t.card] += value;
     });
   
-    res.json({ total, totalsByCard });
+    res.json({ total, totalsByCard, nativeTotals, exchangeRate });
+  } catch (e) {
+    console.error(e);
+    res.status(502).json({ error: "Failed to load summary exchange rate" });
+  }
   });
 
 app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
@@ -480,6 +618,7 @@ app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
       return res.status(400).json({ error: "to must be greater than or equal to from" });
     }
 
+    const exchangeRate = await getEurRubRate();
     const toExclusive = addUtcDays(to, 1);
     const periodWhere: Prisma.TransactionWhereInput = {
       userId,
@@ -499,6 +638,7 @@ app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
         where: periodWhere,
         select: {
           amount: true,
+          currency: true,
           category: true,
           type: true,
         },
@@ -514,6 +654,7 @@ app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
           category: true,
           type: true,
           amount: true,
+          currency: true,
           createdAt: true,
         },
       }),
@@ -524,7 +665,7 @@ app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
     const outcomeByCategoryMap: Record<string, number> = {};
 
     for (const row of periodRows) {
-      const amount = Number(row.amount);
+      const amount = toRubAmount(row.amount, parseCurrency(row.currency), exchangeRate.rate);
       const isTransfer = row.category === "Transactions";
 
       if (isTransfer) {
@@ -549,6 +690,7 @@ app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
         periodTxCount: periodRows.length,
         outcomeByCategory,
         visibleTx: recentRows,
+        exchangeRate,
       })
     );
   } catch (e) {
@@ -561,10 +703,11 @@ app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
 
 app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
     const { date, card, category, type, amount } = req.body ?? {};
+    const currency = parseCurrency(req.body?.currency);
   
     if (!date) return res.status(400).json({ error: "date is required" });
-    if (![1, 2, 3].includes(Number(card)))
-      return res.status(400).json({ error: "card must be 1, 2, or 3" });
+    if (![1, 2, 3, 4].includes(Number(card)))
+      return res.status(400).json({ error: "card must be 1, 2, 3, or 4" });
     if (!category || typeof category !== "string")
       return res.status(400).json({ error: "category is required" });
     if (type !== "income" && type !== "outcome")
@@ -585,6 +728,7 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
         category,
         type,
         amount: numAmount,
+        currency,
         userId: req.userId!, // ✅ ключевое
       },
     });
@@ -601,11 +745,12 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
         if (!id) return res.status(400).json({ error: "Invalid id" });
   
         const { date, card, category, type, amount } = req.body ?? {};
+        const currency = parseCurrency(req.body?.currency);
   
         if (!date) return res.status(400).json({ error: "date is required" });
   
-        if (![1, 2, 3].includes(Number(card))) {
-          return res.status(400).json({ error: "card must be 1, 2, or 3" });
+        if (![1, 2, 3, 4].includes(Number(card))) {
+          return res.status(400).json({ error: "card must be 1, 2, 3, or 4" });
         }
   
         if (!category || typeof category !== "string") {
@@ -641,6 +786,7 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
             category,
             type,
             amount: numAmount,
+            currency,
           },
         });
   
@@ -678,6 +824,7 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
 
   app.get("/api/balance-series", authRequired, async (req: AuthRequest, res) => {
     try {
+      const exchangeRate = await getEurRubRate();
       const from = typeof req.query.from === "string" ? req.query.from : null;
       const to = typeof req.query.to === "string" ? req.query.to : null;
   
@@ -707,7 +854,10 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
         daily AS (
           SELECT
             date_trunc('day', t."date")::date AS day,
-            SUM(CASE WHEN t."type" = 'income' THEN t."amount" ELSE -t."amount" END) AS delta
+            SUM(
+              CASE WHEN t."type" = 'income' THEN 1 ELSE -1 END
+              * CASE WHEN t."currency"::text = 'EUR' THEN t."amount" * ${exchangeRate.rate} ELSE t."amount" END
+            ) AS delta
           FROM "transactions" t
           WHERE t."userId" = ${req.userId!}
             AND t."date" >= (SELECT d_from FROM bounds)
@@ -716,7 +866,10 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
         ),
         start_balance AS (
           SELECT COALESCE(
-            SUM(CASE WHEN t."type" = 'income' THEN t."amount" ELSE -t."amount" END),
+            SUM(
+              CASE WHEN t."type" = 'income' THEN 1 ELSE -1 END
+              * CASE WHEN t."currency"::text = 'EUR' THEN t."amount" * ${exchangeRate.rate} ELSE t."amount" END
+            ),
             0
           ) AS start
           FROM "transactions" t

@@ -1,5 +1,5 @@
 import type { Transaction } from "../types";
-import { formatDate } from "../utils/format";
+import { currencyMoney, formatDate } from "../utils/format";
 
 export function DeleteModal(props: {
   candidate: Transaction;
@@ -53,7 +53,7 @@ export function DeleteModal(props: {
               }`}
             >
               {candidate.type === "income" ? "+" : "-"}
-              {Number(candidate.amount).toFixed(2)}
+              {currencyMoney(Number(candidate.amount), candidate.currency ?? "RUB")}
             </span>
           </div>
         </div>

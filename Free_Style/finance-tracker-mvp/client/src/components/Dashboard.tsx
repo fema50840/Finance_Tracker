@@ -7,8 +7,8 @@ import { TransactionForm } from "../components/TransactionForm";
 import { TransactionList } from "../components/TransactionList";
 import { WaterfallChart } from "../components/WaterfallChart";
 
-import type { Transaction, TxType } from "../types";
-import { money } from "../utils/format";
+import type { Currency, ExchangeRate, Transaction, TxType } from "../types";
+import { currencyMoney, money } from "../utils/format";
 import { Calendar } from "../components/icons/Calendar";
 import { Gear } from "../components/icons/Gear";
 
@@ -20,13 +20,22 @@ export type FormState = {
   category: string;
   type: TxType;
   amount: string;
+  currency: Currency;
 };
 
 type PeriodPreset = "month" | "30d" | "all" | "custom";
 type FilterType = "all" | "outcome" | "income";
 
 export interface DashboardProps {
-  totals: { total: number; c1: number; c2: number; c3: number };
+  totals: {
+    total: number;
+    c1: number;
+    c2: number;
+    c3: number;
+    c4: number;
+    nativeTotals: Record<Currency, number>;
+    exchangeRate: ExchangeRate | null;
+  };
   period: { income: number; outcome: number };
   cardName: Record<number, string>;
 
@@ -283,6 +292,37 @@ function KpiCards({ income, outcome }: { income: number; outcome: number }) {
       <div className="kpiCard">
         <div className="kpiValue">{money(income)} ₽</div>
         <div className="kpiLabel">Income per period</div>
+      </div>
+    </div>
+  );
+}
+
+function ExchangeRateBox({
+  exchangeRate,
+  nativeTotals,
+}: {
+  exchangeRate: ExchangeRate | null;
+  nativeTotals: Record<Currency, number>;
+}) {
+  return (
+    <div className="exchangeBox">
+      <div>
+        <div className="rightTitle">EUR/RUB</div>
+        <div className="exchangeValue">
+          {exchangeRate ? `1 € = ${money(exchangeRate.rate)} ₽` : "Loading..."}
+        </div>
+        <div className="rowSub">
+          {exchangeRate
+            ? exchangeRate.isFallback
+              ? `Fallback rate: ${exchangeRate.date}`
+              : `CBR rate date: ${exchangeRate.date}`
+            : "Waiting for live CBR rate"}
+        </div>
+      </div>
+
+      <div className="exchangeNative">
+        <span>{currencyMoney(nativeTotals.RUB, "RUB")}</span>
+        <span>{currencyMoney(nativeTotals.EUR, "EUR")}</span>
       </div>
     </div>
   );
@@ -546,6 +586,7 @@ export function Dashboard(props: DashboardProps) {
           <CardRow icon="▦" iconClass="blue" title={cardName[1]} subtitle="Card 1 Amount" value={money(totals.c1)} />
           <CardRow icon="▦" iconClass="blue" title={cardName[2]} subtitle="Card 2 Amount" value={money(totals.c2)} />
           <CardRow icon="▦" iconClass="blue" title={cardName[3]} subtitle="Card 3 Amount" value={money(totals.c3)} />
+          <CardRow icon="€" iconClass="blue" title={cardName[4]} subtitle="PLATA Amount in RUB" value={money(totals.c4)} />
 
           <KpiCards income={period.income} outcome={period.outcome} />
         </div>
@@ -586,6 +627,8 @@ export function Dashboard(props: DashboardProps) {
           <div className="chartPanelBody">
             <WaterfallChart data={outcomeByCategory} total={totalOutcome} />
           </div>
+
+          <ExchangeRateBox exchangeRate={totals.exchangeRate} nativeTotals={totals.nativeTotals} />
         </div>
       </div>
     </div>

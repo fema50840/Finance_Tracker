@@ -2,8 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 
 import { useAuth } from "../hooks/useAuth";
-import type { Transaction } from "../types";
-import { formatDate, money, todayISO } from "../utils/format";
+import type { Currency, Transaction } from "../types";
+import { currencyMoney, formatDate, todayISO } from "../utils/format";
 import { qsGet, qsGetNumber, qsSet } from "../utils/query";
 import { EditIcon } from "../components/icons/EditIcon";
 import { TrashIcon } from "../components/icons/TrashIcon";
@@ -17,6 +17,7 @@ const CARDS = [
   { id: 1, name: "Tbank" },
   { id: 2, name: "Sberbank" },
   { id: 3, name: "Alfa-bank" },
+  { id: 4, name: "PLATA" },
 ] as const;
 
 const CARD_NAME: Record<number, string> = Object.fromEntries(
@@ -29,6 +30,7 @@ type EditFormState = {
   category: string;
   type: "income" | "outcome";
   amount: string;
+  currency: Currency;
 };
 
 type TxListResponse = {
@@ -185,6 +187,7 @@ export default function TransactionsPage() {
         category: next.category,
         type: next.type,
         amount: next.amount,
+        currency: next.currency,
       };
 
       const r = await apiFetch(`/api/transactions/${editCandidate.id}`, {
@@ -277,6 +280,7 @@ export default function TransactionsPage() {
                 <option value={1}>Tbank</option>
                 <option value={2}>Sberbank</option>
                 <option value={3}>Alfa-bank</option>
+                <option value={4}>PLATA</option>
               </select>
             </div>
 
@@ -374,6 +378,8 @@ export default function TransactionsPage() {
                         <span>{formatDate(t.date)}</span>
                         <span>•</span>
                         <span className="pill">{t.type}</span>
+                        <span>•</span>
+                        <span className="pill">{t.currency ?? "RUB"}</span>
                       </div>
                     </div>
                   </div>
@@ -381,7 +387,7 @@ export default function TransactionsPage() {
                   <div className="txRight">
                     <div className={`amount ${isIncome ? "plus" : "minus"}`}>
                       {isIncome ? "+" : "-"}
-                      {money(a)}
+                      {currencyMoney(a, t.currency ?? "RUB")}
                     </div>
 
                     <button type="button" className="iconBtn" onClick={() => setEditCandidate(t)} title="Edit" aria-label="Edit">

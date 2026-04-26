@@ -1,6 +1,6 @@
 // src/components/TransactionList.tsx
 import type { Transaction } from "../types";
-import { formatDate, money } from "../utils/format";
+import { currencyMoney, formatDate } from "../utils/format";
 import { TrashIcon } from "./icons/TrashIcon";
 import { EditIcon } from "./icons/EditIcon";
 
@@ -31,6 +31,8 @@ export function TransactionList(props: {
                   <span>{formatDate(t.date)}</span>
                   <span>•</span>
                   <span className="pill">{t.type}</span>
+                  <span>•</span>
+                  <span className="pill">{t.currency ?? "RUB"}</span>
                 </div>
               </div>
             </div>
@@ -38,7 +40,7 @@ export function TransactionList(props: {
             <div className="txRight">
               <div className={`amount ${isIncome ? "plus" : "minus"}`}>
                 {isIncome ? "+" : "-"}
-                {money(a)}
+                {currencyMoney(a, t.currency ?? "RUB")}
               </div>
 
               {/* ✅ edit */}

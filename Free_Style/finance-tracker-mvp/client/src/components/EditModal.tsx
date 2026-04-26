@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
-import type { Transaction, TxType } from "../types";
-import { money } from "../utils/format";
+import type { Currency, Transaction, TxType } from "../types";
+import { currencyMoney } from "../utils/format";
 import { getCategoriesForType } from "../constants/categories";
 import { Calendar } from "./icons/Calendar";
 
@@ -8,6 +8,7 @@ const CARDS = [
   { id: 1, name: "Tbank" },
   { id: 2, name: "Sberbank" },
   { id: 3, name: "Alfa-bank" },
+  { id: 4, name: "PLATA" },
 ] as const;
 
 type FormState = {
@@ -16,6 +17,7 @@ type FormState = {
   category: string;
   type: TxType;
   amount: string;
+  currency: Currency;
 };
 
 export function EditModal(props: {
@@ -33,6 +35,7 @@ export function EditModal(props: {
     category: candidate.category,
     type: candidate.type,
     amount: String(candidate.amount),
+    currency: candidate.currency ?? "RUB",
   });
 
   const categories = useMemo(() => getCategoriesForType(form.type), [form.type]);
@@ -45,7 +48,7 @@ export function EditModal(props: {
 
   const summary = `${cardName[candidate.card] ?? `Card ${candidate.card}`} • ${
     candidate.type
-  } • ${money(Number(candidate.amount))}`;
+  } • ${currencyMoney(Number(candidate.amount), candidate.currency ?? "RUB")}`;
 
   return (
     <div className="modalOverlay" onMouseDown={onClose}>
@@ -141,6 +144,29 @@ export function EditModal(props: {
               >
                 {form.type}
               </span>
+            </div>
+          </div>
+
+          <div className="modalRow modalRowForm">
+            <span className="modalLabel">Currency</span>
+            <div className="modalControl">
+              <button
+                type="button"
+                className={`iosToggle currencyToggle ${form.currency === "EUR" ? "eur" : "rub"}`}
+                onClick={() =>
+                  setForm((p) => ({
+                    ...p,
+                    currency: (p.currency === "RUB" ? "EUR" : "RUB") as Currency,
+                  }))
+                }
+                aria-label="Toggle currency"
+              >
+                <span className="iosThumb">
+                  {form.currency === "RUB" ? "₽" : "€"}
+                </span>
+              </button>
+
+              <span className="typeHint">{form.currency}</span>
             </div>
           </div>
 

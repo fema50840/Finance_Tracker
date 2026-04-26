@@ -12,6 +12,11 @@ enum TransactionType {
   outcome
 }
 
+enum Currency {
+  RUB
+  EUR
+}
+
 model User {
   id           BigInt        @id @default(autoincrement())
   email        String        @unique
@@ -31,6 +36,7 @@ model Transaction {
   category  String
   type      TransactionType  // <= ВАЖНО: было String
   amount    Decimal          @db.Decimal(18, 2)
+  currency  Currency         @default(RUB)
   importKey String? @db.VarChar(120)
 
   userId    BigInt
