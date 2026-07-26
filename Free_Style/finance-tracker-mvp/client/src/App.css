@@ -178,6 +178,16 @@ body {
 
 .cardRow + .cardRow { margin-top: 10px; }
 
+.cardRow.collapsed {
+  min-height: 48px;
+  padding-block: 6px;
+}
+
+.cardRow.collapsed .icon {
+  width: 34px;
+  height: 34px;
+}
+
 .rowLeft {
   display: flex;
   align-items: center;
@@ -216,6 +226,49 @@ body {
   font-weight: 900;
   text-align: right;
   white-space: nowrap;
+}
+
+.cardRowEnd {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+}
+
+.amountStack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.secondaryBalance {
+  padding-right: 2px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.collapseBtn {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.collapseBtn:hover {
+  color: #111827;
+  background: rgba(17, 24, 39, 0.06);
 }
 
 .calendarStub {

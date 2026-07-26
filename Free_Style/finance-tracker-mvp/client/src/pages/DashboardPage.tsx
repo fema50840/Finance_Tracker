@@ -9,20 +9,10 @@ import { EditModal } from "../components/EditModal";
 import { useAuth } from "../hooks/useAuth";
 
 import type { Currency, ExchangeRate, Transaction, TxType, Summary } from "../types";
+import { CARD_NAME } from "../constants/cards";
 import { todayISO } from "../utils/format";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
-
-const CARDS = [
-  { id: 1, name: "Tbank" },
-  { id: 2, name: "Sberbank" },
-  { id: 3, name: "Alfa-bank" },
-  { id: 4, name: "PLATA" },
-] as const;
-
-const CARD_NAME: Record<number, string> = Object.fromEntries(
-  CARDS.map((c) => [c.id, c.name])
-);
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -249,7 +239,9 @@ function useTransactions(
     c2: summary?.totalsByCard?.[2] ?? 0,
     c3: summary?.totalsByCard?.[3] ?? 0,
     c4: summary?.totalsByCard?.[4] ?? 0,
+    c5: summary?.totalsByCard?.[5] ?? 0,
     nativeTotals: summary?.nativeTotals ?? { RUB: 0, EUR: 0 },
+    nativeTotalsByCard: summary?.nativeTotalsByCard ?? {},
     exchangeRate: summary?.exchangeRate ?? null,
   };
 

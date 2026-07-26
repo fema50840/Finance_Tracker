@@ -15,6 +15,7 @@ export type Summary = {
   total: number;
   totalsByCard: Record<number, number>;
   nativeTotals: Record<Currency, number>;
+  nativeTotalsByCard: Record<number, Record<Currency, number>>;
   exchangeRate: ExchangeRate;
 };
 

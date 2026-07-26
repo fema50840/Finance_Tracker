@@ -152,7 +152,7 @@ export const openapiSpec = {
           properties: {
             id: { type: "string" },
             date: { type: "string", format: "date-time" },
-            card: { type: "integer", enum: [1, 2, 3, 4] },
+            card: { type: "integer", enum: [1, 2, 3, 4, 5] },
             category: { type: "string" },
             type: { type: "string", enum: ["income", "outcome"] },
             amount: { type: "string" },
@@ -166,7 +166,7 @@ export const openapiSpec = {
           type: "object",
           properties: {
             date: { type: "string", description: "YYYY-MM-DD" },
-            card: { type: "integer", enum: [1, 2, 3, 4] },
+            card: { type: "integer", enum: [1, 2, 3, 4, 5] },
             category: { type: "string" },
             type: { type: "string", enum: ["income", "outcome"] },
             amount: { type: "string", description: "decimal as string (e.g. 12.34)" },
@@ -182,6 +182,17 @@ export const openapiSpec = {
             totalsByCard: {
               type: "object",
               additionalProperties: { type: "number" },
+            },
+            nativeTotals: {
+              type: "object",
+              additionalProperties: { type: "number" },
+            },
+            nativeTotalsByCard: {
+              type: "object",
+              additionalProperties: {
+                type: "object",
+                additionalProperties: { type: "number" },
+              },
             },
           },
           required: ["total", "totalsByCard"],

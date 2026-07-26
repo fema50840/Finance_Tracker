@@ -1,14 +1,8 @@
 import type React from "react";
 import type { Currency, FormState, TxType } from "../types";
 import { getCategoriesForType } from "../constants/categories";
+import { CARDS, getCardCurrency } from "../constants/cards";
 import { Calendar } from "./icons/Calendar";
-
-const CARDS = [
-  { id: 1, name: "Tbank" },
-  { id: 2, name: "Sberbank" },
-  { id: 3, name: "Alfa-bank" },
-  { id: 4, name: "PLATA" },
-] as const;
 
 export function TransactionForm(props: {
   form: FormState;
@@ -50,7 +44,10 @@ export function TransactionForm(props: {
         <select
           className="input"
           value={form.card}
-          onChange={(e) => setForm({ ...form, card: Number(e.target.value) })}
+          onChange={(e) => {
+            const card = Number(e.target.value);
+            setForm({ ...form, card, currency: getCardCurrency(card) });
+          }}
         >
           {CARDS.map((c) => (
             <option key={c.id} value={c.id}>

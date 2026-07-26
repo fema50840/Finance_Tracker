@@ -5,6 +5,7 @@ import { useAuth } from "../hooks/useAuth";
 import type { Currency, Transaction } from "../types";
 import { currencyMoney, formatDate, todayISO } from "../utils/format";
 import { qsGet, qsGetNumber, qsSet } from "../utils/query";
+import { CARDS, CARD_NAME } from "../constants/cards";
 import { EditIcon } from "../components/icons/EditIcon";
 import { TrashIcon } from "../components/icons/TrashIcon";
 
@@ -12,17 +13,6 @@ import { DeleteModal } from "../components/DeleteModal";
 import { EditModal } from "../components/EditModal";
 
 const PAGE_SIZES = [10, 20, 50] as const;
-
-const CARDS = [
-  { id: 1, name: "Tbank" },
-  { id: 2, name: "Sberbank" },
-  { id: 3, name: "Alfa-bank" },
-  { id: 4, name: "PLATA" },
-] as const;
-
-const CARD_NAME: Record<number, string> = Object.fromEntries(
-  CARDS.map((c) => [c.id, c.name])
-);
 
 type EditFormState = {
   date: string;
@@ -277,10 +267,11 @@ export default function TransactionsPage() {
                 onChange={(e) => patchQuery({ card: Number(e.target.value), page: 1 })}
               >
                 <option value={0}>All</option>
-                <option value={1}>Tbank</option>
-                <option value={2}>Sberbank</option>
-                <option value={3}>Alfa-bank</option>
-                <option value={4}>PLATA</option>
+                {CARDS.map((item) => (
+                  <option key={item.id} value={item.id}>
+                    {item.name}
+                  </option>
+                ))}
               </select>
             </div>
 

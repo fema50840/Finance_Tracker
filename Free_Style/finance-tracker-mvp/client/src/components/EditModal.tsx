@@ -2,14 +2,8 @@ import { useMemo, useState } from "react";
 import type { Currency, Transaction, TxType } from "../types";
 import { currencyMoney } from "../utils/format";
 import { getCategoriesForType } from "../constants/categories";
+import { CARDS, getCardCurrency } from "../constants/cards";
 import { Calendar } from "./icons/Calendar";
-
-const CARDS = [
-  { id: 1, name: "Tbank" },
-  { id: 2, name: "Sberbank" },
-  { id: 3, name: "Alfa-bank" },
-  { id: 4, name: "PLATA" },
-] as const;
 
 type FormState = {
   date: string;
@@ -106,9 +100,10 @@ export function EditModal(props: {
             <select
               className="input modalInput"
               value={form.card}
-              onChange={(e) =>
-                setForm((p) => ({ ...p, card: Number(e.target.value) }))
-              }
+              onChange={(e) => {
+                const card = Number(e.target.value);
+                setForm((p) => ({ ...p, card, currency: getCardCurrency(card) }));
+              }}
             >
               {CARDS.map((c) => (
                 <option key={c.id} value={c.id}>

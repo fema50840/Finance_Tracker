@@ -33,7 +33,9 @@ export interface DashboardProps {
     c2: number;
     c3: number;
     c4: number;
+    c5: number;
     nativeTotals: Record<Currency, number>;
+    nativeTotalsByCard: Record<number, Record<Currency, number>>;
     exchangeRate: ExchangeRate | null;
   };
   period: { income: number; outcome: number };
@@ -251,24 +253,50 @@ function CardRow({
   subtitle,
   value,
   badge,
+  secondaryValue,
+  collapsed = false,
+  onToggle,
 }: {
   icon: string;
   iconClass: string;
   title: string;
-  subtitle: string;
-  value?: string;
-  badge?: string;
+  subtitle?: string;
+  value?: React.ReactNode;
+  badge?: React.ReactNode;
+  secondaryValue?: React.ReactNode;
+  collapsed?: boolean;
+  onToggle?: () => void;
 }) {
   return (
-    <div className="cardRow">
+    <div className={`cardRow ${collapsed ? "collapsed" : ""}`}>
       <div className="rowLeft">
         <div className={`icon ${iconClass}`}>{icon}</div>
         <div>
           <div className="rowTitle">{title}</div>
-          <div className="rowSub">{subtitle}</div>
+          {!collapsed && subtitle && <div className="rowSub">{subtitle}</div>}
         </div>
       </div>
-      {badge ? <div className="badge">{badge}</div> : <div className="value">{value}</div>}
+      <div className="cardRowEnd">
+        {!collapsed && (
+          <div className="amountStack">
+            {badge ? <div className="badge">{badge}</div> : <div className="value">{value}</div>}
+            {secondaryValue !== undefined && (
+              <div className="secondaryBalance">{secondaryValue}</div>
+            )}
+          </div>
+        )}
+        {onToggle && (
+          <button
+            type="button"
+            className="collapseBtn"
+            onClick={onToggle}
+            aria-label={`${collapsed ? "Expand" : "Collapse"} ${title}`}
+            title={collapsed ? "Expand card" : "Collapse card"}
+          >
+            {collapsed ? "⌄" : "⌃"}
+          </button>
+        )}
+      </div>
     </div>
   );
 }
@@ -299,11 +327,13 @@ function KpiCards({ income, outcome }: { income: number; outcome: number }) {
 
 function ExchangeRateBox({
   exchangeRate,
-  nativeTotals,
+  eurCardsTotal,
 }: {
   exchangeRate: ExchangeRate | null;
-  nativeTotals: Record<Currency, number>;
+  eurCardsTotal: number;
 }) {
+  const rubEquivalent = exchangeRate ? eurCardsTotal * exchangeRate.rate : 0;
+
   return (
     <div className="exchangeBox">
       <div>
@@ -321,8 +351,8 @@ function ExchangeRateBox({
       </div>
 
       <div className="exchangeNative">
-        <span>{currencyMoney(nativeTotals.RUB, "RUB")}</span>
-        <span>{currencyMoney(nativeTotals.EUR, "EUR")}</span>
+        <span>{currencyMoney(eurCardsTotal, "EUR")}</span>
+        <span>{exchangeRate ? currencyMoney(rubEquivalent, "RUB") : "Loading..."}</span>
       </div>
     </div>
   );
@@ -368,11 +398,33 @@ export function Dashboard(props: DashboardProps) {
   const navigate = useNavigate();
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [collapsedCards, setCollapsedCards] = useState<Set<number>>(() => {
+    try {
+      const stored = JSON.parse(localStorage.getItem("collapsed-dashboard-cards") ?? "[]");
+      return new Set(Array.isArray(stored) ? stored.filter(Number.isInteger) : []);
+    } catch {
+      return new Set();
+    }
+  });
   const gearWrapRef = useRef<HTMLDivElement | null>(null);
 
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [isImporting, setIsImporting] = useState(false);
   const [importResult, setImportResult] = useState<ImportResult | null>(null);
+
+  const toggleCard = (cardId: number) => {
+    setCollapsedCards((current) => {
+      const next = new Set(current);
+      if (next.has(cardId)) next.delete(cardId);
+      else next.add(cardId);
+      localStorage.setItem("collapsed-dashboard-cards", JSON.stringify([...next]));
+      return next;
+    });
+  };
+
+  const plataEur = totals.nativeTotalsByCard[4]?.EUR ?? 0;
+  const bocEur = totals.nativeTotalsByCard[5]?.EUR ?? 0;
+  const eurCardsTotal = plataEur + bocEur;
 
   const onPickImportFile = () => {
     fileInputRef.current?.click();
@@ -580,13 +632,15 @@ export function Dashboard(props: DashboardProps) {
             iconClass="yellow"
             title="TOTAL BALANCE"
             subtitle="All cards balance"
-            badge={money(totals.total)}
+            badge={currencyMoney(totals.total, "RUB")}
+            secondaryValue={currencyMoney(eurCardsTotal, "EUR")}
           />
 
-          <CardRow icon="▦" iconClass="blue" title={cardName[1]} subtitle="Card 1 Amount" value={money(totals.c1)} />
-          <CardRow icon="▦" iconClass="blue" title={cardName[2]} subtitle="Card 2 Amount" value={money(totals.c2)} />
-          <CardRow icon="▦" iconClass="blue" title={cardName[3]} subtitle="Card 3 Amount" value={money(totals.c3)} />
-          <CardRow icon="€" iconClass="blue" title={cardName[4]} subtitle="PLATA Amount in RUB" value={money(totals.c4)} />
+          <CardRow icon="▦" iconClass="blue" title={cardName[1]} value={currencyMoney(totals.c1, "RUB")} collapsed={collapsedCards.has(1)} onToggle={() => toggleCard(1)} />
+          <CardRow icon="▦" iconClass="blue" title={cardName[2]} value={currencyMoney(totals.c2, "RUB")} collapsed={collapsedCards.has(2)} onToggle={() => toggleCard(2)} />
+          <CardRow icon="▦" iconClass="blue" title={cardName[3]} value={currencyMoney(totals.c3, "RUB")} collapsed={collapsedCards.has(3)} onToggle={() => toggleCard(3)} />
+          <CardRow icon="€" iconClass="blue" title={cardName[4]} value={currencyMoney(totals.c4, "RUB")} secondaryValue={currencyMoney(plataEur, "EUR")} collapsed={collapsedCards.has(4)} onToggle={() => toggleCard(4)} />
+          <CardRow icon="€" iconClass="blue" title={cardName[5]} value={currencyMoney(totals.c5, "RUB")} secondaryValue={currencyMoney(bocEur, "EUR")} collapsed={collapsedCards.has(5)} onToggle={() => toggleCard(5)} />
 
           <KpiCards income={period.income} outcome={period.outcome} />
         </div>
@@ -628,7 +682,7 @@ export function Dashboard(props: DashboardProps) {
             <WaterfallChart data={outcomeByCategory} total={totalOutcome} />
           </div>
 
-          <ExchangeRateBox exchangeRate={totals.exchangeRate} nativeTotals={totals.nativeTotals} />
+          <ExchangeRateBox exchangeRate={totals.exchangeRate} eurCardsTotal={eurCardsTotal} />
         </div>
       </div>
     </div>

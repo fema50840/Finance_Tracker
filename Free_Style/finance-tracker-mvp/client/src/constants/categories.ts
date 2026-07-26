@@ -14,6 +14,7 @@ export const OUTCOME_CATEGORIES = [
   "Car Maintenance",
   "Fuel",
   "Rent Fee",
+  "Deposit",
   "Transactions",
   "Others",
 ] as const;

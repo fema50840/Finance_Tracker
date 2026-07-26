@@ -63,6 +63,7 @@ const addUtcDays = (date: Date, days: number) => {
 };
 
 type Currency = "RUB" | "EUR";
+const CARD_IDS = [1, 2, 3, 4, 5] as const;
 
 type ExchangeRate = {
   base: "EUR";
@@ -581,8 +582,15 @@ app.get("/api/summary", authRequired, async (req: AuthRequest, res) => {
     });
   
     let total = 0;
-    const totalsByCard: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0 };
+    const totalsByCard: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
     const nativeTotals: Record<Currency, number> = { RUB: 0, EUR: 0 };
+    const nativeTotalsByCard: Record<number, Record<Currency, number>> = {
+      1: { RUB: 0, EUR: 0 },
+      2: { RUB: 0, EUR: 0 },
+      3: { RUB: 0, EUR: 0 },
+      4: { RUB: 0, EUR: 0 },
+      5: { RUB: 0, EUR: 0 },
+    };
   
     transactions.forEach((t) => {
       const currency = parseCurrency(t.currency);
@@ -594,9 +602,11 @@ app.get("/api/summary", authRequired, async (req: AuthRequest, res) => {
       total += value;
       nativeTotals[currency] += signedNative;
       totalsByCard[t.card] += value;
+      nativeTotalsByCard[t.card] ??= { RUB: 0, EUR: 0 };
+      nativeTotalsByCard[t.card][currency] += signedNative;
     });
   
-    res.json({ total, totalsByCard, nativeTotals, exchangeRate });
+    res.json({ total, totalsByCard, nativeTotals, nativeTotalsByCard, exchangeRate });
   } catch (e) {
     console.error(e);
     res.status(502).json({ error: "Failed to load summary exchange rate" });
@@ -706,8 +716,8 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
     const currency = parseCurrency(req.body?.currency);
   
     if (!date) return res.status(400).json({ error: "date is required" });
-    if (![1, 2, 3, 4].includes(Number(card)))
-      return res.status(400).json({ error: "card must be 1, 2, 3, or 4" });
+    if (!CARD_IDS.includes(Number(card) as (typeof CARD_IDS)[number]))
+      return res.status(400).json({ error: "card must be 1, 2, 3, 4, or 5" });
     if (!category || typeof category !== "string")
       return res.status(400).json({ error: "category is required" });
     if (type !== "income" && type !== "outcome")
@@ -749,8 +759,8 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
   
         if (!date) return res.status(400).json({ error: "date is required" });
   
-        if (![1, 2, 3, 4].includes(Number(card))) {
-          return res.status(400).json({ error: "card must be 1, 2, 3, or 4" });
+        if (!CARD_IDS.includes(Number(card) as (typeof CARD_IDS)[number])) {
+          return res.status(400).json({ error: "card must be 1, 2, 3, 4, or 5" });
         }
   
         if (!category || typeof category !== "string") {
