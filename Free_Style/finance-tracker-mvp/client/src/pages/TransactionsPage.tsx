@@ -6,6 +6,7 @@ import type { Currency, Transaction } from "../types";
 import { currencyMoney, formatDate, todayISO } from "../utils/format";
 import { qsGet, qsGetNumber, qsSet } from "../utils/query";
 import { CARDS, CARD_NAME } from "../constants/cards";
+import { INCOME_CATEGORIES, OUTCOME_CATEGORIES } from "../constants/categories";
 import { EditIcon } from "../components/icons/EditIcon";
 import { TrashIcon } from "../components/icons/TrashIcon";
 
@@ -13,6 +14,7 @@ import { DeleteModal } from "../components/DeleteModal";
 import { EditModal } from "../components/EditModal";
 
 const PAGE_SIZES = [10, 20, 50] as const;
+const ALL_CATEGORIES: string[] = Array.from(new Set([...OUTCOME_CATEGORIES, ...INCOME_CATEGORIES]));
 
 type EditFormState = {
   date: string;
@@ -59,6 +61,13 @@ export default function TransactionsPage() {
   const [isSaving, setIsSaving] = useState(false);
 
   const anyModalOpen = Boolean(deleteCandidate || editCandidate);
+  const categoryOptions = useMemo(() => {
+    if (type === "income") return [...INCOME_CATEGORIES] as string[];
+    if (type === "outcome") return [...OUTCOME_CATEGORIES] as string[];
+    return ALL_CATEGORIES;
+  }, [type]);
+
+  const categorySelectValue = categoryOptions.includes(category) ? category : "";
 
   // ---- helper: update query
   const patchQuery = (patch: Partial<Record<string, string | number | null>>) => {
@@ -252,7 +261,25 @@ export default function TransactionsPage() {
           <div className="form" style={{ gridTemplateColumns: "repeat(6, minmax(140px, 1fr))" }}>
             <div>
               <div className="fieldLabel">Type</div>
-              <select className="input" value={type} onChange={(e) => patchQuery({ type: e.target.value, page: 1 })}>
+              <select
+                className="input"
+                value={type}
+                onChange={(e) => {
+                  const nextType = e.target.value as "all" | "income" | "outcome";
+                  const nextCategories: readonly string[] =
+                    nextType === "income"
+                      ? INCOME_CATEGORIES
+                      : nextType === "outcome"
+                      ? OUTCOME_CATEGORIES
+                      : ALL_CATEGORIES;
+
+                  patchQuery({
+                    type: nextType,
+                    category: category && !nextCategories.includes(category) ? "" : category,
+                    page: 1,
+                  });
+                }}
+              >
                 <option value="all">All</option>
                 <option value="outcome">Outcome</option>
                 <option value="income">Income</option>
@@ -277,12 +304,21 @@ export default function TransactionsPage() {
 
             <div>
               <div className="fieldLabel">Category</div>
-              <input
+              <select
                 className="input"
-                value={category}
+                value={categorySelectValue}
                 onChange={(e) => patchQuery({ category: e.target.value, page: 1 })}
-                placeholder="exact (optional)"
-              />
+              >
+                <option value="">All</option>
+                {category && !categoryOptions.includes(category) && (
+                  <option value={category}>{category}</option>
+                )}
+                {categoryOptions.map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
             </div>
 
             <div>

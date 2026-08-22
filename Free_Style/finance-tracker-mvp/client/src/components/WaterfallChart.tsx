@@ -10,7 +10,8 @@ import {
   Cell,
   LabelList,
 } from "recharts";
-import { money } from "../utils/format";
+import type { ExchangeRate } from "../types";
+import { currencyMoney, money } from "../utils/format";
 
 type Item = { category: string; amount: number };
 
@@ -33,11 +34,17 @@ function round2(n: number) {
 }
 
 function TooltipCard(props: any) {
-  const { active, payload, label } = props;
+  const { active, payload, label, exchangeRate } = props as {
+    active?: boolean;
+    payload?: any[];
+    label?: string;
+    exchangeRate?: ExchangeRate | null;
+  };
   if (!active || !payload?.length) return null;
 
   const row = payload[0]?.payload as Row | undefined;
   const value = Number(row?.value ?? 0);
+  const eurValue = exchangeRate?.rate ? value / exchangeRate.rate : null;
 
   return (
     <div
@@ -54,14 +61,20 @@ function TooltipCard(props: any) {
         {label}
       </div>
       <div style={{ fontSize: 12, color: "rgba(17,24,39,0.65)" }}>
-        value: <span style={{ fontWeight: 800, color: "#111827" }}>{money(value)}</span>
+        RUB: <span style={{ fontWeight: 800, color: "#111827" }}>{currencyMoney(value, "RUB")}</span>
+      </div>
+      <div style={{ marginTop: 4, fontSize: 12, color: "rgba(17,24,39,0.65)" }}>
+        EUR equivalent:{" "}
+        <span style={{ fontWeight: 800, color: "#111827" }}>
+          {eurValue === null ? "Loading..." : currencyMoney(eurValue, "EUR")}
+        </span>
       </div>
     </div>
   );
 }
 
-export function WaterfallChart(props: { data: Item[]; total: number }) {
-  const { data, total } = props;
+export function WaterfallChart(props: { data: Item[]; total: number; exchangeRate: ExchangeRate | null }) {
+  const { data, total, exchangeRate } = props;
 
   const [activeName, setActiveName] = useState<string | null>(null);
 
@@ -162,7 +175,7 @@ export function WaterfallChart(props: { data: Item[]; total: number }) {
                 tickLine={false}
                 />
 
-            <Tooltip content={<TooltipCard />} />
+            <Tooltip content={<TooltipCard exchangeRate={exchangeRate} />} />
 
             {/* offset */}
             <Bar dataKey="start" stackId="wf" fill="transparent" isAnimationActive={false} />

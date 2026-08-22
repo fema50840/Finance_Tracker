@@ -240,6 +240,7 @@ function useTransactions(
     c3: summary?.totalsByCard?.[3] ?? 0,
     c4: summary?.totalsByCard?.[4] ?? 0,
     c5: summary?.totalsByCard?.[5] ?? 0,
+    c6: summary?.totalsByCard?.[6] ?? 0,
     nativeTotals: summary?.nativeTotals ?? { RUB: 0, EUR: 0 },
     nativeTotalsByCard: summary?.nativeTotalsByCard ?? {},
     exchangeRate: summary?.exchangeRate ?? null,

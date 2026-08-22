@@ -34,6 +34,7 @@ export interface DashboardProps {
     c3: number;
     c4: number;
     c5: number;
+    c6: number;
     nativeTotals: Record<Currency, number>;
     nativeTotalsByCard: Record<number, Record<Currency, number>>;
     exchangeRate: ExchangeRate | null;
@@ -422,9 +423,10 @@ export function Dashboard(props: DashboardProps) {
     });
   };
 
-  const plataEur = totals.nativeTotalsByCard[4]?.EUR ?? 0;
+  const ameriaEur = totals.nativeTotalsByCard[4]?.EUR ?? 0;
   const bocEur = totals.nativeTotalsByCard[5]?.EUR ?? 0;
-  const eurCardsTotal = plataEur + bocEur;
+  const revolutEur = totals.nativeTotalsByCard[6]?.EUR ?? 0;
+  const eurCardsTotal = ameriaEur + bocEur + revolutEur;
 
   const onPickImportFile = () => {
     fileInputRef.current?.click();
@@ -639,8 +641,9 @@ export function Dashboard(props: DashboardProps) {
           <CardRow icon="▦" iconClass="blue" title={cardName[1]} value={currencyMoney(totals.c1, "RUB")} collapsed={collapsedCards.has(1)} onToggle={() => toggleCard(1)} />
           <CardRow icon="▦" iconClass="blue" title={cardName[2]} value={currencyMoney(totals.c2, "RUB")} collapsed={collapsedCards.has(2)} onToggle={() => toggleCard(2)} />
           <CardRow icon="▦" iconClass="blue" title={cardName[3]} value={currencyMoney(totals.c3, "RUB")} collapsed={collapsedCards.has(3)} onToggle={() => toggleCard(3)} />
-          <CardRow icon="€" iconClass="blue" title={cardName[4]} value={currencyMoney(totals.c4, "RUB")} secondaryValue={currencyMoney(plataEur, "EUR")} collapsed={collapsedCards.has(4)} onToggle={() => toggleCard(4)} />
+          <CardRow icon="€" iconClass="blue" title={cardName[4]} value={currencyMoney(totals.c4, "RUB")} secondaryValue={currencyMoney(ameriaEur, "EUR")} collapsed={collapsedCards.has(4)} onToggle={() => toggleCard(4)} />
           <CardRow icon="€" iconClass="blue" title={cardName[5]} value={currencyMoney(totals.c5, "RUB")} secondaryValue={currencyMoney(bocEur, "EUR")} collapsed={collapsedCards.has(5)} onToggle={() => toggleCard(5)} />
+          <CardRow icon="€" iconClass="blue" title={cardName[6]} value={currencyMoney(totals.c6, "RUB")} secondaryValue={currencyMoney(revolutEur, "EUR")} collapsed={collapsedCards.has(6)} onToggle={() => toggleCard(6)} />
 
           <KpiCards income={period.income} outcome={period.outcome} />
         </div>
@@ -679,7 +682,7 @@ export function Dashboard(props: DashboardProps) {
           </div>
 
           <div className="chartPanelBody">
-            <WaterfallChart data={outcomeByCategory} total={totalOutcome} />
+            <WaterfallChart data={outcomeByCategory} total={totalOutcome} exchangeRate={totals.exchangeRate} />
           </div>
 
           <ExchangeRateBox exchangeRate={totals.exchangeRate} eurCardsTotal={eurCardsTotal} />

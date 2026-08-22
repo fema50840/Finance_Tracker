@@ -63,7 +63,7 @@ const addUtcDays = (date: Date, days: number) => {
 };
 
 type Currency = "RUB" | "EUR";
-const CARD_IDS = [1, 2, 3, 4, 5] as const;
+const CARD_IDS = [1, 2, 3, 4, 5, 6] as const;
 
 type ExchangeRate = {
   base: "EUR";
@@ -582,7 +582,7 @@ app.get("/api/summary", authRequired, async (req: AuthRequest, res) => {
     });
   
     let total = 0;
-    const totalsByCard: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+    const totalsByCard: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0 };
     const nativeTotals: Record<Currency, number> = { RUB: 0, EUR: 0 };
     const nativeTotalsByCard: Record<number, Record<Currency, number>> = {
       1: { RUB: 0, EUR: 0 },
@@ -590,6 +590,7 @@ app.get("/api/summary", authRequired, async (req: AuthRequest, res) => {
       3: { RUB: 0, EUR: 0 },
       4: { RUB: 0, EUR: 0 },
       5: { RUB: 0, EUR: 0 },
+      6: { RUB: 0, EUR: 0 },
     };
   
     transactions.forEach((t) => {
@@ -717,7 +718,7 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
   
     if (!date) return res.status(400).json({ error: "date is required" });
     if (!CARD_IDS.includes(Number(card) as (typeof CARD_IDS)[number]))
-      return res.status(400).json({ error: "card must be 1, 2, 3, 4, or 5" });
+      return res.status(400).json({ error: "card must be 1, 2, 3, 4, 5, or 6" });
     if (!category || typeof category !== "string")
       return res.status(400).json({ error: "category is required" });
     if (type !== "income" && type !== "outcome")
@@ -760,7 +761,7 @@ app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
         if (!date) return res.status(400).json({ error: "date is required" });
   
         if (!CARD_IDS.includes(Number(card) as (typeof CARD_IDS)[number])) {
-          return res.status(400).json({ error: "card must be 1, 2, 3, 4, or 5" });
+          return res.status(400).json({ error: "card must be 1, 2, 3, 4, 5, or 6" });
         }
   
         if (!category || typeof category !== "string") {
