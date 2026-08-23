@@ -8,6 +8,7 @@ import AuthPage from "./pages/AuthPage";
 import TransactionsPage from "./pages/TransactionsPage";
 import DashboardPage from "./pages/DashboardPage";
 import ChartsPage from "./pages/ChartsPage";
+import PlanPage from "./pages/PlanPage";
 
 import { useAuth } from "./hooks/useAuth";
 
@@ -56,6 +57,15 @@ export default function App() {
         element={
           <ProtectedRoute>
             <ChartsPage />
+          </ProtectedRoute>
+        }
+      />
+
+      <Route
+        path="/plan"
+        element={
+          <ProtectedRoute>
+            <PlanPage />
           </ProtectedRoute>
         }
       />

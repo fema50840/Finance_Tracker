@@ -34,11 +34,12 @@ function round2(n: number) {
 }
 
 function TooltipCard(props: any) {
-  const { active, payload, label, exchangeRate } = props as {
+  const { active, payload, label, exchangeRate, privacyMode } = props as {
     active?: boolean;
     payload?: any[];
     label?: string;
     exchangeRate?: ExchangeRate | null;
+    privacyMode?: boolean;
   };
   if (!active || !payload?.length) return null;
 
@@ -61,11 +62,14 @@ function TooltipCard(props: any) {
         {label}
       </div>
       <div style={{ fontSize: 12, color: "rgba(17,24,39,0.65)" }}>
-        RUB: <span style={{ fontWeight: 800, color: "#111827" }}>{currencyMoney(value, "RUB")}</span>
+        RUB:{" "}
+        <span className={`privateAmount ${privacyMode ? "hidden" : ""}`} style={{ fontWeight: 800, color: "#111827" }}>
+          {currencyMoney(value, "RUB")}
+        </span>
       </div>
       <div style={{ marginTop: 4, fontSize: 12, color: "rgba(17,24,39,0.65)" }}>
         EUR equivalent:{" "}
-        <span style={{ fontWeight: 800, color: "#111827" }}>
+        <span className={`privateAmount ${privacyMode ? "hidden" : ""}`} style={{ fontWeight: 800, color: "#111827" }}>
           {eurValue === null ? "Loading..." : currencyMoney(eurValue, "EUR")}
         </span>
       </div>
@@ -73,8 +77,13 @@ function TooltipCard(props: any) {
   );
 }
 
-export function WaterfallChart(props: { data: Item[]; total: number; exchangeRate: ExchangeRate | null }) {
-  const { data, total, exchangeRate } = props;
+export function WaterfallChart(props: {
+  data: Item[];
+  total: number;
+  exchangeRate: ExchangeRate | null;
+  privacyMode: boolean;
+}) {
+  const { data, total, exchangeRate, privacyMode } = props;
 
   const [activeName, setActiveName] = useState<string | null>(null);
 
@@ -130,15 +139,20 @@ export function WaterfallChart(props: { data: Item[]; total: number; exchangeRat
         fontWeight={900}
         opacity={isTotal ? 0.95 : 1}
       >
-        {formatCompact(Number(value))}
+        {privacyMode ? "•••" : formatCompact(Number(value))}
       </text>
     );
   };
 
   return (
-    <div className="wfCard">
+      <div className="wfCard">
       <div className="wfTitle">Outcome breakdown</div>
-      <div className="wfSub">Total: {money(round2(total))}</div>
+      <div className="wfSub">
+        Total:{" "}
+        <span className={`privateAmount ${privacyMode ? "hidden" : ""}`}>
+          {money(round2(total))}
+        </span>
+      </div>
 
       <div className="wfBody">
         <ResponsiveContainer width="100%" height={360}>
@@ -157,6 +171,7 @@ export function WaterfallChart(props: { data: Item[]; total: number; exchangeRat
                     fill: "rgba(17,24,39,0.55)",
                     fontWeight: 500,
                 }}
+                tickFormatter={(value) => (privacyMode ? "•••" : money(Number(value)))}
                 axisLine={{ stroke: "rgba(0,0,0,0.15)" }}
                 tickLine={false}
                 />
@@ -175,7 +190,7 @@ export function WaterfallChart(props: { data: Item[]; total: number; exchangeRat
                 tickLine={false}
                 />
 
-            <Tooltip content={<TooltipCard exchangeRate={exchangeRate} />} />
+            <Tooltip content={<TooltipCard exchangeRate={exchangeRate} privacyMode={privacyMode} />} />
 
             {/* offset */}
             <Bar dataKey="start" stackId="wf" fill="transparent" isAnimationActive={false} />

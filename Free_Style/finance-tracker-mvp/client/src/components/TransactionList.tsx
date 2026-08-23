@@ -9,8 +9,9 @@ export function TransactionList(props: {
   cardName: Record<number, string>;
   onDelete: (t: Transaction) => void;
   onEdit: (t: Transaction) => void; // ✅ NEW
+  privacyMode?: boolean;
 }) {
-  const { transactions, cardName, onDelete, onEdit } = props;
+  const { transactions, cardName, onDelete, onEdit, privacyMode = false } = props;
 
   return (
     <div className="list">
@@ -39,8 +40,10 @@ export function TransactionList(props: {
 
             <div className="txRight">
               <div className={`amount ${isIncome ? "plus" : "minus"}`}>
-                {isIncome ? "+" : "-"}
-                {currencyMoney(a, t.currency ?? "RUB")}
+                <span className={`privateAmount ${privacyMode ? "hidden" : ""}`}>
+                  {isIncome ? "+" : "-"}
+                  {currencyMoney(a, t.currency ?? "RUB")}
+                </span>
               </div>
 
               {/* ✅ edit */}

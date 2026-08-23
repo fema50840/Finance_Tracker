@@ -257,6 +257,9 @@ function CardRow({
   secondaryValue,
   collapsed = false,
   onToggle,
+  actionLabel,
+  actionTitle,
+  actionClassName,
 }: {
   icon: string;
   iconClass: string;
@@ -267,6 +270,9 @@ function CardRow({
   secondaryValue?: React.ReactNode;
   collapsed?: boolean;
   onToggle?: () => void;
+  actionLabel?: React.ReactNode;
+  actionTitle?: string;
+  actionClassName?: string;
 }) {
   return (
     <div className={`cardRow ${collapsed ? "collapsed" : ""}`}>
@@ -289,12 +295,12 @@ function CardRow({
         {onToggle && (
           <button
             type="button"
-            className="collapseBtn"
+            className={`collapseBtn ${actionClassName ?? ""}`}
             onClick={onToggle}
-            aria-label={`${collapsed ? "Expand" : "Collapse"} ${title}`}
-            title={collapsed ? "Expand card" : "Collapse card"}
+            aria-label={actionTitle ?? `${collapsed ? "Expand" : "Collapse"} ${title}`}
+            title={actionTitle ?? (collapsed ? "Expand card" : "Collapse card")}
           >
-            {collapsed ? "⌄" : "⌃"}
+            {actionLabel ?? (collapsed ? "⌄" : "⌃")}
           </button>
         )}
       </div>
@@ -302,24 +308,46 @@ function CardRow({
   );
 }
 
-function KpiCards({ income, outcome }: { income: number; outcome: number }) {
+function PrivateAmount({
+  children,
+  hidden,
+  className,
+}: {
+  children: React.ReactNode;
+  hidden: boolean;
+  className?: string;
+}) {
+  return (
+    <span className={`privateAmount ${hidden ? "hidden" : ""} ${className ?? ""}`}>
+      {children}
+    </span>
+  );
+}
+
+function KpiCards({ income, outcome, privacyMode }: { income: number; outcome: number; privacyMode: boolean }) {
   const delta = income - outcome;
   const deltaClass = delta > 0 ? "plus" : delta < 0 ? "minus" : "zero";
 
   return (
     <div className="kpis">
       <div className={`kpiCard kpiDelta ${deltaClass}`}>
-        <div className="kpiValue">{money(delta)} ₽</div>
+        <div className="kpiValue">
+          <PrivateAmount hidden={privacyMode}>{money(delta)} ₽</PrivateAmount>
+        </div>
         <div className="kpiLabel">Delta (income − outcome)</div>
       </div>
 
       <div className="kpiCard">
-        <div className="kpiValue">{money(outcome)} ₽</div>
+        <div className="kpiValue">
+          <PrivateAmount hidden={privacyMode}>{money(outcome)} ₽</PrivateAmount>
+        </div>
         <div className="kpiLabel">Outcome per period</div>
       </div>
 
       <div className="kpiCard">
-        <div className="kpiValue">{money(income)} ₽</div>
+        <div className="kpiValue">
+          <PrivateAmount hidden={privacyMode}>{money(income)} ₽</PrivateAmount>
+        </div>
         <div className="kpiLabel">Income per period</div>
       </div>
     </div>
@@ -329,9 +357,11 @@ function KpiCards({ income, outcome }: { income: number; outcome: number }) {
 function ExchangeRateBox({
   exchangeRate,
   eurCardsTotal,
+  privacyMode,
 }: {
   exchangeRate: ExchangeRate | null;
   eurCardsTotal: number;
+  privacyMode: boolean;
 }) {
   const rubEquivalent = exchangeRate ? eurCardsTotal * exchangeRate.rate : 0;
 
@@ -340,7 +370,9 @@ function ExchangeRateBox({
       <div>
         <div className="rightTitle">EUR/RUB</div>
         <div className="exchangeValue">
-          {exchangeRate ? `1 € = ${money(exchangeRate.rate)} ₽` : "Loading..."}
+          <PrivateAmount hidden={privacyMode}>
+            {exchangeRate ? `1 € = ${money(exchangeRate.rate)} ₽` : "Loading..."}
+          </PrivateAmount>
         </div>
         <div className="rowSub">
           {exchangeRate
@@ -352,8 +384,14 @@ function ExchangeRateBox({
       </div>
 
       <div className="exchangeNative">
-        <span>{currencyMoney(eurCardsTotal, "EUR")}</span>
-        <span>{exchangeRate ? currencyMoney(rubEquivalent, "RUB") : "Loading..."}</span>
+        <span>
+          <PrivateAmount hidden={privacyMode}>{currencyMoney(eurCardsTotal, "EUR")}</PrivateAmount>
+        </span>
+        <span>
+          <PrivateAmount hidden={privacyMode}>
+            {exchangeRate ? currencyMoney(rubEquivalent, "RUB") : "Loading..."}
+          </PrivateAmount>
+        </span>
       </div>
     </div>
   );
@@ -407,6 +445,9 @@ export function Dashboard(props: DashboardProps) {
       return new Set();
     }
   });
+  const [privacyMode, setPrivacyMode] = useState(() => {
+    return localStorage.getItem("dashboard-privacy-mode") === "true";
+  });
   const gearWrapRef = useRef<HTMLDivElement | null>(null);
 
   const fileInputRef = useRef<HTMLInputElement | null>(null);
@@ -419,6 +460,14 @@ export function Dashboard(props: DashboardProps) {
       if (next.has(cardId)) next.delete(cardId);
       else next.add(cardId);
       localStorage.setItem("collapsed-dashboard-cards", JSON.stringify([...next]));
+      return next;
+    });
+  };
+
+  const togglePrivacyMode = () => {
+    setPrivacyMode((current) => {
+      const next = !current;
+      localStorage.setItem("dashboard-privacy-mode", String(next));
       return next;
     });
   };
@@ -523,6 +572,18 @@ export function Dashboard(props: DashboardProps) {
                 }}
               >
                 Charts
+              </button>
+
+              <button
+                className="gearItem"
+                type="button"
+                role="menuitem"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  navigate("/plan");
+                }}
+              >
+                Plan
               </button>
 
               <div className="gearSep" />
@@ -634,18 +695,23 @@ export function Dashboard(props: DashboardProps) {
             iconClass="yellow"
             title="TOTAL BALANCE"
             subtitle="All cards balance"
-            badge={currencyMoney(totals.total, "RUB")}
-            secondaryValue={currencyMoney(eurCardsTotal, "EUR")}
+            badge={<PrivateAmount hidden={privacyMode}>{currencyMoney(totals.total, "RUB")}</PrivateAmount>}
+            secondaryValue={<PrivateAmount hidden={privacyMode}>{currencyMoney(eurCardsTotal, "EUR")}</PrivateAmount>}
+            onToggle={togglePrivacyMode}
+            collapsed={false}
+            actionLabel={privacyMode ? "Show" : "Hide"}
+            actionTitle={privacyMode ? "Show money values" : "Hide money values"}
+            actionClassName="privacyToggleBtn"
           />
 
-          <CardRow icon="▦" iconClass="blue" title={cardName[1]} value={currencyMoney(totals.c1, "RUB")} collapsed={collapsedCards.has(1)} onToggle={() => toggleCard(1)} />
-          <CardRow icon="▦" iconClass="blue" title={cardName[2]} value={currencyMoney(totals.c2, "RUB")} collapsed={collapsedCards.has(2)} onToggle={() => toggleCard(2)} />
-          <CardRow icon="▦" iconClass="blue" title={cardName[3]} value={currencyMoney(totals.c3, "RUB")} collapsed={collapsedCards.has(3)} onToggle={() => toggleCard(3)} />
-          <CardRow icon="€" iconClass="blue" title={cardName[4]} value={currencyMoney(totals.c4, "RUB")} secondaryValue={currencyMoney(ameriaEur, "EUR")} collapsed={collapsedCards.has(4)} onToggle={() => toggleCard(4)} />
-          <CardRow icon="€" iconClass="blue" title={cardName[5]} value={currencyMoney(totals.c5, "RUB")} secondaryValue={currencyMoney(bocEur, "EUR")} collapsed={collapsedCards.has(5)} onToggle={() => toggleCard(5)} />
-          <CardRow icon="€" iconClass="blue" title={cardName[6]} value={currencyMoney(totals.c6, "RUB")} secondaryValue={currencyMoney(revolutEur, "EUR")} collapsed={collapsedCards.has(6)} onToggle={() => toggleCard(6)} />
+          <CardRow icon="▦" iconClass="blue" title={cardName[1]} value={<PrivateAmount hidden={privacyMode}>{currencyMoney(totals.c1, "RUB")}</PrivateAmount>} collapsed={collapsedCards.has(1)} onToggle={() => toggleCard(1)} />
+          <CardRow icon="▦" iconClass="blue" title={cardName[2]} value={<PrivateAmount hidden={privacyMode}>{currencyMoney(totals.c2, "RUB")}</PrivateAmount>} collapsed={collapsedCards.has(2)} onToggle={() => toggleCard(2)} />
+          <CardRow icon="▦" iconClass="blue" title={cardName[3]} value={<PrivateAmount hidden={privacyMode}>{currencyMoney(totals.c3, "RUB")}</PrivateAmount>} collapsed={collapsedCards.has(3)} onToggle={() => toggleCard(3)} />
+          <CardRow icon="€" iconClass="blue" title={cardName[4]} value={<PrivateAmount hidden={privacyMode}>{currencyMoney(totals.c4, "RUB")}</PrivateAmount>} secondaryValue={<PrivateAmount hidden={privacyMode}>{currencyMoney(ameriaEur, "EUR")}</PrivateAmount>} collapsed={collapsedCards.has(4)} onToggle={() => toggleCard(4)} />
+          <CardRow icon="€" iconClass="blue" title={cardName[5]} value={<PrivateAmount hidden={privacyMode}>{currencyMoney(totals.c5, "RUB")}</PrivateAmount>} secondaryValue={<PrivateAmount hidden={privacyMode}>{currencyMoney(bocEur, "EUR")}</PrivateAmount>} collapsed={collapsedCards.has(5)} onToggle={() => toggleCard(5)} />
+          <CardRow icon="€" iconClass="blue" title={cardName[6]} value={<PrivateAmount hidden={privacyMode}>{currencyMoney(totals.c6, "RUB")}</PrivateAmount>} secondaryValue={<PrivateAmount hidden={privacyMode}>{currencyMoney(revolutEur, "EUR")}</PrivateAmount>} collapsed={collapsedCards.has(6)} onToggle={() => toggleCard(6)} />
 
-          <KpiCards income={period.income} outcome={period.outcome} />
+          <KpiCards income={period.income} outcome={period.outcome} privacyMode={privacyMode} />
         </div>
 
         {/* MIDDLE */}
@@ -672,7 +738,13 @@ export function Dashboard(props: DashboardProps) {
           </div>
 
           <TransactionForm form={form} setForm={setForm} onSubmit={onSubmit} loading={loading} dateRef={dateRef} />
-          <TransactionList transactions={visibleTx} cardName={cardName} onEdit={onEdit} onDelete={onDelete} />
+          <TransactionList
+            transactions={visibleTx}
+            cardName={cardName}
+            onEdit={onEdit}
+            onDelete={onDelete}
+            privacyMode={privacyMode}
+          />
         </div>
 
         {/* RIGHT */}
@@ -682,10 +754,19 @@ export function Dashboard(props: DashboardProps) {
           </div>
 
           <div className="chartPanelBody">
-            <WaterfallChart data={outcomeByCategory} total={totalOutcome} exchangeRate={totals.exchangeRate} />
+            <WaterfallChart
+              data={outcomeByCategory}
+              total={totalOutcome}
+              exchangeRate={totals.exchangeRate}
+              privacyMode={privacyMode}
+            />
           </div>
 
-          <ExchangeRateBox exchangeRate={totals.exchangeRate} eurCardsTotal={eurCardsTotal} />
+          <ExchangeRateBox
+            exchangeRate={totals.exchangeRate}
+            eurCardsTotal={eurCardsTotal}
+            privacyMode={privacyMode}
+          />
         </div>
       </div>
     </div>

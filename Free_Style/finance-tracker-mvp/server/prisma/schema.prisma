@@ -25,6 +25,7 @@ model User {
   updatedAt    DateTime      @updatedAt
 
   transactions Transaction[]
+  planEntries  PlanEntry[]
 
   @@map("users")
 }
@@ -50,4 +51,24 @@ model Transaction {
   @@map("transactions")
   @@unique([userId, importKey])
 
+}
+
+model PlanEntry {
+  id        BigInt          @id @default(autoincrement())
+  date      DateTime
+  category  String
+  type      TransactionType
+  amount    Decimal         @db.Decimal(18, 2)
+  currency  Currency        @default(RUB)
+
+  userId    BigInt
+  user      User            @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, date])
+  @@index([userId, type, date])
+  @@unique([userId, date, category, type, currency])
+  @@map("plan_entries")
 }

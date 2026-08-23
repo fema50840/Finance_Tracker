@@ -170,6 +170,32 @@ const toRubAmount = (amount: Prisma.Decimal | number, currency: Currency, eurRub
   const n = Number(amount);
   return currency === "EUR" ? n * eurRubRate : n;
 };
+
+const signedRubAmount = (
+  amount: Prisma.Decimal | number,
+  type: "income" | "outcome",
+  currency: Currency,
+  eurRubRate: number
+) => {
+  const value = toRubAmount(amount, currency, eurRubRate);
+  return type === "income" ? value : -value;
+};
+
+const getCurrentTotalRub = async (userId: bigint, eurRubRate: number) => {
+  const transactions = await prisma.transaction.findMany({
+    where: { userId },
+    select: { amount: true, type: true, currency: true },
+  });
+
+  return transactions.reduce((sum, row) => {
+    return sum + signedRubAmount(row.amount, row.type, parseCurrency(row.currency), eurRubRate);
+  }, 0);
+};
+
+const yearBounds = (year: number) => ({
+  from: new Date(`${year}-01-01T00:00:00.000Z`),
+  toExclusive: new Date(`${year + 1}-01-01T00:00:00.000Z`),
+});
   
 
 const allowedOrigins = new Set([
@@ -710,6 +736,163 @@ app.get("/api/dashboard", authRequired, async (req: AuthRequest, res) => {
   }
 });
   
+app.get("/api/plan", authRequired, async (req: AuthRequest, res) => {
+  try {
+    const userId = req.userId!;
+    const year = toInt(req.query.year, new Date().getUTCFullYear());
+    if (year < 2000 || year > 2100) {
+      return res.status(400).json({ error: "year must be between 2000 and 2100" });
+    }
+
+    const exchangeRate = await getEurRubRate();
+    const currentTotal = await getCurrentTotalRub(userId, exchangeRate.rate);
+    const { from, toExclusive } = yearBounds(year);
+    const today = new Date(new Date().toISOString().slice(0, 10) + "T00:00:00.000Z");
+    const projectionFrom = today > from ? today : from;
+
+    const rows = await prisma.planEntry.findMany({
+      where: {
+        userId,
+        date: {
+          gte: from,
+          lt: toExclusive,
+        },
+      },
+      orderBy: [{ date: "asc" }, { category: "asc" }, { type: "asc" }],
+      select: {
+        id: true,
+        date: true,
+        category: true,
+        type: true,
+        amount: true,
+        currency: true,
+        createdAt: true,
+        updatedAt: true,
+      },
+    });
+
+    let plannedIncome = 0;
+    let plannedOutcome = 0;
+    const monthly: Record<number, { income: number; outcome: number }> = {};
+    const byCategory: Record<string, { income: number; outcome: number }> = {};
+
+    for (let month = 0; month < 12; month += 1) {
+      monthly[month] = { income: 0, outcome: 0 };
+    }
+
+    for (const row of rows) {
+      if (row.date < projectionFrom) continue;
+
+      const amountRub = toRubAmount(row.amount, parseCurrency(row.currency), exchangeRate.rate);
+      const month = row.date.getUTCMonth();
+      monthly[month] ??= { income: 0, outcome: 0 };
+      byCategory[row.category] ??= { income: 0, outcome: 0 };
+
+      if (row.type === "income") {
+        plannedIncome += amountRub;
+        monthly[month].income += amountRub;
+        byCategory[row.category].income += amountRub;
+      } else {
+        plannedOutcome += amountRub;
+        monthly[month].outcome += amountRub;
+        byCategory[row.category].outcome += amountRub;
+      }
+    }
+
+    const projectedTotal = currentTotal + plannedIncome - plannedOutcome;
+    const growthPercent = currentTotal === 0
+      ? null
+      : ((projectedTotal - currentTotal) / Math.abs(currentTotal)) * 100;
+
+    return res.json(
+      jsonSafe({
+        year,
+        entries: rows,
+        exchangeRate,
+        summary: {
+          currentTotal,
+          plannedIncome,
+          plannedOutcome,
+          plannedNet: plannedIncome - plannedOutcome,
+          projectedTotal,
+          growthPercent,
+          projectionFrom: projectionFrom.toISOString().slice(0, 10),
+          projectionTo: `${year}-12-31`,
+          monthly: Object.entries(monthly).map(([month, value]) => ({
+            month: Number(month) + 1,
+            ...value,
+            net: value.income - value.outcome,
+          })),
+          byCategory: Object.entries(byCategory)
+            .map(([category, value]) => ({
+              category,
+              ...value,
+              net: value.income - value.outcome,
+            }))
+            .sort((a, b) => b.outcome + b.income - (a.outcome + a.income)),
+        },
+      })
+    );
+  } catch (e) {
+    console.error(e);
+    return res.status(500).json({ error: "Failed to load plan" });
+  }
+});
+
+app.put("/api/plan/day", authRequired, async (req: AuthRequest, res) => {
+  try {
+    const userId = req.userId!;
+    const date = parseDateOnly(req.body?.date);
+    if (!date) return res.status(400).json({ error: "date is required (YYYY-MM-DD)" });
+
+    const rawEntries = Array.isArray(req.body?.entries) ? req.body.entries : [];
+    const data: Prisma.PlanEntryCreateManyInput[] = [];
+
+    for (const raw of rawEntries) {
+      const category = toStr(raw?.category).trim();
+      const type = toStr(raw?.type);
+      const amount = Number(raw?.amount);
+      const currency = parseCurrency(raw?.currency);
+
+      if (!category) continue;
+      if (type !== "income" && type !== "outcome") continue;
+      if (!Number.isFinite(amount) || amount <= 0) continue;
+
+      data.push({
+        userId,
+        date,
+        category,
+        type,
+        amount,
+        currency,
+      });
+    }
+
+    const next = await prisma.$transaction(async (tx) => {
+      await tx.planEntry.deleteMany({
+        where: {
+          userId,
+          date,
+        },
+      });
+
+      if (data.length > 0) {
+        await tx.planEntry.createMany({ data });
+      }
+
+      return tx.planEntry.findMany({
+        where: { userId, date },
+        orderBy: [{ category: "asc" }, { type: "asc" }],
+      });
+    });
+
+    return res.json(jsonSafe({ date: date.toISOString().slice(0, 10), entries: next }));
+  } catch (e) {
+    console.error(e);
+    return res.status(400).json({ error: "Failed to save plan day" });
+  }
+});
+
   
 
 app.post("/api/transactions", authRequired, async (req: AuthRequest, res) => {
